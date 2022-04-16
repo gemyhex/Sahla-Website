@@ -1,10 +1,19 @@
 <template>
   <v-container fluid class="home">
     <v-row>
-      <v-col class="px-0">
+      <v-col class="banner px-0">
         <div class="curve">
-
+          <img
+            src="../assets/images/business-online-shopping-sale-concept.png"
+            alt=""
+          />
         </div>
+        <div class="overlay"></div>
+        <p class="payment">
+          Make your<br />
+          Payment<br />
+          More Easy
+        </p>
       </v-col>
     </v-row>
     <v-container>
@@ -43,7 +52,7 @@
         </v-col>
       </v-row>
       <v-row>
-        <v-col class="d-flex justify-center">
+        <v-col class="d-flex justify-center my-3">
           <v-btn color="#602167">Start Now</v-btn>
         </v-col>
       </v-row>
@@ -63,20 +72,42 @@ export default {
 <style lang="scss" scoped>
 .home {
   min-height: 1000px;
-  .curve {
-    height: 400px;
+  .banner {
     position: relative;
-    // background: linear-gradient(90deg, #f0027f, #75489f);
-    background: url("../assets/images/business-online-shopping-sale-concept.png");
-    background-size: cover;
-    &:before {
-      content: "";
+    padding: 0;
+    .curve {
+      height: 400px;
+      position: relative;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+      &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100px;
+        background: url("../assets/images/border.svg");
+      }
+    }
+    .overlay {
       position: absolute;
+      top: 0;
       left: 0;
-      bottom: 0;
       width: 100%;
-      height: 100px;
-      background: url("../assets/images/border.svg");
+      height: 100%;
+      background: linear-gradient(45deg, #00ada8, #602167);
+      opacity: 0.7;
+    }
+    .payment {
+      position: absolute;
+      top: 12%;
+      left: 7%;
+      font-size: 50px;
+      font-weight: bold;
+      color: #fff;
     }
   }
   .heading {

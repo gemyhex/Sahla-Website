@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <div class="nav px-5 py-5">
+    <div class="nav px-5 py-2">
       <navbar></navbar>
     </div>
     <v-main>
