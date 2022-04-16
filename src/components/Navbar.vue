@@ -33,13 +33,3 @@ export default {
   },
 };
 </script>
-
-<style lang="scss" scoped>
-.theme--light.v-application {
-  .auth {
-    .v-btn {
-      color: #fff !important;
-    }
-  }
-}
-</style>
