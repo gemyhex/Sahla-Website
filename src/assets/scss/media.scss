@@ -1,0 +1,32 @@
+@media screen and (max-width: 959px) {
+    .item:nth-child(2):after {
+        display: none;
+    }
+
+    .item:not(:last-child):after {
+        top: 23% !important;
+        left: 77% !important;
+        // width: 70px !important;
+        // height: 33px !important;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .item:after {
+        display: none;
+    }
+
+    .box {
+        width: 350px !important;
+        height: 350px !important;
+        top: 40% !important;
+        left: -50% !important;
+    }
+}
+
+// @media screen and (min-width: 1400px) {
+//     .box {
+//         top: 40% !important;
+//         left: -50% !important;
+//     }
+// }

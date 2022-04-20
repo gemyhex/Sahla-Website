@@ -3,7 +3,11 @@ import App from "./App.vue";
 import router from "./router";
 import store from "./store";
 import vuetify from "./plugins/vuetify";
+import "bootstrap"
+import "bootstrap/dist/css/bootstrap.min.css"
 import "@/assets/scss/main.scss";
+import "@/assets/scss/fonts/css/all.css";
+import 'animate.css';
 
 Vue.config.productionTip = false;
 

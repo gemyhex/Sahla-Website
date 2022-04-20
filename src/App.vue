@@ -1,18 +1,22 @@
 <template>
   <v-app>
-    <div class="nav px-5 py-2">
+    <div class="nav px-5">
       <navbar></navbar>
     </div>
     <v-main>
       <router-view />
     </v-main>
+    <div class="foot">
+      <Footer></Footer>
+    </div>
   </v-app>
 </template>
 
 <script>
 import Navbar from "@/components/Navbar.vue";
+import Footer from "./components/Footer.vue";
 export default {
-  components: { Navbar },
+  components: { Navbar, Footer },
   name: "App",
 
   data: () => ({
