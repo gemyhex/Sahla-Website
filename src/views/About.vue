@@ -1,5 +1,30 @@
 <template>
   <div class="about">
+    <v-row>
+      <v-col>
+        <div
+          class="
+            bread-item
+            d-flex
+            flex-column
+            justify-content-center
+            align-items-center
+          "
+        >
+          <h3>About Us</h3>
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">
+                <router-link to="/">Home</router-link>
+              </li>
+              <li class="breadcrumb-item active" aria-current="page">
+                About Us
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </v-col>
+    </v-row>
     <v-container>
       <v-row>
         <v-col class="d-none d-lg-block">

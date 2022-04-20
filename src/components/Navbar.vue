@@ -17,8 +17,8 @@
   <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
       <transition
-        enter-active-class="animate__animated animate__lightSpeedInLeft"
-        leave-active-class="animate__animated animate__lightSpeedOutLeft"
+        enter-active-class="animate__animated animate__backInLeft"
+        leave-active-class="animate__animated animate__backInRight"
         appear
       >
         <a class="navbar-brand" href="#"
@@ -50,8 +50,8 @@
         </div>
       </transition>
       <transition
-        enter-active-class="animate__animated animate__lightSpeedInRight"
-        leave-active-class="animate__animated animate__lightSpeedOutRight"
+        enter-active-class="animate__animated animate__backInRight"
+        leave-active-class="animate__animated animate__backInLeft"
         appear
       >
         <v-btn color="#602167">Sign Up</v-btn>

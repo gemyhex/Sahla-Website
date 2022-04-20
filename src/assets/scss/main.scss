@@ -8,10 +8,64 @@
   box-sizing: border-box;
 }
 
-ul {
+.v-application ul {
   list-style: none;
+  padding: 0 !important;
 }
 
 a {
   text-decoration: none;
+}
+
+// Style
+.nav-pills {
+  padding: 0 !important;
+  background-color: #fff !important;
+
+  .nav-item {
+    .nav-link {
+      color: #000 !important;
+      background-color: #fff !important;
+      margin: 5px 0;
+      box-shadow: 0 4px 4px rgba($color: #707070, $alpha: 0.3);
+
+      &.active {
+        background-color: #602167 !important;
+        color: #fff !important;
+      }
+    }
+  }
+}
+
+.tabs {
+  .tab-content {
+    .card-body {
+      padding: 0rem 1rem !important;
+      margin: 5px 0;
+    }
+  }
+}
+
+.bread-item {
+  height: 200px;
+  background: #602167;
+
+  h3 {
+    color: #fff;
+  }
+
+  .breadcrumb-item+.breadcrumb-item::before {
+    content: "|";
+    color: #fff;
+  }
+
+  .breadcrumb {
+    li {
+      color: #fff;
+
+      a {
+        color: rgba($color: #ffffff, $alpha: 0.5);
+      }
+    }
+  }
 }
