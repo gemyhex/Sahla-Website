@@ -9,6 +9,30 @@
         // width: 70px !important;
         // height: 33px !important;
     }
+
+    .banner {
+        display: none !important;
+    }
+
+    .banner-alt {
+        display: block !important;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .banner {
+        display: block !important;
+    }
+
+    .banner-alt {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .btn-signup {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -24,9 +48,15 @@
     }
 }
 
-// @media screen and (min-width: 1400px) {
-//     .box {
-//         top: 40% !important;
-//         left: -50% !important;
-//     }
-// }
+@media screen and (max-width: 575px) {
+    .footer-wrap {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 1259px) {
+    .box {
+        display: none !important;
+    }
+}

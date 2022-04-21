@@ -21,9 +21,9 @@
         leave-active-class="animate__animated animate__backInRight"
         appear
       >
-        <a class="navbar-brand" href="#"
+        <router-link class="navbar-brand" to="/"
           ><img src="../assets/images/logo.svg" alt="" width="150px"
-        /></a>
+        /></router-link>
       </transition>
       <button
         class="navbar-toggler"
@@ -34,11 +34,12 @@
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
-        <span class="navbar-toggler-icon"></span>
+        <!-- <span class="navbar-toggler-icon"></span> -->
+        <v-icon>{{ icons.menu }}</v-icon>
       </button>
       <transition
-        enter-active-class="animate__animated animate__shakeY"
-        leave-active-class="animate__animated animate__shakeY"
+        enter-active-class="animate__animated animate__bounceIn"
+        leave-active-class="animate__animated animate__bounceIn"
         appear
       >
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -54,7 +55,9 @@
         leave-active-class="animate__animated animate__backInLeft"
         appear
       >
-        <v-btn color="#602167">Sign Up</v-btn>
+        <div class="btn-signup">
+          <v-btn color="#602167">Sign Up</v-btn>
+        </div>
       </transition>
     </div>
   </nav>
@@ -73,6 +76,9 @@ export default {
         { title: "Contact Us", to: "/contactus" },
       ],
       auth: "Sign Up",
+      icons: {
+        menu: "fal fa-bars",
+      },
     };
   },
 };

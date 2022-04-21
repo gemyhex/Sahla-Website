@@ -99,7 +99,7 @@
       </v-row>
       <v-row class="d-flex justify-content-center">
         <v-col class="d-flex justify-content-center mt-5" lg="3" md="3" sm="4">
-          <v-btn color="#602167"> Show More </v-btn>
+          <v-btn color="#602167" to="/offers"> Show More </v-btn>
         </v-col>
       </v-row>
     </v-container>

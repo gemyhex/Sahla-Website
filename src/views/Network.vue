@@ -1,31 +1,29 @@
 <template>
   <div class="network">
-    <v-row>
-      <v-col>
-        <div
-          class="
-            bread-item
-            d-flex
-            flex-column
-            justify-content-center
-            align-items-center
-          "
-        >
-          <h3>Our Network</h3>
-          <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-              <li class="breadcrumb-item">
-                <router-link to="/">Home</router-link>
-              </li>
-              <li class="breadcrumb-item active" aria-current="page">
-                Our Network
-              </li>
-            </ol>
-          </nav>
-        </div>
-      </v-col>
-    </v-row>
-    <v-container>
+    <div class="container-fluid p-0">
+      <div
+        class="
+          bread-item
+          d-flex
+          flex-column
+          justify-content-center
+          align-items-center
+        "
+      >
+        <h3>Our Network</h3>
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <router-link to="/">Home</router-link>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">
+              Our Network
+            </li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+    <div class="container">
       <v-row justify="center" align="center">
         <v-col class="d-flex">
           <p>Shop from over 2,500 stores, service providers and websites</p>
@@ -293,12 +291,10 @@
         <v-col xl="3" lg="3" class="d-block d-xl-none d-lg-none"> </v-col>
         <v-col xl="10" lg="10"></v-col> -->
       </v-row>
-    </v-container>
-    <v-row>
-      <v-col>
-        <subscribe></subscribe>
-      </v-col>
-    </v-row>
+    </div>
+    <div class="container-fluid p-0">
+      <subscribe></subscribe>
+    </div>
   </div>
 </template>
 

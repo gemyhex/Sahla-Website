@@ -1,8 +1,8 @@
 <template>
   <div class="footer">
     <v-container>
-      <v-row justify="center" align="center">
-        <v-col lg="3" md="12" sm="12" class="brief">
+      <v-row justify="center" align="center" class="footer-wrap">
+        <v-col cols="12" lg="3" md="12" class="brief">
           <div class="bb-sec">
             <img src="../assets/images/logo_white.png" alt="" />
             <p class="mt-3">Follow us on Social Media</p>
@@ -19,14 +19,25 @@
             </ul>
           </div>
         </v-col>
-        <v-col lg="9" md="12" sm="12" class="links">
+        <v-col cols="12" lg="9" md="12" sm="12" class="links">
           <v-row>
-            <v-col lg="4" md="6" sm="6" v-for="(list, i) in lists" :key="i">
+            <v-col
+              class="col-12 col-xl-4 col-lg-4 col-md-6 col-sm-6"
+              v-for="(list, i) in lists"
+              :key="i"
+            >
               <h4>{{ list.head }}</h4>
               <ul>
                 <li v-for="(item, i) in list.items" :key="i">
-                  <v-icon class="px-2">{{ item.icon }}</v-icon>
-                  <router-link :to="item.to">{{ item.title }}</router-link>
+                  <div v-if="item.icon != ''"></div>
+                  <router-link
+                    :to="item.to"
+                    class="d-flex flex-nowrap align-items-start"
+                  >
+                    <v-icon class="px-0.5 pt-1">{{ item.icon }}</v-icon>
+                    <h6 class="px-1 pt-0.25">{{ item.title }}</h6>
+                    <p>{{ item.content }}</p>
+                  </router-link>
                 </li>
               </ul>
             </v-col>
@@ -72,17 +83,24 @@ export default {
         list3: {
           head: "Company",
           items: [
-            { to: "", icon: "fal fa-mobile", title: "Mobile: 0114-357-8414" },
+            {
+              to: "",
+              icon: "fal fa-mobile",
+              title: "Mobile:",
+              content: " 0114-357-8414",
+            },
             {
               to: "",
               icon: "fal fa-envelope",
-              title: "Email: info@smarttechno.co",
+              title: "Email:",
+              content: "info@smarttechno.co",
             },
             {
               to: "",
               icon: "far fa-map-marker-alt",
-              title:
-                "Address: 86 Ahmed El-Zomor St, Al Manteqah Ath Thamenah,Nasr City, Cairo",
+              title: "Address:",
+              content:
+                " 86 Ahmed El-Zomor St, Al Manteqah Ath Thamenah,Nasr City, Cairo",
             },
           ],
         },

@@ -1,30 +1,26 @@
 <template>
   <div class="offers-wrap">
-    <v-row>
-      <v-col>
-        <div
-          class="
-            bread-item
-            d-flex
-            flex-column
-            justify-content-center
-            align-items-center
-          "
-        >
-          <h3>Offers</h3>
-          <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-              <li class="breadcrumb-item">
-                <router-link to="/">Home</router-link>
-              </li>
-              <li class="breadcrumb-item active" aria-current="page">
-                Offers
-              </li>
-            </ol>
-          </nav>
-        </div>
-      </v-col>
-    </v-row>
+    <div class="container-fluid p-0">
+      <div
+        class="
+          bread-item
+          d-flex
+          flex-column
+          justify-content-center
+          align-items-center
+        "
+      >
+        <h3>Offers</h3>
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <router-link to="/">Home</router-link>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">Offers</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
     <v-container>
       <v-row>
         <v-col lg="4" md="6" sm="12" class="offer-item">
@@ -396,7 +392,9 @@
         </v-col>
       </v-row>
     </v-container>
-    <subscribe class="mt-5 pb-5"></subscribe>
+    <div class="container-fluid p-0">
+      <subscribe class="mt-5 pb-5"></subscribe>
+    </div>
   </div>
 </template>
 

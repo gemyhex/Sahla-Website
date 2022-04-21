@@ -1,32 +1,31 @@
 <template>
   <div class="contact">
-    <v-row>
-      <v-col>
-        <div
-          class="
-            bread-item
-            d-flex
-            flex-column
-            justify-content-center
-            align-items-center
-          "
-        >
-          <h3>Contact Us</h3>
-          <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-              <li class="breadcrumb-item">
-                <router-link to="/">Home</router-link>
-              </li>
-              <li class="breadcrumb-item active" aria-current="page">
-                Contact Us
-              </li>
-            </ol>
-          </nav>
-        </div>
-      </v-col>
-    </v-row>
-    <v-container>
-      <v-row>
+    <div class="container-fluid p-0">
+      <div
+        class="
+          bread-item
+          d-flex
+          flex-column
+          justify-content-center
+          align-items-center
+        "
+      >
+        <h3>Contact Us</h3>
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <router-link to="/">Home</router-link>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">
+              Contact Us
+            </li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+
+    <v-container class="py-12">
+      <v-row justify="center" align="center">
         <v-col class="over d-none d-lg-block">
           <div class="cross">
             <img src="../assets/images/Mask Group 5.png" alt="" />
@@ -41,7 +40,7 @@
                 <!-- <v-text-field placeholder="Name" outlined></v-text-field> -->
                 <input
                   type="text"
-                  class="form-control form-control-lg"
+                  class="form-control"
                   id="exampleFormControlInput1"
                   placeholder="Name"
                 />
@@ -51,7 +50,7 @@
               <v-col>
                 <input
                   type="text"
-                  class="form-control form-control-lg"
+                  class="form-control"
                   id="exampleFormControlInput1"
                   placeholder="Phone"
                 />
@@ -61,7 +60,7 @@
               <v-col>
                 <input
                   type="text"
-                  class="form-control form-control-lg"
+                  class="form-control"
                   id="exampleFormControlInput1"
                   placeholder="E-Mail"
                 />
@@ -86,11 +85,9 @@
         </v-col>
       </v-row>
     </v-container>
-    <v-row>
-      <v-col>
-        <subscribe></subscribe>
-      </v-col>
-    </v-row>
+    <div class="container-fluid p-0">
+      <subscribe></subscribe>
+    </div>
   </div>
 </template>
 
@@ -134,9 +131,9 @@ export default {
   .form-wrap {
     position: relative;
     .form-ww {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
+      // position: absolute;
+      // top: 50%;
+      // transform: translateY(-50%);
       p {
         color: #602167;
         font-weight: bold;
