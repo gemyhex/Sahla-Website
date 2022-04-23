@@ -1,7 +1,7 @@
 <template>
   <div class="about">
     <v-row>
-      <v-col>
+      <v-col class="pt-0">
         <div
           class="
             bread-item

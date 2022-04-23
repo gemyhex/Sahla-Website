@@ -1,12 +1,12 @@
 <template>
   <v-app>
-    <div class="nav px-5">
+    <div class="nav px-5" v-if="content">
       <navbar></navbar>
     </div>
     <v-main>
       <router-view />
     </v-main>
-    <div class="foot">
+    <div class="foot" v-if="content">
       <Footer></Footer>
     </div>
   </v-app>
@@ -18,9 +18,10 @@ import Footer from "./components/Footer.vue";
 export default {
   components: { Navbar, Footer },
   name: "App",
-
-  data: () => ({
-    //
-  }),
+  data() {
+    return {
+      content: localStorage.getItem("content") || false,
+    };
+  },
 };
 </script>

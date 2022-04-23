@@ -1,47 +1,41 @@
 <template>
-  <div ref="scrollSections" data-scroll-container class="container-fluid home">
-    <div class="box d-none d-lg-block"></div>
-    <div class="box d-none"></div>
-    <div class="box d-none d-lg-block"></div>
-    <v-row>
-      <v-col class="px-0 pt-0">
-        <Banner></Banner>
-      </v-col>
-    </v-row>
-    <div class="container">
+  <div class="container-fluid home px-0">
+    <div class="box d-xl-none d-block"></div>
+    <div class="box d-xl-none d-block"></div>
+    <div class="box d-xl-none d-block"></div>
+    <div>
       <v-row>
-        <v-col>
-          <UseSahla data-scroll-section></UseSahla>
+        <v-col class="px-0 pt-0">
+          <Banner></Banner>
         </v-col>
       </v-row>
-    </div>
-    <div class="container-fluid">
-      <v-row>
-        <v-col>
-          <Offers data-scroll-section></Offers>
-        </v-col>
-      </v-row>
-    </div>
-    <div class="container">
-      <v-row>
-        <v-col>
-          <why-sahla data-scroll-section></why-sahla>
-        </v-col>
-      </v-row>
-    </div>
-    <div class="container-fluid">
-      <v-row>
-        <v-col class="partners-wrapper">
-          <partners data-scroll-section></partners>
-        </v-col>
-      </v-row>
-    </div>
-    <div class="container">
-      <v-row>
-        <v-col>
-          <subscribe data-scroll-section></subscribe>
-        </v-col>
-      </v-row>
+      <div class="container">
+        <v-row class="pt-1">
+          <v-col>
+            <UseSahla></UseSahla>
+          </v-col>
+        </v-row>
+      </div>
+      <div class="container-fluid offers p-0">
+        <Offers></Offers>
+      </div>
+      <div class="container">
+        <v-row>
+          <v-col>
+            <why-sahla></why-sahla>
+          </v-col>
+        </v-row>
+      </div>
+      <div class="container-fluid">
+        <partners></partners>
+      </div>
+      <div class="container">
+        <v-row>
+          <v-col>
+            <subscribe></subscribe>
+          </v-col>
+        </v-row>
+      </div>
     </div>
   </div>
 </template>
@@ -54,6 +48,7 @@ import Offers from "../components/Offers.vue";
 import WhySahla from "../components/whySahla.vue";
 import Partners from "../components/partners.vue";
 import Subscribe from "../components/subscribe.vue";
+// import locomotiveScroll from "locomotive-scroll";
 
 export default {
   name: "Home",
@@ -65,13 +60,34 @@ export default {
     Partners,
     Subscribe,
   },
+  mounted() {
+    // const _self = this;
+    // this.$nextTick(function () {
+    //   _self.initLocoScroll();
+    // });
+    localStorage.setItem("content", true);
+  },
+  methods: {
+    // initLocoScroll() {
+    //   const _self = this;
+    //   this.scroll = new locomotiveScroll({
+    //     el: _self.$refs["scrollSections"],
+    //     smooth: true,
+    //     smoothMobile: false,
+    //     getDirection: true,
+    //   });
+    // },
+  },
 };
 </script>
 
 <style lang="scss" scoped>
 .home {
   position: relative;
-  .partners-wrapper {
+  width: 100%;
+  min-height: 100vh;
+  max-height: fit-content;
+  .offers {
     background: #f7f7f7;
   }
   .box {

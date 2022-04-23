@@ -112,7 +112,6 @@ export default {};
 
 <style lang="scss" scoped>
 .offers-wrap {
-  background: #f7f7f7;
   .offers {
     h4 {
       color: #602167;
@@ -126,6 +125,10 @@ export default {};
     }
   }
   .offer-item {
+    .v-sheet.v-card {
+      border-radius: 15px !important;
+      box-shadow: 0px 6px 6px rgba($color: rgb(231, 231, 231), $alpha: 0.8);
+    }
     .v-card__title {
       font-size: 1rem !important;
       p {
@@ -143,9 +146,14 @@ export default {};
       left: 0;
       z-index: 999;
       width: 100px;
-      margin: 0 25px;
+      margin: 0 40px;
       padding: 12px;
-      background: #fff;
+      background: linear-gradient(
+        #e3dfdf,
+        rgba(#fff, 1),
+        rgba(#fff, 1),
+        #e8e8e8
+      );
       box-shadow: 0px 11.1px 29.3px rgba(0, 0, 0, 0.099),
         0px 48px 263px rgba(0, 0, 0, 0.1);
       fill-opacity: 30%;

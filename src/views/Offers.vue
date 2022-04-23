@@ -392,7 +392,7 @@
         </v-col>
       </v-row>
     </v-container>
-    <div class="container-fluid p-0">
+    <div class="container-fluid p-0 subs-cont">
       <subscribe class="mt-5 pb-5"></subscribe>
     </div>
   </div>
@@ -408,7 +408,7 @@ export default {
 <style lang="scss" scoped>
 .offers-wrap {
   background: #fff;
-  .subs-wrap {
+  .subs-cont {
     background: #f7f7f7;
   }
   .offers {
@@ -442,9 +442,14 @@ export default {
       left: 0;
       z-index: 999;
       width: 100px;
-      margin: 0 25px;
+      margin: 0 40px;
       padding: 12px;
-      background: #fff;
+      background: linear-gradient(
+        #e3dfdf,
+        rgba(#fff, 1),
+        rgba(#fff, 1),
+        #e8e8e8
+      );
       box-shadow: 0px 11.1px 29.3px rgba(0, 0, 0, 0.099),
         0px 48px 263px rgba(0, 0, 0, 0.1);
       fill-opacity: 30%;

@@ -1,5 +1,5 @@
 <template>
-  <div class="subs-wrap py-5 mb-5">
+  <div class="subs-wrap py-12">
     <div class="container">
       <div class="heading text-center">
         <p>Subscribe To Our <span>Newsletter</span></p>
@@ -34,6 +34,8 @@ export default {
 
 <style lang="scss" scoped>
 .subs-wrap {
+  width: 50%;
+  margin: auto;
   .heading {
     p {
       font-weight: bold;

@@ -55,10 +55,10 @@ export default {
   data() {
     return {
       icons: {
-        user: "fal fa-user",
-        credit: "fal fa-credit-card-front",
-        shopping: "fal fa-shopping-cart",
-        pay: "fal fa-coins",
+        user: "fas fa-user",
+        credit: "fas fa-credit-card-front",
+        shopping: "fas fa-shopping-cart",
+        pay: "fas fa-coins",
       },
     };
   },
@@ -88,20 +88,24 @@ export default {
     height: 100px;
     background: transparent;
     border-radius: 50%;
-    border: 1px solid #602167;
+    border: 2px solid #60216731;
+    position: relative;
     .circle {
-      position: relative;
-      width: 95px;
-      height: 95px;
+      position: absolute;
+      width: 90px;
+      height: 90px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
       background: #00ada8;
-      margin: 1px auto;
+      margin: auto;
       border-radius: 50%;
       .badge-ico {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        font-size: 30px;
+        font-size: calc(2vw + 2vh);
         color: #fff;
       }
     }

@@ -85,7 +85,7 @@
         </v-col>
       </v-row>
     </v-container>
-    <div class="container-fluid p-0">
+    <div class="container-fluid p-0 subs-cont">
       <subscribe></subscribe>
     </div>
   </div>
@@ -147,7 +147,7 @@ export default {
       }
     }
   }
-  .subs-wrap {
+  .subs-cont {
     background: rgba($color: #f7f7f7, $alpha: 0.7);
   }
 }

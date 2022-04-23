@@ -1,5 +1,5 @@
 <template>
-  <div class="partner-wrap">
+  <div class="partner-wrap py-12">
     <v-container>
       <v-row>
         <v-col>
@@ -10,22 +10,47 @@
       </v-row>
       <v-row>
         <v-col>
-          <v-carousel
-            cycle
-            height="250"
-            hide-delimiter-background
-            show-arrows-on-hover
+          <carousel
+            :items="6"
+            :loop="true"
+            :margin="5"
+            :nav="false"
+            :mouseDrag="true"
+            :responsiveClass="true"
+            :dots="false"
+            :autoHeight="true"
+            :autoplay="true"
+            :smartSpeed="1500"
+            :responsive="{
+              0: {
+                items: 1,
+              },
+              600: {
+                items: 3,
+              },
+              1000: {
+                items: 5,
+                loop: false,
+              },
+              1300: {
+                items: 7,
+                loop: false,
+              },
+            }"
           >
-            <v-carousel-item v-for="(slide, i) in partners" :key="i">
-              <!-- {{ slide }} -->
-
-              <v-row class="fill-height" align="center" justify="center">
-                <v-col v-for="(sim, i) in slide" :key="i">
-                  <img :src="sim.imgSrc" alt="Partner" />
-                </v-col>
-              </v-row>
-            </v-carousel-item>
-          </v-carousel>
+            <img src="@/assets/images/partner.png" />
+            <img src="@/assets/images/partner.png" />
+            <img src="@/assets/images/partner.png" />
+            <img src="@/assets/images/partner.png" />
+            <img src="@/assets/images/partner.png" />
+            <img src="@/assets/images/partner.png" />
+            <img src="@/assets/images/partner.png" />
+            <img src="@/assets/images/partner.png" />
+            <img src="@/assets/images/partner.png" />
+            <img src="@/assets/images/partner.png" />
+            <img src="@/assets/images/partner.png" />
+            <img src="@/assets/images/partner.png" />
+          </carousel>
         </v-col>
       </v-row>
     </v-container>
@@ -33,6 +58,7 @@
 </template>
 
 <script>
+import carousel from "vue-owl-carousel";
 export default {
   data() {
     return {
@@ -54,6 +80,7 @@ export default {
       },
     };
   },
+  components: { carousel },
 };
 </script>
 

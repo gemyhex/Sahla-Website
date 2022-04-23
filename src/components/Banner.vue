@@ -2,15 +2,22 @@
   <div>
     <div class="banner">
       <div class="curve">
-        <img src="../assets/images/card.png" alt="" />
-        <p class="payment">
-          Make your<br />
-          Payment<br />
-          More Easy
-        </p>
-      </div>
-      <div class="overlay">
-        <img src="../assets/images/pic-02.png" alt="" />
+        <img src="../assets/images/Sahla Pay-01.png" alt="" />
+        <div class="payment">
+          <div class="container">
+            <transition
+              appear
+              enter-active-class="animate__animated animate__slideInLeft"
+              leave-active-class="animate__animated animate__slideInRight"
+            >
+              <p class="">
+                Make your<br />
+                Payment<br />
+                More Easy
+              </p>
+            </transition>
+          </div>
+        </div>
       </div>
     </div>
     <div class="banner-alt">
@@ -38,7 +45,7 @@ export default {};
   }
   .curve {
     width: 100%;
-    height: 80vh;
+    height: 86vh;
     position: relative;
     z-index: 1;
     // background-image: url("../assets/images/card.png");
@@ -61,23 +68,25 @@ export default {};
     //   background-position: center;
     //   mix-blend-mode: screen;
     // }
+
     .payment {
       position: absolute;
-      top: 12%;
-      left: 7%;
-      font-size: 50px;
+      top: 5%;
+      left: 0%;
+      font-size: calc(4vw + 3.5vh);
       font-weight: bold;
       color: #fff;
+      line-height: 7vw;
     }
   }
-  .overlay {
-    position: absolute;
-    width: 100%;
-    // height: 100%;
-    top: 0%;
-    left: 0;
-    z-index: 0;
-  }
+  // .overlay {
+  //   position: absolute;
+  //   width: 100%;
+  //   // height: 100%;
+  //   top: 0%;
+  //   left: 0;
+  //   z-index: 0;
+  // }
 }
 .banner-alt {
   position: relative;

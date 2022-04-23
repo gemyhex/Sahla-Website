@@ -1,8 +1,8 @@
 <template>
   <div class="footer">
-    <v-container>
-      <v-row justify="center" align="center" class="footer-wrap">
-        <v-col cols="12" lg="3" md="12" class="brief">
+    <div class="container">
+      <v-row justify="center" class="footer-wrap pt-5">
+        <v-col class="brief col-xl-2 col-lg-3 col-md-6 col-sm-12 col-12">
           <div class="bb-sec">
             <img src="../assets/images/logo_white.png" alt="" />
             <p class="mt-3">Follow us on Social Media</p>
@@ -19,10 +19,10 @@
             </ul>
           </div>
         </v-col>
-        <v-col cols="12" lg="9" md="12" sm="12" class="links">
+        <v-col class="links pt-0 pb-8">
           <v-row>
-            <v-col
-              class="col-12 col-xl-4 col-lg-4 col-md-6 col-sm-6"
+            <!-- <v-col
+              class="col-12 col-xl-4 col-lg-4 col-md-6 col-sm-6 pt-0"
               v-for="(list, i) in lists"
               :key="i"
             >
@@ -30,10 +30,88 @@
               <ul>
                 <li v-for="(item, i) in list.items" :key="i">
                   <div v-if="item.icon != ''"></div>
-                  <router-link
-                    :to="item.to"
-                    class="d-flex flex-nowrap align-items-start"
-                  >
+                  <router-link :to="item.to" class="d-flex align-items-start">
+                    <v-icon class="px-0.5 pt-1">{{ item.icon }}</v-icon>
+                    <h6 class="px-1 pt-0.25">{{ item.title }}</h6>
+                    <p>{{ item.content }}</p>
+                  </router-link>
+                </li>
+              </ul>
+            </v-col> -->
+            <v-col
+              class="d-none d-xl-block d-xl-block col-xl-1 col-lg-1"
+            ></v-col>
+            <v-col class="col-xl-2 col-lg-3 col-md-6 col-sm-12 col-12 pt-0">
+              <h4>Company</h4>
+              <ul>
+                <li>
+                  <div class="mx-2"></div>
+                  <router-link to="/offers" class="d-flex align-items-start">
+                    <v-icon class="px-0.5 pt-1"></v-icon>
+                    Offers
+                  </router-link>
+                </li>
+                <li>
+                  <div class="mx-2"></div>
+                  <router-link to="/network" class="d-flex align-items-start">
+                    <v-icon class="px-0.5 pt-1"></v-icon>
+                    Our Network
+                  </router-link>
+                </li>
+                <li>
+                  <div class="mx-2"></div>
+                  <router-link to="/merchant" class="d-flex align-items-start">
+                    <v-icon class="px-0.5 pt-1"></v-icon>
+                    Join as a Merchant
+                  </router-link>
+                </li>
+                <li>
+                  <div class="mx-2"></div>
+                  <router-link to="/contact" class="d-flex align-items-start">
+                    <v-icon class="px-0.5 pt-1"></v-icon>
+                    Contact Us
+                  </router-link>
+                </li>
+              </ul>
+            </v-col>
+            <v-col
+              class="d-none d-xl-block d-xl-block col-xl-1 col-lg-1"
+            ></v-col>
+            <v-col class="col-xl-2 col-lg-3 col-md-6 col-sm-12 col-12 pt-0">
+              <h4>Get Help</h4>
+              <ul>
+                <li>
+                  <div class="mx-2"></div>
+                  <router-link to="/about" class="d-flex align-items-start">
+                    <v-icon class="px-0.5 pt-1"></v-icon>
+                    About Us
+                  </router-link>
+                </li>
+                <li>
+                  <div class="mx-2"></div>
+                  <router-link to="/contact" class="d-flex align-items-start">
+                    <v-icon class="px-0.5 pt-1"></v-icon>
+                    Contact Us
+                  </router-link>
+                </li>
+                <li>
+                  <div class="mx-2"></div>
+                  <router-link to="/privacy" class="d-flex align-items-start">
+                    <v-icon class="px-0.5 pt-1"></v-icon>
+                    Privacy-Policy
+                  </router-link>
+                </li>
+              </ul>
+            </v-col>
+            <v-col
+              class="d-none d-xl-block d-xl-block col-xl-1 col-lg-1"
+            ></v-col>
+            <v-col class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 pt-0">
+              <h4>Company</h4>
+              <ul>
+                <li v-for="(item, i) in lists.list3.items" :key="i">
+                  <div v-if="item.icon != ''"></div>
+                  <router-link :to="item.to" class="d-flex align-items-start">
                     <v-icon class="px-0.5 pt-1">{{ item.icon }}</v-icon>
                     <h6 class="px-1 pt-0.25">{{ item.title }}</h6>
                     <p>{{ item.content }}</p>
@@ -44,7 +122,8 @@
           </v-row>
         </v-col>
       </v-row>
-    </v-container>
+    </div>
+
     <div class="bottom-foot text-center white--text">
       <p>All Rights Reserved by valU 2022</p>
     </div>
@@ -63,23 +142,6 @@ export default {
         { to: "", icon: "fab fa-youtube" },
       ],
       lists: {
-        list1: {
-          head: "Company",
-          items: [
-            { to: "/offers", icon: "", title: "Offers" },
-            { to: "/network", icon: "", title: "Our Network" },
-            { to: "/merchant", icon: "", title: "Join as a Merchant" },
-            { to: "/contact", icon: "", title: "Contact Us" },
-          ],
-        },
-        list2: {
-          head: "Get Help",
-          items: [
-            { icon: "", to: "/about", title: "About Us" },
-            { icon: "", to: "/contact", title: "Contact Us" },
-            { icon: "", to: "/policy", title: "Privacy-Policy" },
-          ],
-        },
         list3: {
           head: "Company",
           items: [
