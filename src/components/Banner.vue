@@ -40,15 +40,12 @@ export default {};
   img {
     width: 100%;
     height: 100%;
-    max-width: 100%;
-    max-height: 100%;
   }
   .curve {
-    width: 100%;
     height: 86vh;
     position: relative;
     z-index: 1;
-    // background-image: url("../assets/images/card.png");
+    // background-image: url("../assets/images/Sahla Pay-01.png");
     // mask-image: url("../assets/images/mask.jpg");
     // mask-repeat: no-repeat;
     // background-size: cover;
@@ -70,6 +67,8 @@ export default {};
     // }
 
     .payment {
+      width: 100%;
+      height: 100%;
       position: absolute;
       top: 5%;
       left: 0%;
@@ -90,7 +89,7 @@ export default {};
 }
 .banner-alt {
   position: relative;
-  width: 100vw;
+  width: 100%;
   // height: 50vh;
   img {
     width: 100%;

@@ -1,12 +1,12 @@
 <template>
   <v-app>
-    <div class="nav px-5" v-if="content">
+    <div class="nav px-5" v-if="!$route.meta.hideNavbar">
       <navbar></navbar>
     </div>
     <v-main>
       <router-view />
     </v-main>
-    <div class="foot" v-if="content">
+    <div class="foot" v-if="!$route.meta.hideNavbar">
       <Footer></Footer>
     </div>
   </v-app>
@@ -20,7 +20,7 @@ export default {
   name: "App",
   data() {
     return {
-      content: localStorage.getItem("content") || false,
+      content: localStorage.getItem("access_token"),
     };
   },
 };

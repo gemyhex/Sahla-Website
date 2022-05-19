@@ -25,53 +25,45 @@
     </div>
 
     <v-container class="py-12">
-      <v-row justify="center" align="center">
-        <v-col class="over d-none d-lg-block">
+      <v-row align="center" justify="center">
+        <v-col class="over col-xl-5 col-lg-5 col-md-7 col-sm-12 col-12">
           <div class="cross">
-            <img src="../assets/images/Mask Group 5.png" alt="" />
+            <img src="../assets/images/contactu.png" alt="" />
           </div>
-          <div class="overlay"></div>
         </v-col>
-        <v-col class="text-center form-wrap">
+        <v-col class="form-wrap col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12">
           <div class="form-ww">
             <p>Please fill in this form or call us on 00000</p>
             <v-row>
-              <v-col>
-                <!-- <v-text-field placeholder="Name" outlined></v-text-field> -->
+              <v-col cols="12">
                 <input
                   type="text"
-                  class="form-control"
+                  class="form-control-d form-control"
                   id="exampleFormControlInput1"
                   placeholder="Name"
                 />
               </v-col>
-            </v-row>
-            <v-row>
-              <v-col>
+              <v-col cols="12">
                 <input
                   type="text"
-                  class="form-control"
+                  class="form-control-d form-control"
                   id="exampleFormControlInput1"
                   placeholder="Phone"
                 />
               </v-col>
-            </v-row>
-            <v-row>
-              <v-col>
+              <v-col cols="12">
                 <input
                   type="text"
-                  class="form-control"
+                  class="form-control-d form-control"
                   id="exampleFormControlInput1"
                   placeholder="E-Mail"
                 />
               </v-col>
-            </v-row>
-            <v-row>
-              <v-col>
+              <v-col cols="12">
                 <textarea
-                  class="form-control"
+                  class="form-control-d form-control"
                   id="exampleFormControlTextarea1"
-                  rows="3"
+                  rows="6"
                   placeholder="Message"
                 ></textarea>
               </v-col>
@@ -101,43 +93,46 @@ export default {
 <style lang="scss" scoped>
 .contact {
   .over {
-    position: relative;
-    height: 600px;
+    // height: 600px;
     .cross {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
+      position: relative;
+      // top: 0;
+      // left: 0;
+      // width: 100%;
+      // height: 100%;
       z-index: 1;
       img {
+        // width: 42vw !important;
+        // height: 84vh;
+        width: 100%;
+      }
+      .overlay {
+        position: absolute;
+        top: 15%;
+        left: 15%;
         width: 100%;
         height: 100%;
+        // transform: translate(-50%, -50%);
+        background: rgba($color: #602167, $alpha: 0.3);
+        border-radius: 30px;
+        transform: rotate(45deg);
+        z-index: 0;
       }
-    }
-    .overlay {
-      position: absolute;
-      top: 15%;
-      left: 15%;
-      width: 70%;
-      height: 70%;
-      // transform: translate(-50%, -50%);
-      background: rgba($color: #602167, $alpha: 0.3);
-      border-radius: 30px;
-      transform: rotate(45deg);
-      z-index: 0;
     }
   }
   .form-wrap {
     position: relative;
+
     .form-ww {
+      width: 80%;
+      margin: auto;
       // position: absolute;
       // top: 50%;
       // transform: translateY(-50%);
       p {
         color: #602167;
         font-weight: bold;
-        font-size: 2rem;
+        font-size: calc(1.2vw + 1vh);
       }
       .v-btn {
         max-width: 150px;

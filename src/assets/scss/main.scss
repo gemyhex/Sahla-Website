@@ -26,10 +26,61 @@ a {
   text-decoration: none;
 }
 
-// .container-fluid {
-//   padding-left: 0 !important;
-//   padding-right: 0 !important;
-// }
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #602167;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.breadcrumb {
+  padding-left: 0 !important;
+}
+
+.v-btn--is-elevated {
+  box-shadow: none !important;
+  text-transform: none !important;
+}
+
+.form-control {
+  // height: 6vh;
+  &::placeholder {
+    color: rgba($color: #707070, $alpha: 0.5);
+  }
+}
+
+.v-btn:not(.v-btn--round).v-size--default {
+  height: 40px;
+}
+
+.form-control-d {
+  // border-radius: 10px !important;
+  // -webkit-border-radius: 10px !important;
+  // -moz-border-radius: 10px !important;
+  // -ms-border-radius: 10px !important;
+  // -o-border-radius: 10px !important;
+  border: 0 !important;
+  box-shadow: 0px 0px 3px rgba($color: #000, $alpha: 0.16);
+  background-color: #fff;
+
+
+  &::placeholder {
+    color: rgba($color: #707070, $alpha: 0.5);
+  }
+}
+
 .auth-wrap.nav {
   display: none !important;
 }
@@ -40,6 +91,8 @@ a {
   background-color: #fff !important;
 
   .nav-item {
+    margin: 0 5px;
+
     .nav-link {
       color: #000 !important;
       background-color: #fff !important;

@@ -3,7 +3,7 @@
     <v-row class="mt-5">
       <v-col>
         <div class="heading d-flex flex-column justify-center">
-          <p>How to use <span>Sahla Pay</span> ?</p>
+          <p>How to use <span>Sahla Pay</span>?</p>
           <span>Only 4 Easy Steps!</span>
         </div>
       </v-col>
@@ -71,7 +71,7 @@ export default {
   p {
     color: #602167;
     font-weight: bold;
-    font-size: 2.5rem;
+    font-size: calc(2vw + 3vh);
     span {
       color: #00ada8;
     }
@@ -118,8 +118,8 @@ export default {
     content: "";
     position: absolute;
     top: 20%;
-    left: 70%;
-    width: 25vw;
+    left: 72%;
+    width: 26vw;
     height: 50px;
     background: url("../assets/images/arrow.png");
     background-size: contain;

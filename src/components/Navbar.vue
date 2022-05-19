@@ -1,31 +1,11 @@
 <template>
-  <!-- <nav class="navbar">
-    <div class="logo">
-      <img src="../assets/images/logo.svg" alt="" width="150px" />
-    </div>
-    <div class="links">
-      <ul class="d-flex">
-        <li class="px-3 pt-2" v-for="(link, i) in links" :key="i">
-          <router-link :to="link.to">{{ link.title }}</router-link>
-        </li>
-      </ul>
-    </div>
-    <div class="auth">
-      <v-btn color="#602167" elevation="2">{{ auth }}</v-btn>
-    </div>
-  </nav> -->
   <div class="container py-0">
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
-        <transition
-          enter-active-class="animate__animated animate__backInLeft"
-          leave-active-class="animate__animated animate__backInRight"
-          appear
-        >
-          <router-link class="navbar-brand" to="/"
-            ><img src="../assets/images/logo.svg" alt="" width="150px"
-          /></router-link>
-        </transition>
+        <router-link class="navbar-brand" to="/"
+          ><img src="../assets/images/logo.svg" alt="" width="150px"
+        /></router-link>
+
         <button
           class="navbar-toggler"
           type="button"
@@ -38,28 +18,18 @@
           <!-- <span class="navbar-toggler-icon"></span> -->
           <v-icon>{{ icons.menu }}</v-icon>
         </button>
-        <transition
-          enter-active-class="animate__animated animate__bounceIn"
-          leave-active-class="animate__animated animate__bounceIn"
-          appear
-        >
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
-              <li class="nav-item px-2" v-for="(link, i) in links" :key="i">
-                <router-link :to="link.to">{{ link.title }}</router-link>
-              </li>
-            </ul>
-          </div>
-        </transition>
-        <transition
-          enter-active-class="animate__animated animate__backInRight"
-          leave-active-class="animate__animated animate__backInLeft"
-          appear
-        >
-          <div class="btn-signup">
-            <v-btn color="#602167" to="/auth">Sign Up</v-btn>
-          </div>
-        </transition>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+            <li class="nav-item px-3" v-for="(link, i) in links" :key="i">
+              <router-link :to="link.to">{{ link.title }}</router-link>
+            </li>
+          </ul>
+        </div>
+
+        <div class="btn-signup">
+          <v-btn color="#602167" class="btn-sign" to="/auth">Get in touch</v-btn>
+        </div>
       </div>
     </nav>
   </div>
@@ -83,16 +53,28 @@ export default {
       },
     };
   },
+  methods: {
+    signOut() {
+      localStorage.removeItem("access_token");
+      this.$router.push("/auth");
+    },
+  },
 };
 </script>
  <style lang="scss" scoped>
 .navbar {
   width: 100%;
+  .navbar-brand {
+    img {
+      min-width: 100px;
+    }
+  }
 }
 a {
   color: #00ada8 !important;
 }
-a.router-link-exact-active {
+a.router-link-exact-active,
+a:hover {
   color: #602167 !important;
 }
 </style>

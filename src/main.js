@@ -14,7 +14,13 @@ import 'animate.css';
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import "@/assets/scss/main.scss";
+import "@/assets/js/custom.js";
+import Vuelidate from 'vuelidate'
+import axios from 'axios'
 
+axios.defaults.baseURL = 'http://localhost/sahla/public/api/'
+
+Vue.use(Vuelidate)
 Vue.use(BootstrapVue)
 Vue.use(BootstrapVueIcons)
 

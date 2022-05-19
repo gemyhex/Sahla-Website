@@ -8,16 +8,16 @@ const routes = [{
     path: '/',
     name: 'Home',
     component: Home,
-    beforeEnter: (to, from, next) => {
-      const token = localStorage.getItem('access_token') || ''
-      if (token) {
-        next()
-      } else {
-        next({
-          name: 'Auth',
-        })
-      }
-    },
+    // beforeEnter: (to, from, next) => {
+    //   const token = localStorage.getItem('access_token') || ''
+    //   if (token) {
+    //     next()
+    //   } else {
+    //     next({
+    //       name: 'Auth',
+    //     })
+    //   }
+    // },
   },
   {
     path: '/about',
@@ -26,16 +26,16 @@ const routes = [{
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () => import( /* webpackChunkName: "about" */ '../views/About.vue'),
-    beforeEnter: (to, from, next) => {
-      const token = localStorage.getItem('access_token') || ''
-      if (token) {
-        next()
-      } else {
-        next({
-          name: 'Auth',
-        })
-      }
-    },
+    // beforeEnter: (to, from, next) => {
+    //   const token = localStorage.getItem('access_token') || ''
+    //   if (token) {
+    //     next()
+    //   } else {
+    //     next({
+    //       name: 'Auth',
+    //     })
+    //   }
+    // },
   },
   {
     path: '/offers',
@@ -44,16 +44,16 @@ const routes = [{
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () => import( /* webpackChunkName: "about" */ '../views/Offers.vue'),
-    beforeEnter: (to, from, next) => {
-      const token = localStorage.getItem('access_token') || ''
-      if (token) {
-        next()
-      } else {
-        next({
-          name: 'Auth',
-        })
-      }
-    },
+    // beforeEnter: (to, from, next) => {
+    //   const token = localStorage.getItem('access_token') || ''
+    //   if (token) {
+    //     next()
+    //   } else {
+    //     next({
+    //       name: 'Auth',
+    //     })
+    //   }
+    // },
   },
   {
     path: '/network',
@@ -62,16 +62,16 @@ const routes = [{
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () => import( /* webpackChunkName: "about" */ '../views/Network.vue'),
-    beforeEnter: (to, from, next) => {
-      const token = localStorage.getItem('access_token') || ''
-      if (token) {
-        next()
-      } else {
-        next({
-          name: 'Auth',
-        })
-      }
-    },
+    // beforeEnter: (to, from, next) => {
+    //   const token = localStorage.getItem('access_token') || ''
+    //   if (token) {
+    //     next()
+    //   } else {
+    //     next({
+    //       name: 'Auth',
+    //     })
+    //   }
+    // },
   },
   {
     path: '/contactus',
@@ -80,16 +80,16 @@ const routes = [{
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () => import( /* webpackChunkName: "about" */ '../views/Contact.vue'),
-    beforeEnter: (to, from, next) => {
-      const token = localStorage.getItem('access_token') || ''
-      if (token) {
-        next()
-      } else {
-        next({
-          name: 'Auth',
-        })
-      }
-    },
+    // beforeEnter: (to, from, next) => {
+    //   const token = localStorage.getItem('access_token') || ''
+    //   if (token) {
+    //     next()
+    //   } else {
+    //     next({
+    //       name: 'Auth',
+    //     })
+    //   }
+    // },
   },
   {
     path: '/merchant',
@@ -98,16 +98,34 @@ const routes = [{
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () => import( /* webpackChunkName: "about" */ '../views/Merchant.vue'),
-    beforeEnter: (to, from, next) => {
-      const token = localStorage.getItem('access_token') || ''
-      if (token) {
-        next()
-      } else {
-        next({
-          name: 'Auth',
-        })
-      }
-    },
+    // beforeEnter: (to, from, next) => {
+    //   const token = localStorage.getItem('access_token') || ''
+    //   if (token) {
+    //     next()
+    //   } else {
+    //     next({
+    //       name: 'Auth',
+    //     })
+    //   }
+    // },
+  },
+  {
+    path: '/payment-link/:code',
+    name: 'PaymentLink',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import( /* webpackChunkName: "about" */ '../views/PaymentLink.vue'),
+    // beforeEnter: (to, from, next) => {
+    //   const token = localStorage.getItem('access_token') || ''
+    //   if (token) {
+    //     next()
+    //   } else {
+    //     next({
+    //       name: 'Auth',
+    //     })
+    //   }
+    // },
   },
   {
     path: '/auth',
@@ -116,9 +134,19 @@ const routes = [{
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () => import( /* webpackChunkName: "about" */ '../views/Auth.vue'),
+    // beforeEnter: (to, from, next) => {
+    //   const token = localStorage.getItem('access_token') || ''
+    //   if (!token) {
+    //     next()
+    //   } else {
+    //     next({
+    //       name: 'Home',
+    //     })
+    //   }
+    // },
     meta: {
-      layout: 'blank',
-    },
+      hideNavbar: true,
+    }
   },
   {
     path: '*',

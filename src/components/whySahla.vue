@@ -59,7 +59,7 @@ export default {};
     p {
       font-weight: bold;
       color: #602167;
-      font-size: 2rem;
+      font-size: calc(2vw + 2vh);
       span {
         color: #00ada8;
       }

@@ -1,3 +1,48 @@
+@media screen and (max-width: 500px) {
+    .subs-wrap {
+        .input-group {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+
+            input {
+                width: 100%;
+            }
+        }
+    }
+
+    br {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 575px) {
+
+    .auth-wrap .right-side .v-sheet.v-card {
+        width: 100% !important;
+    }
+
+    .auth-wrap .right-side h6:before {
+        width: 40% !important;
+        left: 5% !important;
+    }
+
+    .auth-wrap .right-side h6:after {
+        width: 40% !important;
+        right: 5% !important;
+    }
+
+    .search-wrap {
+        display: flex !important;
+        flex-direction: column;
+    }
+
+    .footer-wrap {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 @media screen and (max-width: 599px) {
     .banner {
         display: none !important;
@@ -7,6 +52,42 @@
         display: block !important;
     }
 }
+
+@media screen and (min-width: 600px) {
+    .banner {
+        display: block !important;
+    }
+
+    .banner-alt {
+        display: none !important;
+    }
+
+    .item:not(:last-child):after {
+        width: 11vw !important;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    .item:after {
+        display: none;
+    }
+
+    // .box {
+    //     display: none !important;
+    // }
+}
+
+@media screen and (max-width: 767px) {
+    .item:after {
+        display: none;
+    }
+
+    .box {
+        display: none !important;
+    }
+}
+
 
 @media screen and (max-width: 959px) {
     .item:nth-child(2):after {
@@ -19,21 +100,20 @@
         // width: 70px !important;
         // height: 33px !important;
     }
-}
 
-@media screen and (min-width: 600px) {
-    .banner {
-        display: block !important;
-    }
-
-    .banner-alt {
-        display: none !important;
-    }
+    // ul.nav-pills {
+    //     display: flex !important;
+    //     flex-direction: row !important;
+    // }
 }
 
 @media screen and (max-width: 992px) {
     .btn-signup {
         display: none;
+    }
+
+    .item:nth-child(2):after {
+        display: none !important;
     }
 
     .auth-wrap {
@@ -53,60 +133,56 @@
     .subs-wrap {
         width: 100% !important;
     }
-}
 
-@media screen and (max-width: 767px) {
-    .item:after {
-        display: none;
-    }
-
-    .box {
-        width: 350px !important;
-        height: 350px !important;
-        top: 40% !important;
-        left: -50% !important;
-    }
-}
-
-@media screen and (max-width: 575px) {
     .footer-wrap {
+        width: 100% !important;
+    }
+
+    .tabs {
         display: flex;
         flex-direction: column;
     }
 
-    .auth-wrap .right-side .v-sheet.v-card {
-        width: 100% !important;
-    }
+    .form-ww {
+        text-align: center !important;
 
-    .auth-wrap .right-side h6:before {
-        width: 40% !important;
-        left: 5% !important;
-    }
-
-    .auth-wrap .right-side h6:after {
-        width: 40% !important;
-        right: 5% !important;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    .subs-wrap {
-        .input-group {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-
-            input {
-                width: 100%;
-            }
+        p {
+            font-size: calc(2vw + 2vh) !important;
         }
     }
 }
+
 
 @media screen and (max-width: 1200px) {
     .home {
-        .box {
-            display: none !important;
+        .item:not(:last-child):after {
+            width: 10vw !important;
+            left: 75% !important;
         }
     }
+}
+
+@media screen and (min-width: 1250px) {
+    .home {
+        .circle {
+            .badge-ico {
+                font-size: calc(1.5vw + 1.5vh) !important;
+            }
+        }
+
+        .payment {
+            font-size: calc(3vw + 2.5vh) !important;
+            line-height: 6vw !important;
+            left: -10%;
+        }
+    }
+
+    .footer {
+        .brief {
+            p {
+                // font-size: calc(0.4vw + 0.4vh) !important;
+            }
+        }
+    }
+
 }

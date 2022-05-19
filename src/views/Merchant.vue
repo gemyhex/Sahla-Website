@@ -24,44 +24,52 @@
       </div>
     </div>
     <v-container>
-      <v-row justify="center" align="center" class="mb-12">
-        <v-col lg="7" md="6" class="merch-wrap">
-          <p>Benefits of joining Sahla Pay’s merchant network</p>
-          <ul class="list">
-            <li>
-              Bridging the gap between customer needs and financial
-              capabilities.
-            </li>
-            <li>
-              Providing customers with easy solutions that best suit their
-              needs.
-            </li>
-            <li>
-              Leveraging common business acumen to achieve customer
-              satisfaction.
-            </li>
-          </ul>
-        </v-col>
-        <v-col lg="5" md="6" class="over d-none d-lg-block">
-          <div class="cross">
-            <img src="../assets/images/merc.png" alt="" />
+      <v-row class="my-12" justify="center" align="center">
+        <v-col class="col-xl-7 col-lg-7 col-md-6 col-sm-12 col-12">
+          <div class="merch-wrap">
+            <p>Benefits of joining Sahla Pay’s merchant network</p>
+            <ul class="list">
+              <li>
+                Bridging the gap between customer needs and financial
+                capabilities.
+              </li>
+              <li>
+                Providing customers with easy solutions that best suit their
+                needs.
+              </li>
+              <li>
+                Leveraging common business acumen to achieve customer
+                satisfaction.
+              </li>
+            </ul>
           </div>
-          <div class="overlay"></div>
+        </v-col>
+        <v-col
+          class="
+            over
+            d-none d-lg-block
+            col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12
+          "
+        >
+          <div class="cross">
+            <img src="../assets/images/merchantu.png" alt="" />
+          </div>
+          <!-- <div class="overlay"></div> -->
         </v-col>
       </v-row>
       <v-row align="center" justify="center" class="subs text-center">
         <v-col>
-          <h2>Join us <span>now</span>!</h2>
+          <h3>Join us <span>now</span>!</h3>
           <h6>Become a Sahla Pay Merchant</h6>
         </v-col>
       </v-row>
       <v-row justify="center" align="center">
-        <v-col cols="8" >
+        <v-col class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
           <v-row>
             <v-col>
               <input
                 type="text"
-                class="form-control"
+                class="form-control form-control-d"
                 id="exampleFormControlInput1"
                 placeholder="Name"
               />
@@ -71,7 +79,7 @@
             <v-col>
               <input
                 type="text"
-                class="form-control"
+                class="form-control form-control-d"
                 id="exampleFormControlInput1"
                 placeholder="Merchant Name"
               />
@@ -81,7 +89,7 @@
             <v-col>
               <input
                 type="text"
-                class="form-control"
+                class="form-control form-control-d"
                 id="exampleFormControlInput1"
                 placeholder="Mobile"
               />
@@ -91,7 +99,7 @@
             <v-col>
               <input
                 type="text"
-                class="form-control"
+                class="form-control form-control-d"
                 id="exampleFormControlInput1"
                 placeholder="Industry"
               />
@@ -101,7 +109,7 @@
             <v-col>
               <input
                 type="text"
-                class="form-control"
+                class="form-control form-control-d"
                 id="exampleFormControlInput1"
                 placeholder="Address"
               />
@@ -110,7 +118,7 @@
           <v-row>
             <v-col>
               <textarea
-                class="form-control"
+                class="form-control form-control-d"
                 id="exampleFormControlTextarea1"
                 rows="5"
                 placeholder="Message"
@@ -162,20 +170,25 @@ export default {};
     }
   }
   .merch-wrap {
+    width: 100%;
     p {
       color: #602167;
       font-weight: bold;
       font-size: 1.3rem;
     }
     .list {
-      list-style: disc;
+      list-style: disc inside;
       li {
-        padding: 10px 0;
+        height: 100%;
+      }
+      ::marker {
+        font-size: calc(1.5vw + 2vh);
       }
     }
   }
   .subs {
-    h2 {
+    h3 {
+      font-weight: bold;
       color: #602167;
       span {
         color: #00ada8;

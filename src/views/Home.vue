@@ -1,11 +1,11 @@
 <template>
   <div class="container-fluid home px-0">
-    <div class="box d-xl-none d-block"></div>
-    <div class="box d-xl-none d-block"></div>
-    <div class="box d-xl-none d-block"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
     <div>
       <v-row>
-        <v-col class="px-0 pt-0">
+        <v-col class="pt-0 px-0">
           <Banner></Banner>
         </v-col>
       </v-row>
@@ -26,7 +26,7 @@
           </v-col>
         </v-row>
       </div>
-      <div class="container-fluid">
+      <div class="container-fluid partners">
         <partners></partners>
       </div>
       <div class="container">
@@ -87,12 +87,16 @@ export default {
   width: 100%;
   min-height: 100vh;
   max-height: fit-content;
+  overflow: hidden;
   .offers {
     background: #f7f7f7;
   }
+  .partners {
+    background: #f7f7f7;
+  }
   .box {
-    width: 500px;
-    height: 500px;
+    width: 32vw;
+    height: 65vh;
     background: rgba($color: #00ada8, $alpha: 0.3);
     border-radius: 50px;
     transform: rotate(45deg);
@@ -104,10 +108,9 @@ export default {
     }
     &:nth-child(2) {
       right: -20%;
-      top: 54%;
+      top: 55%;
     }
     &:nth-child(3) {
-      width: 350px;
       left: -20%;
       top: 73%;
     }

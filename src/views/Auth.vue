@@ -17,6 +17,13 @@
       </v-col>
       <v-col xl="6" lg="7" md="12" class="right-side">
         <div class="container">
+          <div class="close">
+            <div class="container d-flex justify-content-end">
+              <router-link to="/">
+                <v-icon>{{ icons.close }}</v-icon>
+              </router-link>
+            </div>
+          </div>
           <v-card>
             <v-card-title class="text-center justify-center py-6">
               <!-- <h1 class="font-weight-bold text-h2 basil--text">BASiL</h1> -->
@@ -229,6 +236,7 @@ export default {
       icons: {
         facebook: "",
         google: "../assets/images/google.png",
+        close: "far fa-times",
       },
     };
   },
@@ -248,7 +256,6 @@ export default {
         this.$router.push("/");
       } else {
         this.pending = false;
-        console.log("Invalid");
       }
     },
   },

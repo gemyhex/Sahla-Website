@@ -9,7 +9,7 @@
         </v-col>
       </v-row>
       <v-row>
-        <v-col>
+        <v-col class="px-0">
           <carousel
             :items="6"
             :loop="true"
@@ -24,6 +24,9 @@
             :responsive="{
               0: {
                 items: 1,
+              },
+              400: {
+                items: 2,
               },
               600: {
                 items: 3,

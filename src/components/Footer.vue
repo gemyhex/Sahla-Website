@@ -2,10 +2,10 @@
   <div class="footer">
     <div class="container">
       <v-row justify="center" class="footer-wrap pt-5">
-        <v-col class="brief col-xl-2 col-lg-3 col-md-6 col-sm-12 col-12">
+        <v-col class="brief col-xl-3 col-lg-3 col-md-4 col-sm-12 col-12">
           <div class="bb-sec">
             <img src="../assets/images/logo_white.png" alt="" />
-            <p class="mt-3">Follow us on Social Media</p>
+            <p class="mt-3 mb-1">Follow us on Social Media</p>
             <ul class="social_links d-flex">
               <li
                 v-for="(link, i) in icons"
@@ -19,7 +19,9 @@
             </ul>
           </div>
         </v-col>
-        <v-col class="links pt-0 pb-8">
+        <v-col
+          class="links pt-0 pb-8 col-xl-9 col-lg-9 col-md-8 col-sm-12 col-12"
+        >
           <v-row>
             <!-- <v-col
               class="col-12 col-xl-4 col-lg-4 col-md-6 col-sm-6 pt-0"
@@ -38,10 +40,8 @@
                 </li>
               </ul>
             </v-col> -->
-            <v-col
-              class="d-none d-xl-block d-xl-block col-xl-1 col-lg-1"
-            ></v-col>
-            <v-col class="col-xl-2 col-lg-3 col-md-6 col-sm-12 col-12 pt-0">
+
+            <v-col class="col-xl-3 col-lg-3 col-md-4 col-sm-12 col-12 pt-0">
               <h4>Company</h4>
               <ul>
                 <li>
@@ -74,10 +74,7 @@
                 </li>
               </ul>
             </v-col>
-            <v-col
-              class="d-none d-xl-block d-xl-block col-xl-1 col-lg-1"
-            ></v-col>
-            <v-col class="col-xl-2 col-lg-3 col-md-6 col-sm-12 col-12 pt-0">
+            <v-col class="col-xl-3 col-lg-3 col-md-4 col-sm-12 col-12 pt-0">
               <h4>Get Help</h4>
               <ul>
                 <li>
@@ -103,18 +100,15 @@
                 </li>
               </ul>
             </v-col>
-            <v-col
-              class="d-none d-xl-block d-xl-block col-xl-1 col-lg-1"
-            ></v-col>
-            <v-col class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 pt-0">
+            <v-col class="col-xl-6 col-lg-6 col-md-9 col-sm-12 col-12 pt-0">
               <h4>Company</h4>
               <ul>
                 <li v-for="(item, i) in lists.list3.items" :key="i">
                   <div v-if="item.icon != ''"></div>
                   <router-link :to="item.to" class="d-flex align-items-start">
-                    <v-icon class="px-0.5 pt-1">{{ item.icon }}</v-icon>
-                    <h6 class="px-1 pt-0.25">{{ item.title }}</h6>
-                    <p>{{ item.content }}</p>
+                    <v-icon class="px-0.5 pt-1 m-0">{{ item.icon }}</v-icon>
+                    <h6 class="px-1 pt-0.25 m-0">{{ item.title }}</h6>
+                    <p class="m-0">{{ item.content }}</p>
                   </router-link>
                 </li>
               </ul>
@@ -125,7 +119,7 @@
     </div>
 
     <div class="bottom-foot text-center white--text">
-      <p>All Rights Reserved by valU 2022</p>
+      <p>All Rights Reserved by Sahla Pay 2022</p>
     </div>
   </div>
 </template>
@@ -177,30 +171,36 @@ export default {
   width: 100%;
   // min-height: 250px;
   background: #602167;
+  .footer-wrap {
+    width: 85%;
+  }
   .brief {
     .bb-sec {
       width: fit-content;
       margin: auto;
     }
     img {
-      max-width: 100%;
+      width: 70%;
     }
     .social_links {
       padding: 0;
       li {
         border-radius: 5px;
         max-width: 50px;
-        width: 30px;
-        height: 30px;
+        width: 22px;
+        height: 22px;
         max-height: 50px;
         background: #00ada8;
         margin-right: 0.5rem;
         a {
           width: 100%;
           height: 100%;
-
+          display: flex;
+          align-items: center;
+          justify-content: center;
           i {
-            font-size: 16px;
+            font-size: 14px;
+            font-weight: bold;
             color: #fff;
           }
         }
@@ -208,6 +208,7 @@ export default {
     }
     p {
       color: #fff;
+      font-size: calc(0.6vw + 1vh);
     }
   }
   .links {
@@ -232,6 +233,7 @@ export default {
           color: #fff;
         }
         a {
+          width: fit-content;
           color: #fff;
         }
       }
