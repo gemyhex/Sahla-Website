@@ -1,8 +1,5 @@
 <template>
   <div class="container-fluid home px-0">
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
     <div>
       <v-row>
         <v-col class="pt-0 px-0">
