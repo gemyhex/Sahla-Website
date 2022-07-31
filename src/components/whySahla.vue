@@ -35,13 +35,15 @@
           md="6"
           sm="6"
         >
-          <div class="logo">
-            <img src="@/assets/images/new/sec2.png" alt="" />
+          <div class="content">
+            <div class="logo">
+              <img src="@/assets/images/new/sec2.png" alt="" />
+            </div>
+            <h5>Customer Care</h5>
+            <p>
+              Our expert team is ready to deal with your concerns all day long.
+            </p>
           </div>
-          <h5>Customer Care</h5>
-          <p>
-            Our expert team is ready to deal with your concerns all day long.
-          </p>
         </v-col>
         <v-col
           class="why-item text-center mb-5"
@@ -51,14 +53,16 @@
           md="6"
           sm="6"
         >
-          <div class="logo">
-            <img src="@/assets/images/new/sec3.png" alt="" />
+          <div class="content">
+            <div class="logo">
+              <img src="@/assets/images/new/sec3.png" alt="" />
+            </div>
+            <h5>Safe &amp; Secure</h5>
+            <p>
+              protects your money from online fraud through advanced and secure
+              technology
+            </p>
           </div>
-          <h5>Safe &amp; Secure</h5>
-          <p>
-            protects your money from online fraud through advanced and secure
-            technology
-          </p>
         </v-col>
       </v-row>
     </v-container>
@@ -82,12 +86,14 @@ export default {};
     }
   }
   .why-item {
-    // height: 320px;
     padding: 10px;
-    background: #00ada8;
+    border-radius: 10px;
+    // background: #00ada8;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
     .content {
-      border: 2px dashed #c797d3;
       border-radius: 10px;
+      height: 320px;
+      border: 2px dashed #c797d3;
       padding: 2rem 0;
     }
     h5 {

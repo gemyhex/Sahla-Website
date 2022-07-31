@@ -4,7 +4,7 @@
       <v-row>
         <v-col>
           <div class="heading text-center">
-            <p>Our <span>Partners</span></p>
+            <h3>Our Partners</h3>
           </div>
         </v-col>
       </v-row>
@@ -41,18 +41,18 @@
               },
             }"
           >
-            <img src="@/assets/images/partner.png" />
-            <img src="@/assets/images/partner.png" />
-            <img src="@/assets/images/partner.png" />
-            <img src="@/assets/images/partner.png" />
-            <img src="@/assets/images/partner.png" />
-            <img src="@/assets/images/partner.png" />
-            <img src="@/assets/images/partner.png" />
-            <img src="@/assets/images/partner.png" />
-            <img src="@/assets/images/partner.png" />
-            <img src="@/assets/images/partner.png" />
-            <img src="@/assets/images/partner.png" />
-            <img src="@/assets/images/partner.png" />
+            <img src="@/assets/images/new/partner.png" />
+            <img src="@/assets/images/new/partner.png" />
+            <img src="@/assets/images/new/partner.png" />
+            <img src="@/assets/images/new/partner.png" />
+            <img src="@/assets/images/new/partner.png" />
+            <img src="@/assets/images/new/partner.png" />
+            <img src="@/assets/images/new/partner.png" />
+            <img src="@/assets/images/new/partner.png" />
+            <img src="@/assets/images/new/partner.png" />
+            <img src="@/assets/images/new/partner.png" />
+            <img src="@/assets/images/new/partner.png" />
+            <img src="@/assets/images/new/partner.png" />
           </carousel>
         </v-col>
       </v-row>
@@ -90,13 +90,10 @@ export default {
 <style lang="scss" scoped>
 .partner-wrap {
   .heading {
-    p {
-      font-weight: bold;
+    h3 {
+      font-weight: bolder;
       color: #602167;
       font-size: 2rem;
-      span {
-        color: #00ada8;
-      }
     }
   }
 }

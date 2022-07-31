@@ -1,46 +1,52 @@
 <template>
   <div class="footer">
     <div class="container">
+      <v-row justify="center" align="center">
+        <v-col cols="10" class="subs-wrap d-flex py-6">
+          <v-row justify="center" align="center">
+            <v-col cols="3">
+              <v-img
+                :src="require('@/assets/images/new/subs.png')"
+                max-width="200px"
+              ></v-img>
+            </v-col>
+            <v-col cols="6" class="heading text-center">
+              <p>Subscribe To Our <span>Newsletter</span></p>
+              <div class="searchbox-wrap">
+                <input type="text" placeholder="Your Email Address" />
+                <button><span>></span></button>
+              </div>
+            </v-col>
+            <v-col cols="3"></v-col>
+          </v-row>
+        </v-col>
+      </v-row>
       <v-row justify="center" class="footer-wrap pt-5">
         <v-col class="brief col-xl-3 col-lg-3 col-md-4 col-sm-12 col-12">
           <div class="bb-sec">
             <img src="../assets/images/logo_white.png" alt="" />
-            <p class="mt-3 mb-1">Follow us on Social Media</p>
-            <ul class="social_links d-flex">
-              <li
-                v-for="(link, i) in icons"
-                :key="i"
-                class="d-flex text-center"
+            <div class="mt-5">
+              <span :style="{ color: '#602167' }"
+                >Follow us on Social Media</span
               >
-                <router-link :to="link.to">
-                  <v-icon>{{ link.icon }}</v-icon>
-                </router-link>
-              </li>
-            </ul>
+              <ul class="social_links d-flex mt-2">
+                <li
+                  v-for="(link, i) in icons"
+                  :key="i"
+                  class="d-flex text-center"
+                >
+                  <router-link :to="link.to">
+                    <v-icon>{{ link.icon }}</v-icon>
+                  </router-link>
+                </li>
+              </ul>
+            </div>
           </div>
         </v-col>
         <v-col
           class="links pt-0 pb-8 col-xl-9 col-lg-9 col-md-8 col-sm-12 col-12"
         >
           <v-row>
-            <!-- <v-col
-              class="col-12 col-xl-4 col-lg-4 col-md-6 col-sm-6 pt-0"
-              v-for="(list, i) in lists"
-              :key="i"
-            >
-              <h4>{{ list.head }}</h4>
-              <ul>
-                <li v-for="(item, i) in list.items" :key="i">
-                  <div v-if="item.icon != ''"></div>
-                  <router-link :to="item.to" class="d-flex align-items-start">
-                    <v-icon class="px-0.5 pt-1">{{ item.icon }}</v-icon>
-                    <h6 class="px-1 pt-0.25">{{ item.title }}</h6>
-                    <p>{{ item.content }}</p>
-                  </router-link>
-                </li>
-              </ul>
-            </v-col> -->
-
             <v-col class="col-xl-3 col-lg-3 col-md-4 col-sm-12 col-12 pt-0">
               <h4>Company</h4>
               <ul>
@@ -106,8 +112,10 @@
                 <li v-for="(item, i) in lists.list3.items" :key="i">
                   <div v-if="item.icon != ''"></div>
                   <router-link :to="item.to" class="d-flex align-items-start">
-                    <v-icon class="px-0.5 pt-1 m-0">{{ item.icon }}</v-icon>
-                    <h6 class="px-1 pt-0.25 m-0">{{ item.title }}</h6>
+                    <v-icon class="px-0.5 pt-1 m-0 mr-1">{{
+                      item.icon
+                    }}</v-icon>
+                    <h6 class="px-1 pt-0.25 m-0 ml-1">{{ item.title }}</h6>
                     <p class="m-0">{{ item.content }}</p>
                   </router-link>
                 </li>
@@ -119,7 +127,7 @@
     </div>
 
     <div class="bottom-foot text-center white--text">
-      <p>All Rights Reserved by Sahla Pay 2022</p>
+      <p>&copy; All Rights Reserved by Sahla Pay 2022</p>
     </div>
   </div>
 </template>
@@ -170,7 +178,66 @@ export default {
 .footer {
   width: 100%;
   // min-height: 250px;
-  background: #602167;
+  background: linear-gradient(to bottom, #fff, #e6c8ed 90%);
+  .subs-wrap {
+    background: #c797d3;
+    border-radius: 20px;
+    .searchbox-wrap {
+      display: flex;
+      width: 500px;
+
+      input {
+        flex: 1;
+        padding: 20px 20px;
+        font-size: 1.1em;
+
+        -webkit-border-top-left-radius: 40px;
+        -webkit-border-bottom-left-radius: 40px;
+        -moz-border-radius-topleft: 40px;
+        -moz-border-radius-bottomleft: 40px;
+        border-top-left-radius: 40px;
+        border-bottom-left-radius: 40px;
+        box-shadow: none;
+        border: none;
+        // box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.19);
+        background: #fff;
+      }
+
+      button {
+        padding-right: 10px;
+
+        background-color: #fff;
+        -webkit-border-top-right-radius: 40px;
+        -webkit-border-bottom-right-radius: 40px;
+        -moz-border-radius-topright: 40px;
+        -moz-border-radius-bottomright: 40px;
+        border-top-right-radius: 40px;
+        border-bottom-right-radius: 40px;
+        border: none;
+        cursor: pointer;
+        cursor: hand;
+
+        span {
+          margin-left: 50px;
+          padding: 15px 20px;
+
+          font-size: 0.9em;
+          text-transform: uppercase;
+          font-weight: 300;
+          color: #fff;
+          background-color: #c797d3;
+
+          border-radius: 50%;
+          box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.19);
+
+          &:hover {
+            background-color: #c797d3;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.19);
+          }
+        }
+      }
+    }
+  }
   .footer-wrap {
     width: 85%;
   }
@@ -212,13 +279,15 @@ export default {
     }
   }
   .links {
-    color: #fff;
+    color: #602167;
     h4 {
+      font-size: 1.5rem;
+      font-weight: bold;
       position: relative;
       padding: 5px 0;
       &:before {
         content: "";
-        width: 30%;
+        width: 55px;
         position: absolute;
         bottom: 0;
         left: 0;
@@ -230,20 +299,21 @@ export default {
       li {
         i {
           font-size: 14px;
-          color: #fff;
+          color: #602167;
         }
         a {
           width: fit-content;
-          color: #fff;
+          color: #602167;
         }
       }
     }
   }
   .bottom-foot {
-    background: #00ada8;
+    background: #c797d3;
     padding: 8px;
     p {
       margin: 0;
+      color: #602167;
     }
   }
 }

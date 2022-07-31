@@ -6,15 +6,8 @@
           <Banner></Banner>
         </v-col>
       </v-row>
-      <div class="container">
-        <v-row class="pt-1">
-          <v-col>
-            <UseSahla></UseSahla>
-          </v-col>
-        </v-row>
-      </div>
-      <div class="container-fluid offers p-0">
-        <Offers></Offers>
+      <div class="mt-6">
+        <UseSahla></UseSahla>
       </div>
       <div class="container">
         <v-row>
@@ -26,13 +19,6 @@
       <div class="container-fluid partners">
         <partners></partners>
       </div>
-      <div class="container">
-        <v-row>
-          <v-col>
-            <subscribe></subscribe>
-          </v-col>
-        </v-row>
-      </div>
     </div>
   </div>
 </template>
@@ -41,10 +27,10 @@
 // @ is an alias to /src
 import Banner from "@/components/Banner";
 import UseSahla from "../components/UseSahla.vue";
-import Offers from "../components/Offers.vue";
+// import Offers from "../components/Offers.vue";
 import WhySahla from "../components/whySahla.vue";
 import Partners from "../components/partners.vue";
-import Subscribe from "../components/subscribe.vue";
+// import Subscribe from "../components/subscribe.vue";
 // import locomotiveScroll from "locomotive-scroll";
 
 export default {
@@ -52,10 +38,10 @@ export default {
   components: {
     Banner,
     UseSahla,
-    Offers,
+    // Offers,
     WhySahla,
     Partners,
-    Subscribe,
+    // Subscribe,
   },
   mounted() {
     // const _self = this;
@@ -88,29 +74,29 @@ export default {
   .offers {
     background: #f7f7f7;
   }
-  .partners {
-    background: #f7f7f7;
+  .useSahla {
+    background-size: cover;
   }
-  .box {
-    width: 32vw;
-    height: 65vh;
-    background: rgba($color: #00ada8, $alpha: 0.3);
-    border-radius: 50px;
-    transform: rotate(45deg);
-    position: absolute;
-    // transform: translate(-50%, -50%);
-    &:first-child {
-      top: 32%;
-      left: -20%;
-    }
-    &:nth-child(2) {
-      right: -20%;
-      top: 55%;
-    }
-    &:nth-child(3) {
-      left: -20%;
-      top: 73%;
-    }
-  }
+  // .box {
+  //   width: 32vw;
+  //   height: 65vh;
+  //   background: rgba($color: #00ada8, $alpha: 0.3);
+  //   border-radius: 50px;
+  //   transform: rotate(45deg);
+  //   position: absolute;
+  //   // transform: translate(-50%, -50%);
+  //   &:first-child {
+  //     top: 32%;
+  //     left: -20%;
+  //   }
+  //   &:nth-child(2) {
+  //     right: -20%;
+  //     top: 55%;
+  //   }
+  //   &:nth-child(3) {
+  //     left: -20%;
+  //     top: 73%;
+  //   }
+  // }
 }
 </style>
