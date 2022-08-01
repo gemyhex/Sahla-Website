@@ -1,5 +1,5 @@
 <template>
-  <div class="container py-0">
+  <div class="nav-wrap container py-0">
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
         <router-link class="navbar-brand" to="/"
@@ -28,7 +28,9 @@
         </div>
 
         <div class="btn-signup">
-          <v-btn color="#602167" class="btn-sign" to="/auth">Get in touch</v-btn>
+          <v-btn color="#602167" class="btn-sign" to="/auth"
+            >Get in touch</v-btn
+          >
         </div>
       </div>
     </nav>
@@ -61,7 +63,9 @@ export default {
   },
 };
 </script>
- <style lang="scss" scoped>
+<style lang="scss" scoped>
+.nav-wrap {
+}
 .navbar {
   width: 100%;
   .navbar-brand {

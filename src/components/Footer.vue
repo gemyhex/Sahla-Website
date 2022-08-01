@@ -17,14 +17,16 @@
                 <button><span>></span></button>
               </div>
             </v-col>
-            <v-col cols="3"></v-col>
+            <v-col cols="3">
+              <div class="cube"></div>
+            </v-col>
           </v-row>
         </v-col>
       </v-row>
-      <v-row justify="center" class="footer-wrap pt-5">
+      <v-row justify="center" class="footer-wrap pt-8">
         <v-col class="brief col-xl-3 col-lg-3 col-md-4 col-sm-12 col-12">
           <div class="bb-sec">
-            <img src="../assets/images/logo_white.png" alt="" />
+            <img src="../assets/images/new/logo_c.png" alt="" />
             <div class="mt-5">
               <span :style="{ color: '#602167' }"
                 >Follow us on Social Media</span
@@ -178,10 +180,12 @@ export default {
 .footer {
   width: 100%;
   // min-height: 250px;
-  background: linear-gradient(to bottom, #fff, #e6c8ed 90%);
+  background: linear-gradient(to bottom, #fff, #e6c8ed 100%);
   .subs-wrap {
     background: #c797d3;
     border-radius: 20px;
+    overflow: hidden;
+    position: relative;
     .searchbox-wrap {
       display: flex;
       width: 500px;
@@ -190,6 +194,7 @@ export default {
         flex: 1;
         padding: 20px 20px;
         font-size: 1.1em;
+        outline: none;
 
         -webkit-border-top-left-radius: 40px;
         -webkit-border-bottom-left-radius: 40px;
@@ -236,6 +241,20 @@ export default {
           }
         }
       }
+    }
+    .heading {
+      p {
+        font-size: 2rem;
+        color: #fff;
+        font-weight: bold;
+      }
+    }
+    .cube {
+      background: rgba($color: #9b5ba2, $alpha: 0.2);
+      width: 340px;
+      height: 240px;
+      border-radius: 16px;
+      transform: rotate(65deg) translate(30px, -22px);
     }
   }
   .footer-wrap {
