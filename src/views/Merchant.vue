@@ -2,13 +2,7 @@
   <div class="merchant pb-12">
     <div class="container-fluid p-0">
       <div
-        class="
-          bread-item
-          d-flex
-          flex-column
-          justify-content-center
-          align-items-center
-        "
+        class="bread-item d-flex flex-column justify-content-center align-items-center"
       >
         <h3>Join as a Merchant</h3>
         <nav aria-label="breadcrumb">
@@ -41,20 +35,24 @@
                 Leveraging common business acumen to achieve customer
                 satisfaction.
               </li>
+              <li>
+                Leveraging common business acumen to achieve customer
+                satisfaction.
+              </li>
+              <li>
+                Leveraging common business acumen to achieve customer
+                satisfaction.
+              </li>
             </ul>
           </div>
         </v-col>
         <v-col
-          class="
-            over
-            d-none d-lg-block
-            col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12
-          "
+          class="d-none d-lg-block col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12"
         >
-          <div class="cross">
-            <img src="../assets/images/merchantu.png" alt="" />
-          </div>
-          <!-- <div class="overlay"></div> -->
+          <v-img
+            src="@/assets/images/new/merchantu.png"
+            max-width="400px"
+          ></v-img>
         </v-col>
       </v-row>
       <v-row align="center" justify="center" class="subs text-center">
@@ -64,7 +62,7 @@
         </v-col>
       </v-row>
       <v-row justify="center" align="center">
-        <v-col class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+        <v-col cols="12" lg="8">
           <v-row>
             <v-col>
               <input
@@ -127,7 +125,7 @@
           </v-row>
           <v-row justify="center" align="center">
             <v-col class="d-flex justify-content-center">
-              <v-btn style="width: 50%" color="#602167">Send</v-btn>
+              <v-btn style="width: 50%" color="#E0B1E5">Send</v-btn>
             </v-col>
           </v-row>
         </v-col>
@@ -142,33 +140,6 @@ export default {};
 
 <style lang="scss">
 .merchant {
-  .over {
-    position: relative;
-    height: 350px;
-    .cross {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 2;
-      img {
-        width: 100%;
-        height: 100%;
-      }
-    }
-    .overlay {
-      position: absolute;
-      top: 9%;
-      left: -3%;
-      width: 100%;
-      height: 96%;
-      // transform: translate(-50%, -50%);
-      background: rgba($color: #602167, $alpha: 0.3);
-      border-radius: 30px;
-      z-index: 1;
-    }
-  }
   .merch-wrap {
     width: 100%;
     p {
@@ -182,7 +153,7 @@ export default {};
         height: 100%;
       }
       ::marker {
-        font-size: calc(1.5vw + 2vh);
+        font-size: calc(2vw);
       }
     }
   }

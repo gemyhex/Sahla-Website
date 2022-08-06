@@ -16,7 +16,7 @@
       </div>
     </div>
     <v-container>
-      <v-row>
+      <v-row class="mt-8">
         <v-col lg="6" md="6" sm="12" class="offer-item">
           <div class="badge_s">
             <img src="../assets/images/logo_tra.png" alt="" />

@@ -2,13 +2,7 @@
   <div class="contact">
     <div class="container-fluid p-0">
       <div
-        class="
-          bread-item
-          d-flex
-          flex-column
-          justify-content-center
-          align-items-center
-        "
+        class="bread-item d-flex flex-column justify-content-center align-items-center"
       >
         <h3>Contact Us</h3>
         <nav aria-label="breadcrumb">
@@ -26,12 +20,10 @@
 
     <v-container class="py-12">
       <v-row align="center" justify="center">
-        <v-col class="over col-xl-5 col-lg-5 col-md-7 col-sm-12 col-12">
-          <div class="cross">
-            <img src="../assets/images/contactu.png" alt="" />
-          </div>
+        <v-col cols="12" lg="6" md="6">
+          <v-img src="../assets/images/new/abt_1.png" max-width="500px"></v-img>
         </v-col>
-        <v-col class="form-wrap col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12">
+        <v-col class="form-wrap" cols="12" lg="6" md="6">
           <div class="form-ww">
             <p>Please fill in this form or call us on 00000</p>
             <v-row>
@@ -70,23 +62,18 @@
             </v-row>
             <v-row>
               <v-col>
-                <v-btn color="#602167">Send</v-btn>
+                <v-btn color="#E0B1E5">Send</v-btn>
               </v-col>
             </v-row>
           </div>
         </v-col>
       </v-row>
     </v-container>
-    <div class="container-fluid p-0 subs-cont">
-      <subscribe></subscribe>
-    </div>
   </div>
 </template>
 
 <script>
-import subscribe from "../components/subscribe.vue";
 export default {
-  components: { subscribe },
 };
 </script>
 
