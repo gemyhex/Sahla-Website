@@ -30,7 +30,7 @@
           <b-card no-body>
             <b-tabs pills vertical class="tab-list">
               <b-tab v-for="(tab, i) in tabs" :key="i" :title="tab">
-                <v-row align="center">
+                <v-row align="center" class="">
                   <v-col
                     cols="12"
                     class="d-flex justify-content-center search-wrap"
@@ -44,7 +44,7 @@
                         aria-describedby="basic-addon2"
                       />
                       <v-btn
-                        color="#602167"
+                        color="#E0B1E5"
                         class="input-group-text"
                         id="basic-addon2"
                       >
@@ -53,7 +53,7 @@
                     </div>
                     <v-btn color="#33D6D3" class="ml-2">Filter</v-btn>
                   </v-col>
-                  <v-col cols="6" lg="2" md="4" sm="6" class="item-lvl">
+                  <v-col cols="6" lg="2" md="4" sm="4" class="item-lvl">
                     <div class="item">
                       <div class="logo">
                         <v-img
@@ -67,7 +67,7 @@
                       <v-btn color="#E0B1E5" to="/checkout">TradLine</v-btn>
                     </div>
                   </v-col>
-                  <v-col cols="6" lg="2" md="4" sm="6" class="item-lvl">
+                  <v-col cols="6" lg="2" md="4" sm="4" class="item-lvl">
                     <div class="item">
                       <div class="logo">
                         <v-img
@@ -81,7 +81,7 @@
                       <v-btn color="#E0B1E5" to="/checkout">TradLine</v-btn>
                     </div>
                   </v-col>
-                  <v-col cols="6" lg="2" md="4" sm="6" class="item-lvl">
+                  <v-col cols="6" lg="2" md="4" sm="4" class="item-lvl">
                     <div class="item">
                       <div class="logo">
                         <v-img
@@ -95,7 +95,7 @@
                       <v-btn color="#E0B1E5" to="/checkout">TradLine</v-btn>
                     </div>
                   </v-col>
-                  <v-col cols="6" lg="2" md="4" sm="6" class="item-lvl">
+                  <v-col cols="6" lg="2" md="4" sm="4" class="item-lvl">
                     <div class="item">
                       <div class="logo">
                         <v-img
@@ -109,7 +109,7 @@
                       <v-btn color="#E0B1E5" to="/checkout">TradLine</v-btn>
                     </div>
                   </v-col>
-                  <v-col cols="6" lg="2" md="4" sm="6" class="item-lvl">
+                  <v-col cols="6" lg="2" md="4" sm="4" class="item-lvl">
                     <div class="item">
                       <div class="logo">
                         <v-img
@@ -123,7 +123,7 @@
                       <v-btn color="#E0B1E5" to="/checkout">TradLine</v-btn>
                     </div>
                   </v-col>
-                  <v-col cols="6" lg="2" md="4" sm="6" class="item-lvl">
+                  <v-col cols="6" lg="2" md="4" sm="4" class="item-lvl">
                     <div class="item">
                       <div class="logo">
                         <v-img
@@ -137,7 +137,7 @@
                       <v-btn color="#E0B1E5" to="/checkout">TradLine</v-btn>
                     </div>
                   </v-col>
-                  <v-col cols="6" lg="2" md="4" sm="6" class="item-lvl">
+                  <v-col cols="6" lg="2" md="4" sm="4" class="item-lvl">
                     <div class="item">
                       <div class="logo">
                         <v-img
@@ -151,7 +151,7 @@
                       <v-btn color="#E0B1E5" to="/checkout">TradLine</v-btn>
                     </div>
                   </v-col>
-                  <v-col cols="6" lg="2" md="4" sm="6" class="item-lvl">
+                  <v-col cols="6" lg="2" md="4" sm="4" class="item-lvl">
                     <div class="item">
                       <div class="logo">
                         <v-img
@@ -165,7 +165,7 @@
                       <v-btn color="#E0B1E5" to="/checkout">TradLine</v-btn>
                     </div>
                   </v-col>
-                  <v-col cols="6" lg="2" md="4" sm="6" class="item-lvl">
+                  <v-col cols="6" lg="2" md="4" sm="4" class="item-lvl">
                     <div class="item">
                       <div class="logo">
                         <v-img
@@ -179,7 +179,7 @@
                       <v-btn color="#E0B1E5" to="/checkout">TradLine</v-btn>
                     </div>
                   </v-col>
-                  <v-col cols="6" lg="2" md="4" sm="6" class="item-lvl">
+                  <v-col cols="6" lg="2" md="4" sm="4" class="item-lvl">
                     <div class="item">
                       <div class="logo">
                         <v-img
@@ -193,7 +193,7 @@
                       <v-btn color="#E0B1E5" to="/checkout">TradLine</v-btn>
                     </div>
                   </v-col>
-                  <v-col cols="6" lg="2" md="4" sm="6" class="item-lvl">
+                  <v-col cols="6" lg="2" md="4" sm="4" class="item-lvl">
                     <div class="item">
                       <div class="logo">
                         <v-img
@@ -207,7 +207,7 @@
                       <v-btn color="#E0B1E5" to="/checkout">TradLine</v-btn>
                     </div>
                   </v-col>
-                  <v-col cols="6" lg="2" md="4" sm="6" class="item-lvl">
+                  <v-col cols="6" lg="2" md="4" sm="4" class="item-lvl">
                     <div class="item">
                       <div class="logo">
                         <v-img
@@ -221,7 +221,7 @@
                       <v-btn color="#E0B1E5" to="/checkout">TradLine</v-btn>
                     </div>
                   </v-col>
-                  <v-col cols="6" lg="2" md="4" sm="6" class="item-lvl">
+                  <v-col cols="6" lg="2" md="4" sm="4" class="item-lvl">
                     <div class="item">
                       <div class="logo">
                         <v-img
@@ -235,7 +235,7 @@
                       <v-btn color="#E0B1E5" to="/checkout">TradLine</v-btn>
                     </div>
                   </v-col>
-                  <v-col cols="6" lg="2" md="4" sm="6" class="item-lvl">
+                  <v-col cols="6" lg="2" md="4" sm="4" class="item-lvl">
                     <div class="item">
                       <div class="logo">
                         <v-img
@@ -249,7 +249,7 @@
                       <v-btn color="#E0B1E5" to="/checkout">TradLine</v-btn>
                     </div>
                   </v-col>
-                  <v-col cols="6" lg="2" md="4" sm="6" class="item-lvl">
+                  <v-col cols="6" lg="2" md="4" sm="4" class="item-lvl">
                     <div class="item">
                       <div class="logo">
                         <v-img
