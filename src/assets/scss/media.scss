@@ -41,6 +41,9 @@
         display: flex;
         flex-direction: column;
     }
+    .item:after {
+            display: none;
+        }
 }
 
 @media screen and (max-width: 599px) {
@@ -61,17 +64,13 @@
     .banner-alt {
         display: none !important;
     }
-
-    .item:not(:last-child):after {
-        width: 11vw !important;
-    }
 }
 
 
 @media screen and (max-width: 767px) {
-    .item:after {
-        display: none;
-    }
+    // .item:after {
+    //     display: none;
+    // }
 
     // .box {
     //     display: none !important;
@@ -79,9 +78,9 @@
 }
 
 @media screen and (max-width: 767px) {
-    .item:after {
-        display: none;
-    }
+    // .item:after {
+    //     display: none;
+    // }
 
     .box {
         display: none !important;
@@ -95,8 +94,8 @@
     }
 
     .item:not(:last-child):after {
-        top: 23% !important;
-        left: 77% !important;
+        // top: 23% !important;
+        // left: 77% !important;
         // width: 70px !important;
         // height: 33px !important;
     }
@@ -156,8 +155,8 @@
 @media screen and (max-width: 1200px) {
     .home {
         .item:not(:last-child):after {
-            width: 10vw !important;
-            left: 75% !important;
+            // width: 10vw !important;
+            left: 115%;
         }
     }
 }

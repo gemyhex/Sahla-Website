@@ -16,7 +16,10 @@
 import Navbar from "@/components/Navbar.vue";
 import Footer from "./components/Footer.vue";
 export default {
-  components: { Navbar, Footer },
+  components: {
+    Navbar,
+    Footer,
+  },
   name: "App",
   data() {
     return {
@@ -25,3 +28,13 @@ export default {
   },
 };
 </script>
+
+<style lang="scss">
+// .nav {
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   z-index: 99999;
+// }
+</style>

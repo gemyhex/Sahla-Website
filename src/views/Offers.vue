@@ -2,13 +2,7 @@
   <div class="offers-wrap">
     <div class="container-fluid p-0">
       <div
-        class="
-          bread-item
-          d-flex
-          flex-column
-          justify-content-center
-          align-items-center
-        "
+        class="bread-item d-flex flex-column justify-content-center align-items-center"
       >
         <h3>Offers</h3>
         <nav aria-label="breadcrumb">
@@ -23,7 +17,7 @@
     </div>
     <v-container>
       <v-row>
-        <v-col lg="4" md="6" sm="12" class="offer-item">
+        <v-col lg="6" md="6" sm="12" class="offer-item">
           <div class="badge_s">
             <img src="../assets/images/logo_tra.png" alt="" />
           </div>
@@ -49,11 +43,11 @@
             </v-card-text>
 
             <v-card-actions class="justify-content-center">
-              <v-btn color="#602167"> Offer Details </v-btn>
+              <v-btn color="#E0B1E5"> Offer Details </v-btn>
             </v-card-actions>
           </v-card>
         </v-col>
-        <v-col lg="4" md="6" sm="12" class="offer-item">
+        <v-col lg="6" md="6" sm="12" class="offer-item">
           <div class="badge_s">
             <img src="../assets/images/logo_tra.png" alt="" />
           </div>
@@ -79,17 +73,17 @@
             </v-card-text>
 
             <v-card-actions class="justify-content-center">
-              <v-btn color="#602167"> Offer Details <span>></span> </v-btn>
+              <v-btn color="#E0B1E5"> Offer Details </v-btn>
             </v-card-actions>
           </v-card>
         </v-col>
-        <v-col lg="4" md="6" sm="12" class="offer-item">
+        <v-col lg="6" md="6" sm="12" class="offer-item">
           <div class="badge_s">
             <img src="../assets/images/logo_tra.png" alt="" />
           </div>
           <v-card class="mx-auto text-center">
             <div
-              class="electro d-flex justify-content-center align-items-center"
+              class="iphone d-flex justify-content-center align-items-center"
             >
               <img
                 class="white--text align-end"
@@ -108,13 +102,11 @@
             </v-card-text>
 
             <v-card-actions class="justify-content-center">
-              <v-btn color="#602167"> Offer Details </v-btn>
+              <v-btn color="#E0B1E5"> Offer Details </v-btn>
             </v-card-actions>
           </v-card>
         </v-col>
-      </v-row>
-      <v-row>
-        <v-col lg="4" md="6" sm="12" class="offer-item">
+        <v-col lg="6" md="6" sm="12" class="offer-item">
           <div class="badge_s">
             <img src="../assets/images/logo_tra.png" alt="" />
           </div>
@@ -140,111 +132,20 @@
             </v-card-text>
 
             <v-card-actions class="justify-content-center">
-              <v-btn color="#602167"> Offer Details </v-btn>
+              <v-btn color="#E0B1E5"> Offer Details </v-btn>
             </v-card-actions>
           </v-card>
         </v-col>
-        <v-col lg="4" md="6" sm="12" class="offer-item">
+        <v-col lg="6" md="6" sm="12" class="offer-item">
           <div class="badge_s">
             <img src="../assets/images/logo_tra.png" alt="" />
           </div>
-          <v-card class="mx-auto text-center">
-            <div
-              class="iphone d-flex justify-content-center align-items-center"
-            >
-              <img
-                class="white--text align-end"
-                src="@/assets/images/iphone.png"
-              />
-            </div>
-
-            <v-card-text class="text--primary">
-              <v-card-title class="card-title-p justify-content-center"
-                ><p>Enjoy <span> 0% </span> interest at Tradeline!</p>
-              </v-card-title>
-              <div>
-                Get all the mobile phones &amp; electronics you need online and
-                in-store from Mobilaty and pay with 0 interest and 0 down
-                payment on 6 months with Sahla Pay
-              </div>
-            </v-card-text>
-
-            <v-card-actions class="justify-content-center">
-              <v-btn color="#602167"> Offer Details <span>></span> </v-btn>
-            </v-card-actions>
-          </v-card>
-        </v-col>
-        <v-col lg="4" md="6" sm="12" class="offer-item">
-          <div class="badge_s">
-            <img src="../assets/images/logo_tra.png" alt="" />
-          </div>
-          <v-card class="mx-auto text-center">
-            <div
-              class="electro d-flex justify-content-center align-items-center"
-            >
-              <img
-                class="white--text align-end"
-                src="@/assets/images/electronics.png"
-              />
-            </div>
-            <v-card-text class="">
-              <v-card-title class="card-title-p justify-content-center"
-                ><p>Enjoy <span> 0% </span> interest at LG!</p>
-              </v-card-title>
-              <div>
-                Get all the mobile phones &amp; electronics you need online and
-                in-store from Mobilaty and pay with 0 interest and 0 down
-                payment on 6 months with Sahla Pay
-              </div>
-            </v-card-text>
-
-            <v-card-actions class="justify-content-center">
-              <v-btn color="#602167"> Offer Details </v-btn>
-            </v-card-actions>
-          </v-card>
-        </v-col>
-      </v-row>
-      <v-row>
-        <v-col lg="4" md="6" sm="12" class="offer-item">
-          <div class="badge_s">
-            <img src="../assets/images/logo_tra.png" alt="" />
-          </div>
-
           <v-card class="mx-auto text-center">
             <div
               class="laptop d-flex justify-content-center align-items-center"
             >
               <img
                 class="white--text align-end"
-                src="@/assets/images/laptop.png"
-              />
-            </div>
-            <v-card-text class="text-center">
-              <v-card-title class="card-title-p justify-content-center">
-                <p>Enjoy <span> 0% </span> interest at Dell!</p>
-              </v-card-title>
-              <div>
-                Get all the mobile phones &amp; electronics you need online and
-                in-store from Mobilaty and pay with 0 interest and 0 down
-                payment on 6 months with Sahla Pay
-              </div>
-            </v-card-text>
-
-            <v-card-actions class="justify-content-center">
-              <v-btn color="#602167"> Offer Details </v-btn>
-            </v-card-actions>
-          </v-card>
-        </v-col>
-        <v-col lg="4" md="6" sm="12" class="offer-item">
-          <div class="badge_s">
-            <img src="../assets/images/logo_tra.png" alt="" />
-          </div>
-          <v-card class="mx-auto text-center">
-            <div
-              class="iphone d-flex justify-content-center align-items-center"
-            >
-              <img
-                class="white--text align-end"
                 src="@/assets/images/iphone.png"
               />
             </div>
@@ -261,17 +162,17 @@
             </v-card-text>
 
             <v-card-actions class="justify-content-center">
-              <v-btn color="#602167"> Offer Details <span>></span> </v-btn>
+              <v-btn color="#E0B1E5"> Offer Details </v-btn>
             </v-card-actions>
           </v-card>
         </v-col>
-        <v-col lg="4" md="6" sm="12" class="offer-item">
+        <v-col lg="6" md="6" sm="12" class="offer-item">
           <div class="badge_s">
             <img src="../assets/images/logo_tra.png" alt="" />
           </div>
           <v-card class="mx-auto text-center">
             <div
-              class="electro d-flex justify-content-center align-items-center"
+              class="iphone d-flex justify-content-center align-items-center"
             >
               <img
                 class="white--text align-end"
@@ -290,52 +191,49 @@
             </v-card-text>
 
             <v-card-actions class="justify-content-center">
-              <v-btn color="#602167"> Offer Details </v-btn>
+              <v-btn color="#E0B1E5"> Offer Details </v-btn>
             </v-card-actions>
           </v-card>
         </v-col>
-      </v-row>
-      <v-row>
-        <v-col lg="4" md="6" sm="12" class="offer-item">
+        <v-col lg="6" md="6" sm="12" class="offer-item">
           <div class="badge_s">
             <img src="../assets/images/logo_tra.png" alt="" />
           </div>
+          <v-card class="mx-auto text-center">
+            <div
+              class="iphone d-flex justify-content-center align-items-center"
+            >
+              <img
+                class="white--text align-end"
+                src="@/assets/images/electronics.png"
+              />
+            </div>
+            <v-card-text class="">
+              <v-card-title class="card-title-p justify-content-center"
+                ><p>Enjoy <span> 0% </span> interest at LG!</p>
+              </v-card-title>
+              <div>
+                Get all the mobile phones &amp; electronics you need online and
+                in-store from Mobilaty and pay with 0 interest and 0 down
+                payment on 6 months with Sahla Pay
+              </div>
+            </v-card-text>
 
+            <v-card-actions class="justify-content-center">
+              <v-btn color="#E0B1E5"> Offer Details </v-btn>
+            </v-card-actions>
+          </v-card>
+        </v-col>
+        <v-col lg="6" md="6" sm="12" class="offer-item">
+          <div class="badge_s">
+            <img src="../assets/images/logo_tra.png" alt="" />
+          </div>
           <v-card class="mx-auto text-center">
             <div
               class="laptop d-flex justify-content-center align-items-center"
             >
               <img
                 class="white--text align-end"
-                src="@/assets/images/laptop.png"
-              />
-            </div>
-            <v-card-text class="text-center">
-              <v-card-title class="card-title-p justify-content-center">
-                <p>Enjoy <span> 0% </span> interest at Dell!</p>
-              </v-card-title>
-              <div>
-                Get all the mobile phones &amp; electronics you need online and
-                in-store from Mobilaty and pay with 0 interest and 0 down
-                payment on 6 months with Sahla Pay
-              </div>
-            </v-card-text>
-
-            <v-card-actions class="justify-content-center">
-              <v-btn color="#602167"> Offer Details </v-btn>
-            </v-card-actions>
-          </v-card>
-        </v-col>
-        <v-col lg="4" md="6" sm="12" class="offer-item">
-          <div class="badge_s">
-            <img src="../assets/images/logo_tra.png" alt="" />
-          </div>
-          <v-card class="mx-auto text-center">
-            <div
-              class="iphone d-flex justify-content-center align-items-center"
-            >
-              <img
-                class="white--text align-end"
                 src="@/assets/images/iphone.png"
               />
             </div>
@@ -352,57 +250,23 @@
             </v-card-text>
 
             <v-card-actions class="justify-content-center">
-              <v-btn color="#602167"> Offer Details <span>></span> </v-btn>
-            </v-card-actions>
-          </v-card>
-        </v-col>
-        <v-col lg="4" md="6" sm="12" class="offer-item">
-          <div class="badge_s">
-            <img src="../assets/images/logo_tra.png" alt="" />
-          </div>
-          <v-card class="mx-auto text-center">
-            <div
-              class="electro d-flex justify-content-center align-items-center"
-            >
-              <img
-                class="white--text align-end"
-                src="@/assets/images/electronics.png"
-              />
-            </div>
-            <v-card-text class="">
-              <v-card-title class="card-title-p justify-content-center"
-                ><p>Enjoy <span> 0% </span> interest at LG!</p>
-              </v-card-title>
-              <div>
-                Get all the mobile phones &amp; electronics you need online and
-                in-store from Mobilaty and pay with 0 interest and 0 down
-                payment on 6 months with Sahla Pay
-              </div>
-            </v-card-text>
-
-            <v-card-actions class="justify-content-center">
-              <v-btn color="#602167"> Offer Details </v-btn>
+              <v-btn color="#E0B1E5"> Offer Details </v-btn>
             </v-card-actions>
           </v-card>
         </v-col>
       </v-row>
+
       <v-row class="d-flex justify-content-center">
-        <v-col class="d-flex justify-content-center mt-5" lg="3" md="3" sm="4">
-          <v-btn color="#602167"> Show More </v-btn>
+        <v-col class="d-flex justify-content-center mt-12 mb-12" lg="3" md="3" sm="4">
+          <v-btn color="#E0B1E5"> Show More Offers </v-btn>
         </v-col>
       </v-row>
     </v-container>
-    <div class="container-fluid p-0 subs-cont">
-      <subscribe class="mt-5 pb-5"></subscribe>
-    </div>
   </div>
 </template>
 
 <script>
-import Subscribe from "../components/subscribe.vue";
-export default {
-  components: { Subscribe },
-};
+export default {};
 </script>
 
 <style lang="scss" scoped>
@@ -476,7 +340,7 @@ export default {
     }
     .iphone {
       height: 200px;
-      background: #602167;
+      background: #e0b1e5;
     }
     .electro {
       height: 200px;

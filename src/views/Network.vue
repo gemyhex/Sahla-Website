@@ -1,13 +1,9 @@
 <template>
   <div class="network">
     <div class="container-fluid p-0">
-      <div class="
-          bread-item
-          d-flex
-          flex-column
-          justify-content-center
-          align-items-center
-        ">
+      <div
+        class="bread-item d-flex flex-column justify-content-center align-items-center"
+      >
         <h3>Our Network</h3>
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
@@ -26,271 +22,249 @@
         <v-col class="d-flex">
           <p>Shop from over 2,500 stores, service providers and websites</p>
           <v-spacer></v-spacer>
-          <v-btn color="#602167">Join as a Merchant</v-btn>
+          <v-btn color="#E0B1E5">Join as a Merchant</v-btn>
         </v-col>
       </v-row>
-      <v-row align="center" justify="center">
-        <v-col>
-          <v-row class="d-flex justify-content-center">
-            <v-col class="d-flex justify-content-center search-wrap">
-              <div class="input-group mb-3">
-                <input type="email" class="form-control" placeholder="Search..." aria-label="Search..."
-                  aria-describedby="basic-addon2" />
-                <v-btn color="#602167" class="input-group-text" id="basic-addon2">
-                  <i class="fal fa-search"></i>
-                </v-btn>
-              </div>
-              <v-btn color="#602167" class="ml-2">Filter</v-btn>
-            </v-col>
-          </v-row>
+      <v-row class="mb-12" justify="center" align="center">
+        <v-col cols="12">
+          <b-card no-body>
+            <b-tabs pills vertical class="tab-list">
+              <b-tab v-for="(tab, i) in tabs" :key="i" :title="tab">
+                <v-row align="center">
+                  <v-col
+                    cols="12"
+                    class="d-flex justify-content-center search-wrap"
+                  >
+                    <div class="input-group mb-3">
+                      <input
+                        type="email"
+                        class="form-control"
+                        placeholder="Search..."
+                        aria-label="Search..."
+                        aria-describedby="basic-addon2"
+                      />
+                      <v-btn
+                        color="#602167"
+                        class="input-group-text"
+                        id="basic-addon2"
+                      >
+                        <i class="fal fa-search"></i>
+                      </v-btn>
+                    </div>
+                    <v-btn color="#33D6D3" class="ml-2">Filter</v-btn>
+                  </v-col>
+                  <v-col cols="6" lg="2" md="4" sm="6" class="item-lvl">
+                    <div class="item">
+                      <div class="logo">
+                        <img src="@/assets/images/net1.png" alt="TradeLine" />
+                      </div>
+                      <v-btn color="#E0B1E5" to="/checkout">TradLine</v-btn>
+                    </div>
+                  </v-col>
+                  <v-col cols="6" lg="2" md="4" sm="6" class="item-lvl">
+                    <div class="item">
+                      <div class="logo">
+                        <img src="@/assets/images/net1.png" alt="TradeLine" />
+                      </div>
+                      <v-btn color="#E0B1E5" to="/checkout">TradLine</v-btn>
+                    </div>
+                  </v-col>
+                  <v-col cols="6" lg="2" md="4" sm="6" class="item-lvl">
+                    <div class="item">
+                      <div class="logo">
+                        <img src="@/assets/images/net1.png" alt="TradeLine" />
+                      </div>
+                      <v-btn color="#E0B1E5" to="/checkout">TradLine</v-btn>
+                    </div>
+                  </v-col>
+                  <v-col cols="6" lg="2" md="4" sm="6" class="item-lvl">
+                    <div class="item">
+                      <div class="logo">
+                        <img src="@/assets/images/net1.png" alt="TradeLine" />
+                      </div>
+                      <v-btn color="#E0B1E5" to="/checkout">TradLine</v-btn>
+                    </div>
+                  </v-col>
+                  <v-col cols="6" lg="2" md="4" sm="6" class="item-lvl">
+                    <div class="item">
+                      <div class="logo">
+                        <img src="@/assets/images/net1.png" alt="TradeLine" />
+                      </div>
+                      <v-btn color="#E0B1E5" to="/checkout">TradLine</v-btn>
+                    </div>
+                  </v-col>
+                  <v-col cols="6" lg="2" md="4" sm="6" class="item-lvl">
+                    <div class="item">
+                      <div class="logo">
+                        <img src="@/assets/images/net1.png" alt="TradeLine" />
+                      </div>
+                      <v-btn color="#E0B1E5" to="/checkout">TradLine</v-btn>
+                    </div>
+                  </v-col>
+                  <v-col cols="6" lg="2" md="4" sm="6" class="item-lvl">
+                    <div class="item">
+                      <div class="logo">
+                        <img src="@/assets/images/net1.png" alt="TradeLine" />
+                      </div>
+                      <v-btn color="#E0B1E5" to="/checkout">TradLine</v-btn>
+                    </div>
+                  </v-col>
+                  <v-col cols="6" lg="2" md="4" sm="6" class="item-lvl">
+                    <div class="item">
+                      <div class="logo">
+                        <img src="@/assets/images/net1.png" alt="TradeLine" />
+                      </div>
+                      <v-btn color="#E0B1E5" to="/checkout">TradLine</v-btn>
+                    </div>
+                  </v-col>
+                  <v-col cols="6" lg="2" md="4" sm="6" class="item-lvl">
+                    <div class="item">
+                      <div class="logo">
+                        <img src="@/assets/images/net1.png" alt="TradeLine" />
+                      </div>
+                      <v-btn color="#E0B1E5" to="/checkout">TradLine</v-btn>
+                    </div>
+                  </v-col>
+                  <v-col cols="6" lg="2" md="4" sm="6" class="item-lvl">
+                    <div class="item">
+                      <div class="logo">
+                        <img src="@/assets/images/net1.png" alt="TradeLine" />
+                      </div>
+                      <v-btn color="#E0B1E5" to="/checkout">TradLine</v-btn>
+                    </div>
+                  </v-col>
+                  <v-col cols="6" lg="2" md="4" sm="6" class="item-lvl">
+                    <div class="item">
+                      <div class="logo">
+                        <img src="@/assets/images/net1.png" alt="TradeLine" />
+                      </div>
+                      <v-btn color="#E0B1E5" to="/checkout">TradLine</v-btn>
+                    </div>
+                  </v-col>
+                  <v-col cols="6" lg="2" md="4" sm="6" class="item-lvl">
+                    <div class="item">
+                      <div class="logo">
+                        <img src="@/assets/images/net1.png" alt="TradeLine" />
+                      </div>
+                      <v-btn color="#E0B1E5" to="/checkout">TradLine</v-btn>
+                    </div>
+                  </v-col>
+                  <v-col cols="6" lg="2" md="4" sm="6" class="item-lvl">
+                    <div class="item">
+                      <div class="logo">
+                        <img src="@/assets/images/net1.png" alt="TradeLine" />
+                      </div>
+                      <v-btn color="#E0B1E5" to="/checkout">TradLine</v-btn>
+                    </div>
+                  </v-col>
+                  <v-col cols="6" lg="2" md="4" sm="6" class="item-lvl">
+                    <div class="item">
+                      <div class="logo">
+                        <img src="@/assets/images/net1.png" alt="TradeLine" />
+                      </div>
+                      <v-btn color="#E0B1E5" to="/checkout">TradLine</v-btn>
+                    </div>
+                  </v-col>
+                  <v-col cols="6" lg="2" md="4" sm="6" class="item-lvl">
+                    <div class="item">
+                      <div class="logo">
+                        <img src="@/assets/images/net1.png" alt="TradeLine" />
+                      </div>
+                      <v-btn color="#E0B1E5" to="/checkout">TradLine</v-btn>
+                    </div>
+                  </v-col>
+                  <v-col cols="6" lg="2" md="4" sm="6" class="item-lvl">
+                    <div class="item">
+                      <div class="logo">
+                        <img src="@/assets/images/net1.png" alt="TradeLine" />
+                      </div>
+                      <v-btn color="#E0B1E5" to="/checkout">TradLine</v-btn>
+                    </div>
+                  </v-col>
+                  <v-col cols="6" lg="2" md="4" sm="6" class="item-lvl">
+                    <div class="item">
+                      <div class="logo">
+                        <img src="@/assets/images/net1.png" alt="TradeLine" />
+                      </div>
+                      <v-btn color="#E0B1E5" to="/checkout">TradLine</v-btn>
+                    </div>
+                  </v-col>
+                  <v-col cols="6" lg="2" md="4" sm="6" class="item-lvl">
+                    <div class="item">
+                      <div class="logo">
+                        <img src="@/assets/images/net1.png" alt="TradeLine" />
+                      </div>
+                      <v-btn color="#E0B1E5" to="/checkout">TradLine</v-btn>
+                    </div>
+                  </v-col>
+                  <v-col cols="6" lg="2" md="4" sm="6" class="item-lvl">
+                    <div class="item">
+                      <div class="logo">
+                        <img src="@/assets/images/net1.png" alt="TradeLine" />
+                      </div>
+                      <v-btn color="#E0B1E5" to="/checkout">TradLine</v-btn>
+                    </div>
+                  </v-col>
+                  <v-col cols="6" lg="2" md="4" sm="6" class="item-lvl">
+                    <div class="item">
+                      <div class="logo">
+                        <img src="@/assets/images/net1.png" alt="TradeLine" />
+                      </div>
+                      <v-btn color="#E0B1E5" to="/checkout">TradLine</v-btn>
+                    </div>
+                  </v-col>
+                  <v-col cols="6" lg="2" md="4" sm="6" class="item-lvl">
+                    <div class="item">
+                      <div class="logo">
+                        <img src="@/assets/images/net1.png" alt="TradeLine" />
+                      </div>
+                      <v-btn color="#E0B1E5" to="/checkout">TradLine</v-btn>
+                    </div>
+                  </v-col>
+                  <v-col cols="6" lg="2" md="4" sm="6" class="item-lvl">
+                    <div class="item">
+                      <div class="logo">
+                        <img src="@/assets/images/net1.png" alt="TradeLine" />
+                      </div>
+                      <v-btn color="#E0B1E5" to="/checkout">TradLine</v-btn>
+                    </div>
+                  </v-col>
+                  <v-col cols="6" lg="2" md="4" sm="6" class="item-lvl">
+                    <div class="item">
+                      <div class="logo">
+                        <img src="@/assets/images/net1.png" alt="TradeLine" />
+                      </div>
+                      <v-btn color="#E0B1E5" to="/checkout">TradLine</v-btn>
+                    </div>
+                  </v-col>
+                  <v-col cols="6" lg="2" md="4" sm="6" class="item-lvl">
+                    <div class="item">
+                      <div class="logo">
+                        <img src="@/assets/images/net1.png" alt="TradeLine" />
+                      </div>
+                      <v-btn color="#E0B1E5" to="/checkout">TradLine</v-btn>
+                    </div>
+                  </v-col>
+                  <v-col cols="6" lg="2" md="4" sm="6" class="item-lvl">
+                    <div class="item">
+                      <div class="logo">
+                        <img src="@/assets/images/net1.png" alt="TradeLine" />
+                      </div>
+                      <v-btn color="#E0B1E5" to="/checkout">TradLine</v-btn>
+                    </div>
+                  </v-col>
+                </v-row>
+              </b-tab>
+            </b-tabs>
+          </b-card>
         </v-col>
       </v-row>
-      <v-row>
-        <v-col>
-          <div>
-            <b-card no-body>
-              <b-tabs pills vertical class="tab-list">
-                <b-tab v-for="(tab, i) in tabs" :key="i" :title="tab">
-                  <v-row align="center" justify="center">
-                    <v-col class="item-lvl col-8 col-xl-2 col-lg-3 col-md-4 col-sm-6">
-                      <div class="item">
-                        <div class="logo">
-                          <img src="@/assets/images/net1.png" alt="TradeLine" />
-                        </div>
-                        <v-btn color="#602167" to="/checkout">TradLine</v-btn>
-                      </div>
-                    </v-col>
-                    <v-col class="item-lvl col-8 col-xl-2 col-lg-3 col-md-4 col-sm-6">
-                      <div class="item">
-                        <div class="logo">
-                          <img src="@/assets/images/net1.png" alt="TradeLine" />
-                        </div>
-                        <v-btn color="#602167" to="/checkout">TradLine</v-btn>
-                      </div>
-                    </v-col>
-                    <v-col class="item-lvl col-8 col-xl-2 col-lg-3 col-md-4 col-sm-6">
-                      <div class="item">
-                        <div class="logo">
-                          <img src="@/assets/images/net1.png" alt="TradeLine" />
-                        </div>
-                        <v-btn color="#602167" to="/checkout">TradLine</v-btn>
-                      </div>
-                    </v-col>
-                    <v-col class="item-lvl col-8 col-xl-2 col-lg-3 col-md-4 col-sm-6">
-                      <div class="item">
-                        <div class="logo">
-                          <img src="@/assets/images/net1.png" alt="TradeLine" />
-                        </div>
-                        <v-btn color="#602167" to="/checkout">TradLine</v-btn>
-                      </div>
-                    </v-col>
-                    <v-col class="item-lvl col-8 col-xl-2 col-lg-3 col-md-4 col-sm-6">
-                      <div class="item">
-                        <div class="logo">
-                          <img src="@/assets/images/net1.png" alt="TradeLine" />
-                        </div>
-                        <v-btn color="#602167" to="/checkout">TradLine</v-btn>
-                      </div>
-                    </v-col>
-                    <v-col class="item-lvl col-8 col-xl-2 col-lg-3 col-md-4 col-sm-6">
-                      <div class="item">
-                        <div class="logo">
-                          <img src="@/assets/images/net1.png" alt="TradeLine" />
-                        </div>
-                        <v-btn color="#602167" to="/checkout">TradLine</v-btn>
-                      </div>
-                    </v-col>
-                    <v-col class="item-lvl col-8 col-xl-2 col-lg-3 col-md-4 col-sm-6">
-                      <div class="item">
-                        <div class="logo">
-                          <img src="@/assets/images/net1.png" alt="TradeLine" />
-                        </div>
-                        <v-btn color="#602167" to="/checkout">TradLine</v-btn>
-                      </div>
-                    </v-col>
-                    <v-col class="item-lvl col-8 col-xl-2 col-lg-3 col-md-4 col-sm-6">
-                      <div class="item">
-                        <div class="logo">
-                          <img src="@/assets/images/net1.png" alt="TradeLine" />
-                        </div>
-                        <v-btn color="#602167" to="/checkout">TradLine</v-btn>
-                      </div>
-                    </v-col>
-                    <v-col class="item-lvl col-8 col-xl-2 col-lg-3 col-md-4 col-sm-6">
-                      <div class="item">
-                        <div class="logo">
-                          <img src="@/assets/images/net1.png" alt="TradeLine" />
-                        </div>
-                        <v-btn color="#602167" to="/checkout">TradLine</v-btn>
-                      </div>
-                    </v-col>
-                    <v-col class="item-lvl col-8 col-xl-2 col-lg-3 col-md-4 col-sm-6">
-                      <div class="item">
-                        <div class="logo">
-                          <img src="@/assets/images/net1.png" alt="TradeLine" />
-                        </div>
-                        <v-btn color="#602167" to="/checkout">TradLine</v-btn>
-                      </div>
-                    </v-col>
-                    <v-col class="item-lvl col-8 col-xl-2 col-lg-3 col-md-4 col-sm-6">
-                      <div class="item">
-                        <div class="logo">
-                          <img src="@/assets/images/net1.png" alt="TradeLine" />
-                        </div>
-                        <v-btn color="#602167" to="/checkout">TradLine</v-btn>
-                      </div>
-                    </v-col>
-                    <v-col class="item-lvl col-8 col-xl-2 col-lg-3 col-md-4 col-sm-6">
-                      <div class="item">
-                        <div class="logo">
-                          <img src="@/assets/images/net1.png" alt="TradeLine" />
-                        </div>
-                        <v-btn color="#602167" to="/checkout">TradLine</v-btn>
-                      </div>
-                    </v-col>
-                    <v-col class="item-lvl col-8 col-xl-2 col-lg-3 col-md-4 col-sm-6">
-                      <div class="item">
-                        <div class="logo">
-                          <img src="@/assets/images/net1.png" alt="TradeLine" />
-                        </div>
-                        <v-btn color="#602167" to="/checkout">TradLine</v-btn>
-                      </div>
-                    </v-col>
-                    <v-col class="item-lvl col-8 col-xl-2 col-lg-3 col-md-4 col-sm-6">
-                      <div class="item">
-                        <div class="logo">
-                          <img src="@/assets/images/net1.png" alt="TradeLine" />
-                        </div>
-                        <v-btn color="#602167" to="/checkout">TradLine</v-btn>
-                      </div>
-                    </v-col>
-                    <v-col class="item-lvl col-8 col-xl-2 col-lg-3 col-md-4 col-sm-6">
-                      <div class="item">
-                        <div class="logo">
-                          <img src="@/assets/images/net1.png" alt="TradeLine" />
-                        </div>
-                        <v-btn color="#602167" to="/checkout">TradLine</v-btn>
-                      </div>
-                    </v-col>
-                    <v-col class="item-lvl col-8 col-xl-2 col-lg-3 col-md-4 col-sm-6">
-                      <div class="item">
-                        <div class="logo">
-                          <img src="@/assets/images/net1.png" alt="TradeLine" />
-                        </div>
-                        <v-btn color="#602167" to="/checkout">TradLine</v-btn>
-                      </div>
-                    </v-col>
-                    <v-col class="item-lvl col-8 col-xl-2 col-lg-3 col-md-4 col-sm-6">
-                      <div class="item">
-                        <div class="logo">
-                          <img src="@/assets/images/net1.png" alt="TradeLine" />
-                        </div>
-                        <v-btn color="#602167" to="/checkout">TradLine</v-btn>
-                      </div>
-                    </v-col>
-                    <v-col class="item-lvl col-8 col-xl-2 col-lg-3 col-md-4 col-sm-6">
-                      <div class="item">
-                        <div class="logo">
-                          <img src="@/assets/images/net1.png" alt="TradeLine" />
-                        </div>
-                        <v-btn color="#602167" to="/checkout">TradLine</v-btn>
-                      </div>
-                    </v-col>
-                    <v-col class="item-lvl col-8 col-xl-2 col-lg-3 col-md-4 col-sm-6">
-                      <div class="item">
-                        <div class="logo">
-                          <img src="@/assets/images/net1.png" alt="TradeLine" />
-                        </div>
-                        <v-btn color="#602167" to="/checkout">TradLine</v-btn>
-                      </div>
-                    </v-col>
-                    <v-col class="item-lvl col-8 col-xl-2 col-lg-3 col-md-4 col-sm-6">
-                      <div class="item">
-                        <div class="logo">
-                          <img src="@/assets/images/net1.png" alt="TradeLine" />
-                        </div>
-                        <v-btn color="#602167" to="/checkout">TradLine</v-btn>
-                      </div>
-                    </v-col>
-                    <v-col class="item-lvl col-8 col-xl-2 col-lg-3 col-md-4 col-sm-6">
-                      <div class="item">
-                        <div class="logo">
-                          <img src="@/assets/images/net1.png" alt="TradeLine" />
-                        </div>
-                        <v-btn color="#602167" to="/checkout">TradLine</v-btn>
-                      </div>
-                    </v-col>
-                    <v-col class="item-lvl col-8 col-xl-2 col-lg-3 col-md-4 col-sm-6">
-                      <div class="item">
-                        <div class="logo">
-                          <img src="@/assets/images/net1.png" alt="TradeLine" />
-                        </div>
-                        <v-btn color="#602167" to="/checkout">TradLine</v-btn>
-                      </div>
-                    </v-col>
-                    <v-col class="item-lvl col-8 col-xl-2 col-lg-3 col-md-4 col-sm-6">
-                      <div class="item">
-                        <div class="logo">
-                          <img src="@/assets/images/net1.png" alt="TradeLine" />
-                        </div>
-                        <v-btn color="#602167" to="/checkout">TradLine</v-btn>
-                      </div>
-                    </v-col>
-                    <v-col class="item-lvl col-xl-2 col-lg-3 col-md-4 col-sm-6">
-                      <div class="item">
-                        <div class="logo">
-                          <img src="@/assets/images/net1.png" alt="TradeLine" />
-                        </div>
-                        <v-btn color="#602167" to="/checkout">TradLine</v-btn>
-                      </div>
-                    </v-col>
-                    <!-- <v-col class="item-lvl col-xl-2 col-lg-3 col-md-4 col-sm-6">
-                      <div class="item">
-                        <div class="logo">
-                          <img src="@/assets/images/net1.png" alt="TradeLine" />
-                        </div>
-                        <v-btn color="#602167" to="/checkout">TradLine</v-btn>
-                      </div>
-                    </v-col> -->
-                  </v-row>
-                </b-tab>
-              </b-tabs>
-            </b-card>
-          </div>
-        </v-col>
-        <!-- <v-col xl="3" lg="3" class="d-none d-xl-block d-lg-block">
-          <transition
-            appear
-            enter-class="animate__animated animate__bounceInDown"
-            leave-class="animate__animated animate__bounceOutDown"
-            :duration="{ enter: 1000, leave: 800 }"
-          >
-            <ul class="list">
-              <li v-for="(tab, i) in tabs" :key="i">
-                <v-btn
-                  color="#fff"
-                  :class="{ active: i == 0 }"
-                  @click="selectTab($event)"
-                  >{{ tab }}</v-btn
-                >
-              </li>
-            </ul>
-          </transition>
-        </v-col>
-        <v-col xl="3" lg="3" class="d-block d-xl-none d-lg-none"> </v-col>
-        <v-col xl="10" lg="10"></v-col> -->
-      </v-row>
-    </div>
-    <div class="container-fluid p-0 subs-cont mt-8">
-      <subscribe></subscribe>
     </div>
   </div>
 </template>
 
 <script>
-import subscribe from "../components/subscribe.vue";
 export default {
-  components: { subscribe },
   data() {
     return {
       selected: null,
@@ -314,8 +288,8 @@ export default {
     };
   },
   mounted() {
-    var tab = document.querySelector(".tab-list ul");
-    tab.classList.remove("flex-column");
+    // var tab = document.querySelector(".tab-list ul");
+    // tab.classList.remove("flex-column");
   },
   methods: {
     selectTab(ev) {
@@ -326,10 +300,10 @@ export default {
 };
 </script>
 
-<style  lang="scss" scoped>
+<style lang="scss" scoped>
 .network {
   p {
-    color: #602167;
+    color: #000;
   }
 
   .nav-pills {
@@ -346,7 +320,7 @@ export default {
         color: #000 !important;
 
         &.active {
-          background: #602167 !important;
+          background: #e0b1e5 !important;
           color: #fff !important;
         }
       }

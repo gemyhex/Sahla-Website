@@ -1,9 +1,9 @@
 <template>
-  <div class="nav-wrap container py-0">
+  <div class="nav-wrap container">
     <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid">
+      <div>
         <router-link class="navbar-brand" to="/"
-          ><img src="../assets/images/logo.svg" alt="" width="150px"
+          ><img src="../assets/images/new/logo.png" alt="" width="150px"
         /></router-link>
 
         <button
@@ -28,9 +28,7 @@
         </div>
 
         <div class="btn-signup">
-          <v-btn color="#602167" class="btn-sign" to="/auth"
-            >Get in touch</v-btn
-          >
+          <v-btn color="#602167" class="btn-sign" to="/auth">{{ auth }}</v-btn>
         </div>
       </div>
     </nav>
@@ -65,6 +63,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 .nav-wrap {
+  width: 100%;
 }
 .navbar {
   width: 100%;
@@ -73,6 +72,11 @@ export default {
       min-width: 100px;
     }
   }
+}
+.btn-sign {
+  min-width: 140px !important;
+  padding: 10px 20px !important;
+  font-weight: bold !important;
 }
 a {
   color: #00ada8 !important;

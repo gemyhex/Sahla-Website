@@ -1,7 +1,7 @@
 <template>
   <div class="partner-wrap py-12">
     <v-container>
-      <v-row>
+      <v-row class="px-8">
         <v-col>
           <div class="heading text-center">
             <h3>Our Partners</h3>
@@ -90,10 +90,24 @@ export default {
 <style lang="scss" scoped>
 .partner-wrap {
   .heading {
+    position: relative;
     h3 {
       font-weight: bolder;
       color: #602167;
-      font-size: 2rem;
+      font-size: calc(2vw);
+      &:after {
+      content: "Our Partners";
+      // display: flex;
+      // transform: rotateX(180deg);
+      position: absolute;
+      top: 10%;
+      left: 50%;
+      -webkit-background-clip: text;
+      color: #602167;
+      transform: translate(-50%, -50%);
+      opacity: 0.1;
+      font-size: calc(2.5vw);
+    }
     }
   }
 }

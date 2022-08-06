@@ -188,11 +188,11 @@ export default {
     position: relative;
     .searchbox-wrap {
       display: flex;
-      width: 500px;
+      max-width: 500px;
 
       input {
         flex: 1;
-        padding: 20px 20px;
+        padding: 15px;
         font-size: 1.1em;
         outline: none;
 
@@ -223,7 +223,7 @@ export default {
         cursor: hand;
 
         span {
-          margin-left: 50px;
+          margin-left: 20px;
           padding: 15px 20px;
 
           font-size: 0.9em;
@@ -263,7 +263,7 @@ export default {
   .brief {
     .bb-sec {
       width: fit-content;
-      margin: auto;
+      // margin: auto;
     }
     img {
       width: 70%;

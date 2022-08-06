@@ -76,12 +76,27 @@ export default {};
 <style lang="scss" scoped>
 .why {
   .heading {
+    text-align: center;
+    position: relative;
     p {
       font-weight: bold;
       color: #602167;
-      font-size: calc(2vw + 2vh);
+      font-size: calc(3vw);
       span {
         color: #00ada8;
+      }
+      &:after {
+        content: "Why use Sahla Pay?";
+        // display: flex;
+        // transform: rotateX(180deg);
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        -webkit-background-clip: text;
+        color: #602167;
+        transform: translate(-50%, -50%);
+        opacity: 0.1;
+        font-size: calc(3.5vw);
       }
     }
   }

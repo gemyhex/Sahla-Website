@@ -3,14 +3,7 @@
     <!-- <div class="box"></div> -->
     <div class="content">
       <div
-        class="
-          bread-item
-          d-flex
-          flex-column
-          justify-content-center
-          align-items-center
-          text-center
-        "
+        class="bread-item d-flex flex-column justify-content-center align-items-center text-center"
       >
         <h3>About Us</h3>
         <nav aria-label="breadcrumb">
@@ -23,12 +16,16 @@
         </nav>
       </div>
       <div class="container-fluid px-0">
-        <div class="container">
-          <v-row>
-            <v-col class="d-none d-lg-block">
-              <img src="@/assets/images/about.png" alt="" />
-            </v-col>
-            <v-col class="d-flex justify-content-center flex-column">
+        <v-row class="abt__t py-10" justify="space-between" align="center">
+          <v-col cols="6" class="d-none d-lg-block px-8">
+            <v-container>
+              <div class="abt__image">
+                <img :src="require('@/assets/images/new/abt_2.png')" alt="" />
+              </div>
+            </v-container>
+          </v-col>
+          <v-col cols="6" class="">
+            <v-container class="px-8">
               <h2>About <span>Sahla Pay</span></h2>
               <p>
                 SahlaPay is a consumer finance company established in 2022.
@@ -47,14 +44,17 @@
                 these pressures, allowing our customers to enjoy an amazing
                 shopping experience.
               </p>
-            </v-col>
-          </v-row>
-        </div>
-        <div class="container">
-          <v-row>
-            <v-col class="d-flex justify-content-center flex-column">
+            </v-container>
+          </v-col>
+        </v-row>
+
+        <v-row class="abt__b" justify="center" align="center">
+          <div class="heading d-flex flex-column justify-center">
+            <p>Our Mission <span>&amp;</span> Vision</p>
+          </div>
+          <v-col cols="6">
+            <v-container class="px-8">
               <div>
-                <h2 class="mb-5">Our Vision <span>&amp;</span> Mission</h2>
                 <h6>We aspire to</h6>
                 <ul>
                   <li>
@@ -71,7 +71,6 @@
                 </ul>
               </div>
               <div>
-                <h2 class="mb-5">Our Vision <span>&amp;</span> Mission</h2>
                 <h6>Our mission</h6>
                 <p>
                   is to offer financial solutions to all consumer segments in
@@ -86,17 +85,40 @@
                   accessible and affordable to all consumer segments.
                 </p>
               </div>
-            </v-col>
-            <v-col class="over d-none d-lg-block">
-              <div class="cross">
-                <img src="../assets/images/Mask Group 5.png" alt="" />
-              </div>
-              <div class="overlay"></div>
-            </v-col>
-          </v-row>
-        </div>
+            </v-container>
+          </v-col>
+          <v-col cols="6" class="d-none d-lg-block d-md-block">
+            <div class="abt__image">
+              <v-img
+                :src="require('@/assets/images/new/abt_1.png')"
+                class="m-auto"
+                max-width="500px"
+              ></v-img>
+            </div>
+          </v-col>
+          <v-col cols="12" class="rats">
+            <v-row justify="center" align="center" class="text-center">
+              <v-col cols="6" lg="3" md="6">
+                <h4>90 K</h4>
+                <p>Active User</p>
+              </v-col>
+              <v-col cols="6" lg="3" md="6">
+                <h4>70 K</h4>
+                <p>Download App</p>
+              </v-col>
+              <v-col cols="6" lg="3" md="6">
+                <h4>60 K</h4>
+                <p>Client</p>
+              </v-col>
+              <v-col cols="6" lg="3" md="6">
+                <h4>60 K</h4>
+                <p>Active User</p>
+              </v-col>
+            </v-row>
+          </v-col>
+        </v-row>
 
-        <div class="py-8 mt-8 useSahla">
+        <div class="py-8 useSahla">
           <use-sahla></use-sahla>
         </div>
         <div class="parters">
@@ -117,69 +139,84 @@ export default {
 <style lang="scss" scoped>
 .about {
   position: relative;
-  .box {
-    width: 32vw;
-    height: 65vh;
-    background: rgba($color: #00ada8, $alpha: 0.3);
-    border-radius: 50px;
-    transform: rotate(45deg);
-    position: absolute;
-    z-index: 0;
-    // transform: translate(-50%, -50%);
-    &:first-child {
-      top: 13%;
-      left: -10%;
+  .heading {
+    text-align: center;
+    position: relative;
+    p {
+      font-weight: bold;
+      color: #602167;
+      font-size: calc(3vw);
+      span {
+        color: #00ada8;
+      }
+      &:after {
+        content: "Our Vision & Mission";
+        // display: flex;
+        // transform: rotateX(180deg);
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        -webkit-background-clip: text;
+        color: #602167;
+        transform: translate(-50%, -50%);
+        opacity: 0.1;
+        font-size: calc(3.5vw);
+      }
     }
   }
-  img {
-    max-height: 600px;
-    height: 600px;
-    z-index: 1;
+  .abt__t,
+  .abt__b {
+    background: linear-gradient(to bottom, #fff, #e6c8ed 100%);
+    .abt__image {
+      // width: 90%;
+      margin: auto;
+      img {
+        width: 100%;
+      }
+    }
+    p {
+      margin-bottom: 3rem;
+      margin-left: 20px;
+    }
+    h6 {
+      color: #00ada8;
+      font-weight: bold;
+    }
+    ul {
+      list-style-type: disc;
+      li {
+        margin-left: 30px;
+      }
+    }
+  }
+  .abt__b {
+    margin-top: 100px;
+    background: transparent;
+    .rats {
+      margin-top: 70px;
+      background: linear-gradient(to bottom, #fff, #e6c8ed 100%);
+      h4 {
+        color: #00ada8;
+        font-weight: bold;
+        font-size: calc(3vw);
+      }
+      p {
+        color: #602167;
+        font-weight: bold;
+        font-size: calc(1.5vw);
+      }
+    }
+  }
+  .useSahla {
+    margin-top: 100px;
   }
   h2 {
+    margin-bottom: 1.5rem;
     color: #602167;
     font-weight: bold;
     span {
       color: #00ada8;
     }
-  }
-  h6 {
-    color: #00ada8;
-    font-weight: bold;
-  }
-  ul {
-    list-style: disc;
-  }
-  .over {
-    position: relative;
-    height: 600px;
-    .cross {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 1;
-      img {
-        width: 100%;
-        height: 100%;
-      }
-    }
-    .overlay {
-      position: absolute;
-      top: 15%;
-      left: 15%;
-      width: 70%;
-      height: 70%;
-      // transform: translate(-50%, -50%);
-      background: rgba($color: #602167, $alpha: 0.3);
-      border-radius: 30px;
-      transform: rotate(45deg);
-      z-index: 0;
-    }
-  }
-  .useSahla {
-    background: #f7f7f7;
   }
 }
 </style>

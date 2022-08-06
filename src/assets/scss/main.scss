@@ -100,7 +100,7 @@ a {
       box-shadow: 0 4px 4px rgba($color: #707070, $alpha: 0.3);
 
       &.active {
-        background-color: #602167 !important;
+        background-color: #E0B1E5 !important;
         color: #fff !important;
       }
     }
@@ -118,11 +118,13 @@ a {
 
 
 .bread-item {
-  height: 200px;
-  background: #602167;
+  height: 173px;
+  background: rgba($color: #C165CB, $alpha: 0.5);
 
   h3 {
     color: #fff;
+    font-weight: bold;
+    font-size: calc(2.5vw);
   }
 
   .breadcrumb-item+.breadcrumb-item::before {
