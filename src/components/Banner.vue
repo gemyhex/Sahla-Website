@@ -1,5 +1,5 @@
 <template>
-  <v-row class="banner-wrap m-0">
+  <v-row class="banner-wrap m-0" justify="center" align="center">
     <!-- <div class="banner">
       <div class="curve">
         <img src="../assets/images/Sahla Pay-01.png" alt="" />
@@ -25,7 +25,10 @@
         <img src="../assets/images/card2.png" alt="" />
       </div>
     </div> -->
-    <v-col cols="5" class="banner__left pt-0 pl-0">
+    <!-- <v-col cols="8" class="d-lg-none">
+      <v-img src="@/assets/images/new/mobbb.png"></v-img>
+    </v-col> -->
+    <v-col cols="12" xl="5" lg="12" md="12" sm="12" class="banner__left pt-0 pl-0">
       <v-img
         class="position-absolute top-0 left-0"
         src="@/assets/images/new/ban_f.png"
@@ -46,8 +49,12 @@
         </div>
       </div>
     </v-col>
-    <v-col cols="7" class="banner__right pt-0 pr-0">
-      <v-img src="@/assets/images/new/hm_1.png" max-height="660px" eager></v-img>
+    <v-col cols="12" lg="7" class="banner__right pt-0 pr-0 d-none d-lg-block">
+      <v-img
+        src="@/assets/images/new/hm_1.png"
+        max-height="660px"
+        eager
+      ></v-img>
     </v-col>
   </v-row>
 </template>
@@ -69,9 +76,9 @@ export default {};
       height: 100%;
       .wrap {
         width: 100%;
-        margin-top: 40%;
+        margin-top: 20%;
         margin-left: 10%;
-        transform: translate(-10, -40%);
+        transform: translate(-10%, -30%);
       }
       h4 {
         // color: linear-gradient(to right, #602167, #b25abf);

@@ -4,22 +4,21 @@
       <v-row justify="center" align="center">
         <v-col cols="10" class="subs-wrap d-flex py-6">
           <v-row justify="center" align="center">
-            <v-col cols="3">
+            <v-col cols="3" lg="3" md="3">
               <v-img
                 :src="require('@/assets/images/new/subs.png')"
                 max-width="200px"
               ></v-img>
             </v-col>
-            <v-col cols="6" class="heading text-center">
-              <p>Subscribe To Our <span>Newsletter</span></p>
+            <v-col cols="12" lg="7" md="6" sm="12" class="heading ">
+              <p class="mx-9">Subscribe To Our <span>Newsletter</span></p>
               <div class="searchbox-wrap">
                 <input type="text" placeholder="Your Email Address" />
                 <button><span>></span></button>
               </div>
             </v-col>
-            <v-col cols="3">
-              <div class="cube"></div>
-            </v-col>
+            <!-- <v-col cols="3"> </v-col> -->
+            <div class="cube"></div>
           </v-row>
         </v-col>
       </v-row>
@@ -223,10 +222,10 @@ export default {
         cursor: hand;
 
         span {
-          margin-left: 20px;
+          margin-left: 8px;
           padding: 15px 20px;
 
-          font-size: 0.9em;
+          // font-size: 0.9em;
           text-transform: uppercase;
           font-weight: 300;
           color: #fff;
@@ -244,17 +243,20 @@ export default {
     }
     .heading {
       p {
-        font-size: 2rem;
+        font-size: calc(3vw);
         color: #fff;
         font-weight: bold;
       }
     }
     .cube {
-      background: rgba($color: #9b5ba2, $alpha: 0.2);
-      width: 340px;
-      height: 240px;
+      position: absolute;
+      top: 49px;
+      right: -85px;
+      background: rgba(155, 91, 162, 0.2);
+      width: 222px;
+      height: 200px;
       border-radius: 16px;
-      transform: rotate(65deg) translate(30px, -22px);
+      transform: rotate(60deg) translate(0px, -65px);
     }
   }
   .footer-wrap {

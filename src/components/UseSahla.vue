@@ -4,83 +4,85 @@
       <p>How to use <span>Sahla Pay</span>?</p>
       <span>Only 4 Easy Steps!</span>
     </div>
-    <div class="first-wrap mt-5">
-      <v-container>
-        <v-row class="item__wrap px-8" justify="space-between" align="center">
-          <v-col
-            lg="2"
-            md="5"
-            sm="5"
-            class="item"
-            justify="center"
-            align="center"
-          >
-            <v-img
-              :src="require('@/assets/images/new/mob1.png')"
-              width="285px"
-            ></v-img>
-          </v-col>
-          <v-col
-            lg="2"
-            md="5"
-            sm="5"
-            class="item"
-            justify="center"
-            align="center"
-          >
-            <v-img
-              :src="require('@/assets/images/new/mob2.png')"
-              width="285px"
-            ></v-img>
-          </v-col>
-          <v-col
-            lg="2"
-            md="5"
-            sm="5"
-            class="item"
-            justify="center"
-            align="center"
-          >
-            <v-img
-              :src="require('@/assets/images/new/mob3.png')"
-              width="285px"
-            ></v-img>
-          </v-col>
-          <v-col
-            lg="2"
-            md="5"
-            sm="5"
-            class="item"
-            justify="center"
-            align="center"
-          >
-            <v-img
-              :src="require('@/assets/images/new/mob1.png')"
-              width="285px"
-            ></v-img>
-          </v-col>
-        </v-row>
-      </v-container>
+    <div>
+      <div class="first-wrap mt-5">
+        <v-container>
+          <v-row class="item__wrap px-8" justify="space-between" align="center">
+            <v-col
+              lg="2"
+              md="5"
+              sm="5"
+              class="item"
+              justify="center"
+              align="center"
+            >
+              <v-img
+                :src="require('@/assets/images/new/mob1.png')"
+                width="285px"
+              ></v-img>
+            </v-col>
+            <v-col
+              lg="2"
+              md="5"
+              sm="5"
+              class="item"
+              justify="center"
+              align="center"
+            >
+              <v-img
+                :src="require('@/assets/images/new/mob2.png')"
+                width="285px"
+              ></v-img>
+            </v-col>
+            <v-col
+              lg="2"
+              md="5"
+              sm="5"
+              class="item"
+              justify="center"
+              align="center"
+            >
+              <v-img
+                :src="require('@/assets/images/new/mob3.png')"
+                width="285px"
+              ></v-img>
+            </v-col>
+            <v-col
+              lg="2"
+              md="5"
+              sm="5"
+              class="item"
+              justify="center"
+              align="center"
+            >
+              <v-img
+                :src="require('@/assets/images/new/mob1.png')"
+                width="285px"
+              ></v-img>
+            </v-col>
+          </v-row>
+        </v-container>
+      </div>
     </div>
-    <v-container>
-      <v-row class="headings-wrap">
-        <v-col lg="3" md="6" sm="6">
-          <p class="text-center mt-3">
+    <v-container class="pt-0 d-none d-xl-block d-lg-block">
+      <v-row class="headings-wrap px-8 text-center" justify="space-between" align="center">
+        <v-col lg="2" md="5" sm="5">
+          <p class="mt-3">
             Point your phone<br />
             at the QR code
           </p>
         </v-col>
-        <v-col lg="3" md="6" sm="6">
-          <p class="text-center mt-3">Scan the QR code</p>
+        <v-col lg="2" md="5" sm="5">
+          <p class="mt-3">Scan the QR code</p>
         </v-col>
-        <v-col lg="3" md="6" sm="6">
-          <p class="text-center mt-3">
+        <v-col lg="2" md="5" sm="5">
+          <p class="mt-3">
             Wait for the page<br />
             to load
           </p>
         </v-col>
-        <v-col lg="3" md="6" sm="6">
-          <p class="text-center mt-3">Access the information</p>
+        <v-col lg="2" md="5" sm="5">
+          <p class="mt-3">Access the information</p>
         </v-col>
       </v-row>
     </v-container>

@@ -24,7 +24,7 @@
               </div>
             </v-container>
           </v-col>
-          <v-col cols="6" class="">
+          <v-col cols="12" lg="6" md="6" sm="12">
             <v-container class="px-8">
               <h2>About <span>Sahla Pay</span></h2>
               <p>
@@ -52,9 +52,9 @@
           <div class="heading d-flex flex-column justify-center">
             <p>Our Mission <span>&amp;</span> Vision</p>
           </div>
-          <v-col cols="6">
+          <v-col cols="12" lg="6" md="6" sm="12">
             <v-container class="px-8">
-              <div>
+              <div class="px-8">
                 <h6>We aspire to</h6>
                 <ul>
                   <li>
@@ -70,7 +70,7 @@
                   </li>
                 </ul>
               </div>
-              <div>
+              <div class="px-8">
                 <h6>Our mission</h6>
                 <p>
                   is to offer financial solutions to all consumer segments in

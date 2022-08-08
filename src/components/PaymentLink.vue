@@ -7,7 +7,7 @@
     }"
   >
     <v-container>
-      <v-row justify="space-around" align="center" class="px-8">
+      <v-row justify="space-around" align="center" class="px-lg-8">
         <v-col
           cols="12"
           xl="5"
