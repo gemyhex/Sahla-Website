@@ -73,7 +73,7 @@ export default {};
       }
       .btn-start {
         background: linear-gradient(to right, #602167, #b25abf) !important;
-        font-weight: bold;
+        font-weight: lighter;
         min-width: 140px;
       }
     }
