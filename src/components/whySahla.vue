@@ -81,7 +81,7 @@ export default {};
     p {
       font-weight: bold;
       color: #602167;
-      font-size: calc(4.2vw);
+      font-size: calc(3.6vw);
       span {
         color: #00ada8;
       }
@@ -97,7 +97,7 @@ export default {};
         color: #602167;
         transform: translate(-50%, -50%);
         opacity: 0.1;
-        font-size: calc(4.6vw);
+        font-size: calc(4vw);
       }
     }
   }

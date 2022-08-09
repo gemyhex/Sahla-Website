@@ -19,9 +19,9 @@
         >
           <h3
             :style="{
-              'font-size': '2.2rem',
+              'font-size': '2rem',
               color: '#602167',
-              'font-weight': 'bold',
+              'font-weight': 'bolder',
             }"
           >
             Payment link to scan QR code

@@ -6,66 +6,74 @@
     </div>
     <div>
       <div class="first-wrap mt-5">
-        <v-container>
+        <v-container class="py-0">
           <v-row class="item__wrap px-8" justify="space-between" align="center">
             <v-col
               lg="2"
               md="5"
               sm="5"
-              class="item"
+              class="item py-0"
               justify="center"
               align="center"
             >
               <v-img
                 :src="require('@/assets/images/new/mob1.png')"
                 width="285px"
+                class="mob-logo"
               ></v-img>
             </v-col>
             <v-col
               lg="2"
               md="5"
               sm="5"
-              class="item"
+              class="item py-0"
               justify="center"
               align="center"
             >
               <v-img
                 :src="require('@/assets/images/new/mob2.png')"
                 width="285px"
+                class="mob-logo"
               ></v-img>
             </v-col>
             <v-col
               lg="2"
               md="5"
               sm="5"
-              class="item"
+              class="item py-0"
               justify="center"
               align="center"
             >
               <v-img
                 :src="require('@/assets/images/new/mob3.png')"
                 width="285px"
+                class="mob-logo"
               ></v-img>
             </v-col>
             <v-col
               lg="2"
               md="5"
               sm="5"
-              class="item"
+              class="item py-0"
               justify="center"
               align="center"
             >
               <v-img
                 :src="require('@/assets/images/new/mob1.png')"
                 width="285px"
+                class="mob-logo"
               ></v-img>
             </v-col>
           </v-row>
         </v-container>
       </div>
     </div>
-    <v-container class="pt-0 d-none d-xl-block d-lg-block">
-      <v-row class="headings-wrap px-8 text-center" justify="space-between" align="center">
+    <v-container class="py-0 d-none d-xl-block d-lg-block">
+      <v-row
+        class="headings-wrap px-8 mt-4 text-center"
+        justify="space-between"
+        align="start"
+      >
         <v-col lg="2" md="5" sm="5">
           <p class="mt-3">
             Point your phone<br />
@@ -111,7 +119,7 @@ export default {
   p {
     color: #602167;
     font-weight: bold;
-    font-size: calc(4.2vw);
+    font-size: calc(3.6vw);
     margin-bottom: 5px;
 
     span {
@@ -128,7 +136,7 @@ export default {
       color: #602167;
       transform: translate(-50%, -50%);
       opacity: 0.1;
-      font-size: calc(4.6vw);
+      font-size: calc(4vw);
     }
   }
   span {
@@ -138,6 +146,10 @@ export default {
 }
 .item {
   position: relative;
+  .mob-logo {
+    box-shadow: 0 10px 10px #707070;
+    border-radius: 16px;
+  }
   &:not(:last-child):after {
     content: "";
     position: absolute;
@@ -157,7 +169,8 @@ export default {
 }
 .headings-wrap {
   p {
-    font-size: calc(1.3rem);
+    font-size: calc(1.2rem);
+    font-weight: lighter;
     color: #602167;
   }
 }

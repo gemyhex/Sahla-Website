@@ -11,13 +11,13 @@
               ></v-img>
             </v-col>
             <v-col cols="12" lg="7" md="6" sm="12" class="heading px-8">
-              <p class="mx-9">Subscribe To Our <span>Newsletter</span></p>
+              <p class="">Subscribe To Our <span>Newsletter</span></p>
               <div class="searchbox-wrap">
                 <input type="text" placeholder="Your Email Address" />
                 <button><span>></span></button>
               </div>
             </v-col>
-            <!-- <v-col cols="3"> </v-col> -->
+            <v-col cols="2" class="d-none d-xl-block d-lg-block"> </v-col>
             <div class="cube"></div>
           </v-row>
         </v-col>
@@ -245,7 +245,7 @@ export default {
       p {
         font-size: calc(2.5vw);
         color: #fff;
-        font-weight: bold;
+        font-weight: bolder;
       }
     }
     .cube {

@@ -1,7 +1,8 @@
 @import "./themes/light.scss";
 @import "./media.scss";
 @import "./variables.scss";
-@import url('https://fonts.googleapis.com/css2?family=Almarai&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inspiration&display=swap");
 
 * {
   padding: 0;
@@ -10,11 +11,14 @@
 }
 
 body {
-  font-family: 'Almarai', sans-serif !important;
+  font-family: "Inter", sans-serif !important;
+  // font-family: "Inspiration", cursive;
 }
 
 .v-application {
-  font-family: 'Almarai', sans-serif !important;
+  font-family: "Inter", sans-serif !important;
+
+  // font-family: "Inspiration", cursive;
 
   ul {
     list-style: none;
@@ -75,7 +79,6 @@ a {
   box-shadow: 0px 0px 3px rgba($color: #000, $alpha: 0.16);
   background-color: #fff;
 
-
   &::placeholder {
     color: rgba($color: #707070, $alpha: 0.5);
   }
@@ -100,7 +103,7 @@ a {
       box-shadow: 0 4px 4px rgba($color: #707070, $alpha: 0.3);
 
       &.active {
-        background-color: #E0B1E5 !important;
+        background-color: #e0b1e5 !important;
         color: #fff !important;
       }
     }
@@ -116,10 +119,9 @@ a {
   }
 }
 
-
 .bread-item {
   height: 173px;
-  background: rgba($color: #C165CB, $alpha: 0.5);
+  background: rgba($color: #c165cb, $alpha: 0.5);
 
   h3 {
     color: #fff;
@@ -127,7 +129,7 @@ a {
     font-size: calc(2.5vw);
   }
 
-  .breadcrumb-item+.breadcrumb-item::before {
+  .breadcrumb-item + .breadcrumb-item::before {
     content: "|";
     color: #fff;
   }

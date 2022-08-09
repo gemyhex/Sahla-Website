@@ -15,10 +15,7 @@
       ></v-img>
       <div class="item container px-8">
         <div class="wrap">
-          <h4>
-            Make everythings easy <br />
-            with QR code
-          </h4>
+          <h4>Make everythings easy with QR code</h4>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
             cursus, massa quis luctus tempor, mauris massa pharetra neque, eu
@@ -36,12 +33,7 @@
       sm="12"
       class="banner__right pt-0 pr-0"
     >
-      <v-img
-        src="@/assets/images/new/hm_1.png"
-        max-height="80vh"
-        
-        eager
-      ></v-img>
+      <v-img src="@/assets/images/new/hm_1.png" max-height="80vh" eager></v-img>
     </v-col>
   </v-row>
 </template>
@@ -62,7 +54,7 @@ export default {};
       width: 100%;
       height: 100%;
       .wrap {
-        width: 100%;
+        width: 90%;
         margin-top: 0%;
         margin-left: 20%;
         transform: translate(0%, -30%);
@@ -72,16 +64,17 @@ export default {};
         background: -webkit-linear-gradient(#602167, #b25abf);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        font-size: 3vw;
+        font-size: 2.9vw;
         font-weight: bolder;
       }
       p {
-        color: #00ada8;
+        color: #000;
         // line-height: 1.5rem;
       }
       .btn-start {
         background: linear-gradient(to right, #602167, #b25abf) !important;
         font-weight: bold;
+        min-width: 140px;
       }
     }
   }
