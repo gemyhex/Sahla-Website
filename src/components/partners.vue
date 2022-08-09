@@ -94,11 +94,12 @@ export default {
     h3 {
       font-weight: bolder;
       color: #602167;
-      font-size: calc(2vw);
+      font-size: calc(4.2vw);
       &:after {
       content: "Our Partners";
       // display: flex;
       // transform: rotateX(180deg);
+      width: 100%;
       position: absolute;
       top: 10%;
       left: 50%;
@@ -106,7 +107,7 @@ export default {
       color: #602167;
       transform: translate(-50%, -50%);
       opacity: 0.1;
-      font-size: calc(2.5vw);
+      font-size: calc(4.6vw);
     }
     }
   }

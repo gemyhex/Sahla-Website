@@ -1,7 +1,7 @@
 <template>
   <div class="footer">
     <div class="container">
-      <v-row justify="center" align="center">
+      <v-row justify="center" align="center" class="mx-4">
         <v-col cols="10" class="subs-wrap d-flex py-6">
           <v-row justify="center" align="center">
             <v-col cols="3" lg="3" md="3">
@@ -10,7 +10,7 @@
                 max-width="200px"
               ></v-img>
             </v-col>
-            <v-col cols="12" lg="7" md="6" sm="12" class="heading ">
+            <v-col cols="12" lg="7" md="6" sm="12" class="heading px-8">
               <p class="mx-9">Subscribe To Our <span>Newsletter</span></p>
               <div class="searchbox-wrap">
                 <input type="text" placeholder="Your Email Address" />
@@ -47,8 +47,8 @@
         <v-col
           class="links pt-0 pb-8 col-xl-9 col-lg-9 col-md-8 col-sm-12 col-12"
         >
-          <v-row>
-            <v-col class="col-xl-3 col-lg-3 col-md-4 col-sm-12 col-12 pt-0">
+          <v-row justify="center" >
+            <v-col cols="12" lg="3" md="6" sm="6">
               <h4>Company</h4>
               <ul>
                 <li>
@@ -81,7 +81,7 @@
                 </li>
               </ul>
             </v-col>
-            <v-col class="col-xl-3 col-lg-3 col-md-4 col-sm-12 col-12 pt-0">
+            <v-col cols="12" lg="3" md="6" sm="6">
               <h4>Get Help</h4>
               <ul>
                 <li>
@@ -107,7 +107,7 @@
                 </li>
               </ul>
             </v-col>
-            <v-col class="col-xl-6 col-lg-6 col-md-9 col-sm-12 col-12 pt-0">
+            <v-col class="col-xl-6 col-lg-6 col-md-9 col-sm-12 col-12">
               <h4>Company</h4>
               <ul>
                 <li v-for="(item, i) in lists.list3.items" :key="i">
@@ -243,7 +243,7 @@ export default {
     }
     .heading {
       p {
-        font-size: calc(3vw);
+        font-size: calc(2.5vw);
         color: #fff;
         font-weight: bold;
       }

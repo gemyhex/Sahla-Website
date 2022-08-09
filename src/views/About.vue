@@ -16,8 +16,8 @@
         </nav>
       </div>
       <div class="container-fluid px-0">
-        <v-row class="abt__t py-10" justify="space-between" align="center">
-          <v-col cols="6" class="d-none d-lg-block px-8">
+        <v-row class="abt__t py-10" justify="center" align="center">
+          <v-col cols="12" lg="6" md="6" sm="12" class="">
             <v-container>
               <div class="abt__image">
                 <img :src="require('@/assets/images/new/abt_2.png')" alt="" />
@@ -98,19 +98,19 @@
           </v-col>
           <v-col cols="12" class="rats">
             <v-row justify="center" align="center" class="text-center">
-              <v-col cols="6" lg="3" md="6">
+              <v-col cols="12" lg="3" md="6" sm="6">
                 <h4>90 K</h4>
                 <p>Active User</p>
               </v-col>
-              <v-col cols="6" lg="3" md="6">
+              <v-col cols="12" lg="3" md="6" sm="6">
                 <h4>70 K</h4>
                 <p>Download App</p>
               </v-col>
-              <v-col cols="6" lg="3" md="6">
+              <v-col cols="12" lg="3" md="6" sm="6">
                 <h4>60 K</h4>
                 <p>Client</p>
               </v-col>
-              <v-col cols="6" lg="3" md="6">
+              <v-col cols="12" lg="3" md="6" sm="6">
                 <h4>60 K</h4>
                 <p>Active User</p>
               </v-col>

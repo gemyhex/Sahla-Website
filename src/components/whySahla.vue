@@ -81,7 +81,7 @@ export default {};
     p {
       font-weight: bold;
       color: #602167;
-      font-size: calc(3vw);
+      font-size: calc(4.2vw);
       span {
         color: #00ada8;
       }
@@ -89,6 +89,7 @@ export default {};
         content: "Why use Sahla Pay?";
         // display: flex;
         // transform: rotateX(180deg);
+        width: 100%;
         position: absolute;
         top: 10%;
         left: 50%;
@@ -96,18 +97,18 @@ export default {};
         color: #602167;
         transform: translate(-50%, -50%);
         opacity: 0.1;
-        font-size: calc(3.5vw);
+        font-size: calc(4.6vw);
       }
     }
   }
   .why-item {
-    padding: 10px;
+    // padding: 10px;
     border-radius: 10px;
     // background: #00ada8;
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
     .content {
       border-radius: 10px;
-      height: 320px;
+      min-height: 330px;
       border: 2px dashed #c797d3;
       padding: 2rem 0;
     }
