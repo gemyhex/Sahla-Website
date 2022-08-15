@@ -7,6 +7,34 @@
 }
 
 @media screen and (max-width: 575px) {
+  .first-wrap {
+    .item__wrap {
+      .item {
+        &:nth-child(2),
+        &:nth-child(3),
+        &:nth-child(4) {
+          margin-top: 24px;
+        }
+      }
+    }
+  }
+  .abt__b {
+    .rats {
+      .rats__wrapper {
+        .rate__item {
+          &:not(:last-child) {
+            border-bottom: 0.5px solid rgba(#9b5ba2, 0.45);
+          }
+          h4 {
+            font-size: 5vw !important;
+          }
+          p {
+            font-size: 4vw !important;
+          }
+        }
+      }
+    }
+  }
   .auth-wrap .right-side .v-sheet.v-card {
     width: 100% !important;
   }
@@ -49,6 +77,12 @@
       }
     }
   }
+  .merchantt {
+    order: 2;
+  }
+  .merchantu {
+    order: 1;
+  }
 }
 
 @media screen and (max-width: 959px) {
@@ -58,6 +92,39 @@
 }
 
 @media screen and (max-width: 992px) {
+  .first-wrap {
+    .item__wrap {
+      .item {
+        &:nth-child(3),
+        &:nth-child(4) {
+          margin-top: 24px;
+        }
+      }
+    }
+  }
+  .abt__b {
+    .rats {
+      .rats__wrapper {
+        .rate__item {
+          &:nth-child(1),
+          &:nth-child(2) {
+            border-bottom: 0.5px solid rgba(#9b5ba2, 0.45);
+          }
+          h4 {
+            font-size: 5vw !important;
+          }
+          p {
+            font-size: 4vw !important;
+          }
+        }
+      }
+    }
+  }
+  .footer {
+    .cube {
+      display: none;
+    }
+  }
   .btn-signup {
     display: none;
   }
@@ -80,7 +147,6 @@
     }
   }
 
-
   .footer-wrap {
     width: 100% !important;
   }
@@ -99,7 +165,7 @@
   }
   .banner-wrap {
     .banner__left {
-        display: none !important;
+      display: none !important;
     }
   }
 }

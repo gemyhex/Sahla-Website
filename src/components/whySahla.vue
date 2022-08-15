@@ -81,7 +81,7 @@ export default {};
     p {
       font-weight: bold;
       color: #602167;
-      font-size: calc(3.6vw);
+      font-size: calc(2.99vw);
       span {
         color: #00ada8;
       }
@@ -97,7 +97,7 @@ export default {};
         color: #602167;
         transform: translate(-50%, -50%);
         opacity: 0.1;
-        font-size: calc(4vw);
+        font-size: calc(3.2vw);
       }
     }
   }
@@ -105,7 +105,7 @@ export default {};
     // padding: 10px;
     border-radius: 10px;
     // background: #00ada8;
-    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.08);
     .content {
       border-radius: 10px;
       min-height: 330px;

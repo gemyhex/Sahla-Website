@@ -13,7 +13,7 @@
           <carousel
             :items="6"
             :loop="true"
-            :margin="5"
+            :margin="30"
             :nav="false"
             :mouseDrag="true"
             :responsiveClass="true"
@@ -41,18 +41,18 @@
               },
             }"
           >
-            <img src="@/assets/images/new/partner.png" />
-            <img src="@/assets/images/new/partner.png" />
-            <img src="@/assets/images/new/partner.png" />
-            <img src="@/assets/images/new/partner.png" />
-            <img src="@/assets/images/new/partner.png" />
-            <img src="@/assets/images/new/partner.png" />
-            <img src="@/assets/images/new/partner.png" />
-            <img src="@/assets/images/new/partner.png" />
-            <img src="@/assets/images/new/partner.png" />
-            <img src="@/assets/images/new/partner.png" />
-            <img src="@/assets/images/new/partner.png" />
-            <img src="@/assets/images/new/partner.png" />
+            <img src="@/assets/images/new/partner.png" alt="Partner" />
+            <img src="@/assets/images/new/partner.png" alt="Partner" />
+            <img src="@/assets/images/new/partner.png" alt="Partner" />
+            <img src="@/assets/images/new/partner.png" alt="Partner" />
+            <img src="@/assets/images/new/partner.png" alt="Partner" />
+            <img src="@/assets/images/new/partner.png" alt="Partner" />
+            <img src="@/assets/images/new/partner.png" alt="Partner" />
+            <img src="@/assets/images/new/partner.png" alt="Partner" />
+            <img src="@/assets/images/new/partner.png" alt="Partner" />
+            <img src="@/assets/images/new/partner.png" alt="Partner" />
+            <img src="@/assets/images/new/partner.png" alt="Partner" />
+            <img src="@/assets/images/new/partner.png" alt="Partner" />
           </carousel>
         </v-col>
       </v-row>
@@ -94,21 +94,21 @@ export default {
     h3 {
       font-weight: bolder;
       color: #602167;
-      font-size: calc(3.6vw);
+      font-size: calc(2.99vw);
       &:after {
-      content: "Our Partners";
-      // display: flex;
-      // transform: rotateX(180deg);
-      width: 100%;
-      position: absolute;
-      top: 10%;
-      left: 50%;
-      -webkit-background-clip: text;
-      color: #602167;
-      transform: translate(-50%, -50%);
-      opacity: 0.1;
-      font-size: calc(4vw);
-    }
+        content: "Our Partners";
+        // display: flex;
+        // transform: rotateX(180deg);
+        width: 100%;
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        -webkit-background-clip: text;
+        color: #602167;
+        transform: translate(-50%, -50%);
+        opacity: 0.1;
+        font-size: calc(3.2vw);
+      }
     }
   }
 }

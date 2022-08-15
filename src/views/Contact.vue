@@ -20,7 +20,7 @@
 
     <v-container class="py-12">
       <v-row align="center" justify="center">
-        <v-col cols="12" lg="6" md="6">
+        <v-col cols="12" lg="6" md="6" class="pa-8">
           <v-img src="../assets/images/new/abt_1.png" max-width="500px"></v-img>
         </v-col>
         <v-col class="form-wrap" cols="12" lg="6" md="6">

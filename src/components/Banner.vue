@@ -64,12 +64,15 @@ export default {};
         background: -webkit-linear-gradient(#602167, #b25abf);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        font-size: 2.9vw;
-        font-weight: bolder;
+        font-size: 3vw;
+        font-weight: 900;
       }
       p {
+        width: 95%;
         color: #000;
+        color: #00ADA8;
         // line-height: 1.5rem;
+        margin: 20px 0;
       }
       .btn-start {
         background: linear-gradient(to right, #602167, #b25abf) !important;

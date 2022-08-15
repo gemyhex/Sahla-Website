@@ -1,131 +1,125 @@
 <template>
   <div class="footer">
-    <div class="container">
-      <v-row justify="center" align="center" class="mx-4">
-        <v-col cols="10" class="subs-wrap d-flex py-6">
-          <v-row justify="center" align="center">
-            <v-col cols="3" lg="3" md="3">
-              <v-img
-                :src="require('@/assets/images/new/subs.png')"
-                max-width="200px"
-              ></v-img>
-            </v-col>
-            <v-col cols="12" lg="7" md="6" sm="12" class="heading px-8">
-              <p class="">Subscribe To Our <span>Newsletter</span></p>
-              <div class="searchbox-wrap">
-                <input type="text" placeholder="Your Email Address" />
-                <button><span>></span></button>
-              </div>
-            </v-col>
-            <v-col cols="2" class="d-none d-xl-block d-lg-block"> </v-col>
-            <div class="cube"></div>
-          </v-row>
-        </v-col>
-      </v-row>
-      <v-row justify="center" class="footer-wrap pt-8">
-        <v-col class="brief col-xl-3 col-lg-3 col-md-4 col-sm-12 col-12">
-          <div class="bb-sec">
-            <img src="../assets/images/new/logo_c.png" alt="" />
-            <div class="mt-5">
-              <span :style="{ color: '#602167' }"
-                >Follow us on Social Media</span
-              >
-              <ul class="social_links d-flex mt-2">
-                <li
-                  v-for="(link, i) in icons"
-                  :key="i"
-                  class="d-flex text-center"
-                >
-                  <router-link :to="link.to">
-                    <v-icon>{{ link.icon }}</v-icon>
-                  </router-link>
-                </li>
-              </ul>
+    <v-row justify="center" align="center" class="mx-4">
+      <v-col cols="12" lg="10" md="10" class="subs-wrap d-flex py-6">
+        <v-row justify="center" align="center">
+          <v-col cols="3" lg="3" md="3">
+            <v-img
+              :src="require('@/assets/images/new/subs.png')"
+              max-width="200px"
+            ></v-img>
+          </v-col>
+          <v-col cols="12" lg="8" md="9" sm="12" class="heading px-8">
+            <p class="">Subscribe To Our Newsletter</p>
+            <div class="searchbox-wrap">
+              <input type="text" placeholder="Your Email Address" />
+              <button><span>></span></button>
             </div>
+          </v-col>
+          <v-col cols="2" class="d-none d-xl-block d-lg-block"> </v-col>
+          <div class="cube"></div>
+        </v-row>
+      </v-col>
+    </v-row>
+    <v-row justify="center" class="footer-wrap pt-8">
+      <v-col class="brief col-xl-3 col-lg-3 col-md-4 col-sm-12 col-12">
+        <div class="bb-sec">
+          <img src="../assets/images/new/logo_c.png" alt="" />
+          <div class="mt-5">
+            <span :style="{ color: '#602167' }">Follow us on Social Media</span>
+            <ul class="social_links d-flex mt-2">
+              <li
+                v-for="(link, i) in icons"
+                :key="i"
+                class="d-flex text-center"
+              >
+                <router-link :to="link.to">
+                  <v-icon>{{ link.icon }}</v-icon>
+                </router-link>
+              </li>
+            </ul>
           </div>
-        </v-col>
-        <v-col
-          class="links pt-0 pb-8 col-xl-9 col-lg-9 col-md-8 col-sm-12 col-12"
-        >
-          <v-row justify="center" >
-            <v-col cols="12" lg="3" md="6" sm="6">
-              <h4>Company</h4>
-              <ul>
-                <li>
-                  <div class="mx-2"></div>
-                  <router-link to="/offers" class="d-flex align-items-start">
-                    <v-icon class="px-0.5 pt-1"></v-icon>
-                    Offers
-                  </router-link>
-                </li>
-                <li>
-                  <div class="mx-2"></div>
-                  <router-link to="/network" class="d-flex align-items-start">
-                    <v-icon class="px-0.5 pt-1"></v-icon>
-                    Our Network
-                  </router-link>
-                </li>
-                <li>
-                  <div class="mx-2"></div>
-                  <router-link to="/merchant" class="d-flex align-items-start">
-                    <v-icon class="px-0.5 pt-1"></v-icon>
-                    Join as a Merchant
-                  </router-link>
-                </li>
-                <li>
-                  <div class="mx-2"></div>
-                  <router-link to="/contact" class="d-flex align-items-start">
-                    <v-icon class="px-0.5 pt-1"></v-icon>
-                    Contact Us
-                  </router-link>
-                </li>
-              </ul>
-            </v-col>
-            <v-col cols="12" lg="3" md="6" sm="6">
-              <h4>Get Help</h4>
-              <ul>
-                <li>
-                  <div class="mx-2"></div>
-                  <router-link to="/about" class="d-flex align-items-start">
-                    <v-icon class="px-0.5 pt-1"></v-icon>
-                    About Us
-                  </router-link>
-                </li>
-                <li>
-                  <div class="mx-2"></div>
-                  <router-link to="/contact" class="d-flex align-items-start">
-                    <v-icon class="px-0.5 pt-1"></v-icon>
-                    Contact Us
-                  </router-link>
-                </li>
-                <li>
-                  <div class="mx-2"></div>
-                  <router-link to="/privacy" class="d-flex align-items-start">
-                    <v-icon class="px-0.5 pt-1"></v-icon>
-                    Privacy-Policy
-                  </router-link>
-                </li>
-              </ul>
-            </v-col>
-            <v-col class="col-xl-6 col-lg-6 col-md-9 col-sm-12 col-12">
-              <h4>Company</h4>
-              <ul>
-                <li v-for="(item, i) in lists.list3.items" :key="i">
-                  <div v-if="item.icon != ''"></div>
-                  <router-link :to="item.to" class="d-flex align-items-start">
-                    <v-icon class="px-0.5 pt-1 m-0 mr-1">{{
-                      item.icon
-                    }}</v-icon>
-                    <h6 class="px-1 pt-0.25 m-0 ml-1">{{ item.title }}</h6>
-                    <p class="m-0">{{ item.content }}</p>
-                  </router-link>
-                </li>
-              </ul>
-            </v-col>
-          </v-row>
-        </v-col>
-      </v-row>
-    </div>
+        </div>
+      </v-col>
+      <v-col
+        class="links pt-0 pb-8 col-xl-9 col-lg-9 col-md-8 col-sm-12 col-12"
+      >
+        <v-row justify="center">
+          <v-col cols="12" lg="3" md="6" sm="6">
+            <h4>Company</h4>
+            <ul>
+              <li>
+                <div class="mx-2"></div>
+                <router-link to="/offers" class="d-flex align-items-start">
+                  <v-icon class="px-0.5 pt-1"></v-icon>
+                  Offers
+                </router-link>
+              </li>
+              <li>
+                <div class="mx-2"></div>
+                <router-link to="/network" class="d-flex align-items-start">
+                  <v-icon class="px-0.5 pt-1"></v-icon>
+                  Our Network
+                </router-link>
+              </li>
+              <li>
+                <div class="mx-2"></div>
+                <router-link to="/merchant" class="d-flex align-items-start">
+                  <v-icon class="px-0.5 pt-1"></v-icon>
+                  Join as a Merchant
+                </router-link>
+              </li>
+              <li>
+                <div class="mx-2"></div>
+                <router-link to="/contact" class="d-flex align-items-start">
+                  <v-icon class="px-0.5 pt-1"></v-icon>
+                  Contact Us
+                </router-link>
+              </li>
+            </ul>
+          </v-col>
+          <v-col cols="12" lg="3" md="6" sm="6">
+            <h4>Get Help</h4>
+            <ul>
+              <li>
+                <div class="mx-2"></div>
+                <router-link to="/about" class="d-flex align-items-start">
+                  <v-icon class="px-0.5 pt-1"></v-icon>
+                  About Us
+                </router-link>
+              </li>
+              <li>
+                <div class="mx-2"></div>
+                <router-link to="/contact" class="d-flex align-items-start">
+                  <v-icon class="px-0.5 pt-1"></v-icon>
+                  Contact Us
+                </router-link>
+              </li>
+              <li>
+                <div class="mx-2"></div>
+                <router-link to="/privacy" class="d-flex align-items-start">
+                  <v-icon class="px-0.5 pt-1"></v-icon>
+                  Privacy-Policy
+                </router-link>
+              </li>
+            </ul>
+          </v-col>
+          <v-col class="col-xl-6 col-lg-6 col-md-9 col-sm-12 col-12">
+            <h4>Company</h4>
+            <ul>
+              <li v-for="(item, i) in lists.list3.items" :key="i">
+                <div v-if="item.icon != ''"></div>
+                <router-link :to="item.to" class="d-flex align-items-start">
+                  <v-icon class="px-0.5 pt-1 m-0 mr-1">{{ item.icon }}</v-icon>
+                  <h6 class="px-1 pt-0.25 m-0 ml-1">{{ item.title }}</h6>
+                  <p class="m-0">{{ item.content }}</p>
+                </router-link>
+              </li>
+            </ul>
+          </v-col>
+        </v-row>
+      </v-col>
+    </v-row>
 
     <div class="bottom-foot text-center white--text">
       <p>&copy; All Rights Reserved by Sahla Pay 2022</p>
@@ -187,7 +181,7 @@ export default {
     position: relative;
     .searchbox-wrap {
       display: flex;
-      max-width: 500px;
+      // max-width: 500px;
 
       input {
         flex: 1;
@@ -243,7 +237,7 @@ export default {
     }
     .heading {
       p {
-        font-size: calc(2.5vw);
+        font-size: calc(2.99vw);
         color: #fff;
         font-weight: bolder;
       }
@@ -260,7 +254,7 @@ export default {
     }
   }
   .footer-wrap {
-    width: 85%;
+    // width: %;
   }
   .brief {
     .bb-sec {
@@ -335,6 +329,7 @@ export default {
     p {
       margin: 0;
       color: #602167;
+      font-weight: 900;
     }
   }
 }

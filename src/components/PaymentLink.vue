@@ -10,23 +10,24 @@
       <v-row justify="space-around" align="center" class="px-lg-8">
         <v-col
           cols="12"
-          xl="5"
-          lg="5"
+          xl="7"
+          lg="7"
           md="6"
           sm="12"
+          class="pa-8"
           justify="start"
           align="start"
         >
           <h3
             :style="{
-              'font-size': '2rem',
+              'font-size': '46px',
               color: '#602167',
-              'font-weight': 'bolder',
+              'font-weight': '900',
             }"
           >
             Payment link to scan QR code
           </h3>
-          <p :style="{ 'font-size': '1.2rem' }">
+          <p :style="{ 'font-size': '1.2rem' }" class="mt-6">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
             nulla eros, condimentum id leo a, laoreet eleifend ipsum. Aliquam at
             sodales elit, sit amet cursus dui. Maecenas venenatis tincidunt
@@ -36,8 +37,8 @@
         </v-col>
         <v-col
           cols="12"
-          xl="6"
-          lg="6"
+          xl="5"
+          lg="5"
           md="6"
           sm="8"
           justify="center"

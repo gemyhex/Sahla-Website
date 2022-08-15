@@ -1,6 +1,10 @@
 <template>
   <div class="container-fluid auth-wrap text-center">
-    <v-row>
+    <v-row
+      :style="{
+        'background-image': `url(${require('@/assets/images/new/BACKGROUND.png')})`,
+      }"
+    >
       <v-col
         xl="6"
         lg="5"
@@ -8,11 +12,7 @@
         class="left-side d-none d-xl-flex d-lg-flex d-md-flex"
       >
         <div class="container">
-          <p>
-            Easy Way to <br />
-            <span>Payment</span>
-          </p>
-          <img src="../assets/images/auth.png" alt="auth" />
+          <img src="../assets/images/new/OBJECTS.png" alt="auth" />
         </div>
       </v-col>
       <v-col xl="6" lg="7" md="12" class="right-side">
@@ -37,7 +37,7 @@
             </v-tabs>
 
             <v-tabs-items v-model="tab">
-              <v-tab-item>
+              <v-tab-item class="form__wrapper">
                 <v-card flat>
                   <v-card flat>
                     <v-row>
@@ -99,11 +99,7 @@
                         <h6>Or</h6>
                         <p class="network">With your social network</p>
                         <div
-                          class="
-                            d-flex
-                            justify-content-center
-                            align-items-center
-                          "
+                          class="d-flex justify-content-center align-items-center"
                         >
                           <router-link to="/auth">
                             <div class="icon-bg mx-2">
@@ -127,7 +123,7 @@
                   </v-card>
                 </v-card>
               </v-tab-item>
-              <v-tab-item>
+              <v-tab-item class="form__wrapper">
                 <v-card flat>
                   <v-row>
                     <v-col>
@@ -264,10 +260,9 @@ export default {
 
 <style lang="scss" scoped>
 .auth-wrap {
-  background: #d08cd8;
   min-height: 100vh;
   .left-side {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -291,13 +286,14 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #fff;
+    background: #e0b1e5;
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
     .v-sheet.v-card {
       box-shadow: none !important;
       width: 80%;
       margin: calc(1vw + 1vh) auto;
+      background-color: transparent !important;
       p {
         margin-bottom: 0 !important;
         color: #707070;
@@ -306,6 +302,18 @@ export default {
           font-size: 0.85rem;
           margin-bottom: 0.5rem !important;
         }
+      }
+      .v-tabs > .v-tabs-bar {
+        background-color: transparent !important;
+      }
+      .v-tabs-items {
+        background-color: transparent !important;
+      }
+      .form__wrapper {
+        max-height: 400px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        padding: 10px;
       }
     }
     .v-text-field__details {

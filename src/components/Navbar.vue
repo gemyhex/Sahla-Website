@@ -40,8 +40,6 @@ export default {
       links: [
         { title: "Home", to: "/" },
         { title: "About Us", to: "/about" },
-        { title: "Offers", to: "/offers" },
-        { title: "Our Network", to: "/network" },
         { title: "Jion as a Merchant", to: "/merchant" },
         { title: "Contact Us", to: "/contactus" },
       ],
@@ -49,6 +47,7 @@ export default {
       icons: {
         menu: "fal fa-bars",
       },
+      opened: false,
     };
   },
   methods: {
@@ -77,12 +76,26 @@ export default {
   padding: 10px 20px !important;
   font-weight: bold !important;
   background: linear-gradient(to right, #602167, #b25abf);
+  font-size: 1rem;
 }
 a {
   color: #00ada8 !important;
+  font-size: 1.1rem;
 }
 a.router-link-exact-active,
 a:hover {
   color: #602167 !important;
+}
+.navbar-collapse {
+  &.show {
+    .nav-item {
+      text-align: center;
+      background-color: #b25abf;
+      padding: 10px 0;
+      a {
+        color: #fff !important;
+      }
+    }
+  }
 }
 </style>

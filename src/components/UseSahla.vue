@@ -5,7 +5,7 @@
       <span>Only 4 Easy Steps!</span>
     </div>
     <div>
-      <div class="first-wrap mt-5">
+      <div class="first-wrap mt-12">
         <v-container class="py-0">
           <v-row class="item__wrap px-8" justify="space-between" align="center">
             <v-col
@@ -118,8 +118,8 @@ export default {
   position: relative;
   p {
     color: #602167;
-    font-weight: bold;
-    font-size: calc(3.6vw);
+    font-weight: 900;
+    font-size: calc(2.99vw);
     margin-bottom: 5px;
 
     span {
@@ -136,7 +136,8 @@ export default {
       color: #602167;
       transform: translate(-50%, -50%);
       opacity: 0.1;
-      font-size: calc(4vw);
+      font-size: calc(3.2vw);
+      font-weight: 900;
     }
   }
   span {
@@ -170,7 +171,7 @@ export default {
 .headings-wrap {
   p {
     font-size: calc(1.2rem);
-    font-weight: lighter;
+    font-weight: bold;
     color: #602167;
   }
 }
