@@ -3,31 +3,30 @@
     <div class="container">
       <v-row class="">
         <v-col cols="12" lg="6" md="6">
+          <v-img src="@/assets/images/new/exp1.png"></v-img>
+        </v-col>
+        <v-col cols="12" lg="6" md="6">
           <div class="wrap">
             <div class="item py-2">
-              <h2>
-                Reaching your customers through Android/iOS mobile applications?
-              </h2>
-              <h3>Sahla Pay Mobile SDks</h3>
+              <h2>Running a website and need a payment button or link?</h2>
+              <h3>Sahla Pay Express Checkout</h3>
             </div>
             <ul class="mt-6">
               <li>
-                Sahla Pay empowers partners with mobile SDKs satisfying the
-                emerging need of mobile technology.
+                The fastest way to build conversion-optimized payment forms
+                hosted on Sahla Pay
               </li>
               <li class="mt-3">
-                We offer mobile payment payment SDKs readily available for
-                integration in your native mobile application.
+                A drop-in payments flow designed to drive the most seamless and
+                easy payment integration.
               </li>
               <li class="mt-3">
-                We provide both, Android and iOS native payment plugins.
+                Choose your convenient integration option, Checkout Button OR
+                Checkout Link.
               </li>
             </ul>
             <v-btn class="btn-start mt-3">Learn More</v-btn>
           </div>
-        </v-col>
-        <v-col cols="12" lg="6" md="6">
-          <v-img src="@/assets/images/new/mob.png" contain></v-img>
         </v-col>
       </v-row>
     </div>
@@ -50,9 +49,47 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.heading {
+  text-align: center;
+  position: relative;
+  h2 {
+    color: #602167;
+    font-weight: bold;
+    // font-size: calc(3.6vw);
+    margin-bottom: 5px;
+
+    span {
+      color: #00ada8;
+    }
+    &:after {
+      content: "Choose how do you want to integrate";
+      // display: flex;
+      // transform: rotateX(180deg);
+      position: absolute;
+      top: 10%;
+      left: 50%;
+      -webkit-background-clip: text;
+      color: #602167;
+      transform: translate(-50%, -50%);
+      opacity: 0.1;
+      // font-size: calc(3vw);
+    }
+  }
+  p {
+    width: 70%;
+    margin: 0 auto;
+    font-weight: lighter;
+    color: #000;
+  }
+}
+
 .useSahla {
   margin-top: 60px;
-
+  background: linear-gradient(
+    to left,
+    rgba($color: #fff, $alpha: 0),
+    rgba($color: #e6c8ed, $alpha: 0.45)
+  );
   .wrap {
     .item {
       border-bottom: 2px dashed #602167;

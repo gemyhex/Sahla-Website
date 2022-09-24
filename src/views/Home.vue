@@ -1,18 +1,18 @@
 <template>
   <div class="container-fluid home px-0">
     <div>
-      <div class="">
-        <Banner></Banner>
-      </div>
+      <Banner></Banner>
       <div class="useSahla">
         <UseSahla></UseSahla>
       </div>
       <div class="mt-12">
         <PaymentLink></PaymentLink>
       </div>
-      <div class="container">
-        <why-sahla></why-sahla>
+      <div class="mt-12">
+        <SahlaExpress></SahlaExpress>
       </div>
+      <why-sahla></why-sahla>
+      <Platform></Platform>
       <div class="container-fluid partners">
         <partners></partners>
       </div>
@@ -52,6 +52,8 @@ import UseSahla from "../components/UseSahla.vue";
 import WhySahla from "../components/whySahla.vue";
 import Partners from "../components/partners.vue";
 import PaymentLink from "../components/PaymentLink.vue";
+import SahlaExpress from "../components/sahlaExpress.vue";
+import Platform from "../components/Platform.vue";
 // import Subscribe from "../components/subscribe.vue";
 // import locomotiveScroll from "locomotive-scroll";
 
@@ -64,6 +66,8 @@ export default {
     WhySahla,
     Partners,
     PaymentLink,
+    SahlaExpress,
+    Platform,
   },
 };
 </script>

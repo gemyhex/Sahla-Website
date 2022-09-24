@@ -15,11 +15,12 @@
       ></v-img>
       <div class="item container px-8">
         <div class="wrap">
-          <h4>Make everythings easy with QR code</h4>
+          <h4>Welcome to Sahla <span class="light">Pay</span></h4>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
-            cursus, massa quis luctus tempor, mauris massa pharetra neque, eu
-            cursus eros sem vitae nunc.
+            Sahla Pay is your one stop shop online payment platform. We empower
+            partners with multiple payment methods across their channels Sahla
+            Pay is your one stop shop online payment platform. We empower
+            partners with multiple payment methods across their channels.
           </p>
           <v-btn class="btn-start">Get Start</v-btn>
         </div>
@@ -55,20 +56,21 @@ export default {};
       height: 100%;
       .wrap {
         width: 90%;
-        margin-top: 0%;
+        margin-top: 50%;
         margin-left: 20%;
-        transform: translate(0%, -30%);
+        transform: translate(-20%, -50%);
       }
       h4 {
         // color: linear-gradient(to right, #602167, #b25abf);
-        background: -webkit-linear-gradient(#602167, #b25abf);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        color: #602167;
         font-size: 2.9vw;
         font-weight: bolder;
+        span {
+          color: #00ada8 !important;
+        }
       }
       p {
-        color: #000;
+        color: #00ada8;
         // line-height: 1.5rem;
       }
       .btn-start {

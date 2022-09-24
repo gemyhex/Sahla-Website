@@ -1,33 +1,38 @@
 <template>
   <div class="useSahla">
     <div class="container">
-      <v-row class="">
+      <v-row class="px-lg-8 pt-0" justify="center" align="center">
+        <v-col cols="12" lg="6" md="6">
+          <v-img src="@/assets/images/new/plat.png"></v-img>
+        </v-col>
         <v-col cols="12" lg="6" md="6">
           <div class="wrap">
             <div class="item py-2">
-              <h2>
-                Reaching your customers through Android/iOS mobile applications?
-              </h2>
-              <h3>Sahla Pay Mobile SDks</h3>
+              <h2>Building your own platform from scratch?</h2>
+              <h3>Sahla Pay REST API Integration</h3>
             </div>
             <ul class="mt-6">
               <li>
-                Sahla Pay empowers partners with mobile SDKs satisfying the
-                emerging need of mobile technology.
+                Looking forward taking control over the look and feel of your
+                checkout page? our set of comprehensive server side APIs are
+                ready for you. With our set of APIs you can:
+              </li>
+              <li class="mt-3">Make payments using Cards.</li>
+              <li class="mt-3">
+                Issue tokens for your clients' Cards so a more secure payments.
               </li>
               <li class="mt-3">
-                We offer mobile payment payment SDKs readily available for
-                integration in your native mobile application.
+                Receive payments at any of our Sahla Pay POS retail store.
               </li>
               <li class="mt-3">
-                We provide both, Android and iOS native payment plugins.
+                Take full control of checkout UI/UX elements.
+              </li>
+              <li class="mt-3">
+                Design your client’s payment options selection form.
               </li>
             </ul>
             <v-btn class="btn-start mt-3">Learn More</v-btn>
           </div>
-        </v-col>
-        <v-col cols="12" lg="6" md="6">
-          <v-img src="@/assets/images/new/mob.png" contain></v-img>
         </v-col>
       </v-row>
     </div>
@@ -51,8 +56,12 @@ export default {
 
 <style lang="scss" scoped>
 .useSahla {
-  margin-top: 60px;
-
+  margin-top: 0 !important;
+  background: linear-gradient(
+    to right,
+    rgba($color: #fff, $alpha: 0),
+    rgba($color: #e6c8ed, $alpha: 0.45)
+  );
   .wrap {
     .item {
       border-bottom: 2px dashed #602167;

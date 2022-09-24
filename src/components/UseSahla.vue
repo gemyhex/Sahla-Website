@@ -1,99 +1,46 @@
 <template>
   <div class="">
-    <div class="heading d-flex flex-column justify-center">
-      <p>How to use <span>Sahla Pay</span>?</p>
-      <span>Only 4 Easy Steps!</span>
+    <div class="container heading d-flex flex-column justify-center">
+      <h2>Choose how do you want to <span>integrate</span></h2>
+      <p>
+        Sahla Pay has a variety of services designed to fit within your business
+        needs. Choose the payment service that best fit your business Sahla Pay
+        has a variety of services designed to fit within your business needs.
+        Choose the payment service that best fit your business..
+      </p>
     </div>
-    <div>
-      <div class="first-wrap mt-5">
-        <v-container class="py-0">
-          <v-row class="item__wrap px-8" justify="space-between" align="center">
-            <v-col
-              lg="2"
-              md="5"
-              sm="5"
-              class="item py-0"
-              justify="center"
-              align="center"
-            >
-              <v-img
-                :src="require('@/assets/images/new/mob1.png')"
-                width="285px"
-                class="mob-logo"
-              ></v-img>
-            </v-col>
-            <v-col
-              lg="2"
-              md="5"
-              sm="5"
-              class="item py-0"
-              justify="center"
-              align="center"
-            >
-              <v-img
-                :src="require('@/assets/images/new/mob2.png')"
-                width="285px"
-                class="mob-logo"
-              ></v-img>
-            </v-col>
-            <v-col
-              lg="2"
-              md="5"
-              sm="5"
-              class="item py-0"
-              justify="center"
-              align="center"
-            >
-              <v-img
-                :src="require('@/assets/images/new/mob3.png')"
-                width="285px"
-                class="mob-logo"
-              ></v-img>
-            </v-col>
-            <v-col
-              lg="2"
-              md="5"
-              sm="5"
-              class="item py-0"
-              justify="center"
-              align="center"
-            >
-              <v-img
-                :src="require('@/assets/images/new/mob1.png')"
-                width="285px"
-                class="mob-logo"
-              ></v-img>
-            </v-col>
-          </v-row>
-        </v-container>
+    <div class="useSahla">
+      <div class="container">
+        <v-row class="pa-lg-8" align="center" justify="center">
+          <v-col cols="12" lg="6" md="6">
+            <v-img src="@/assets/images/new/use1.png"></v-img>
+          </v-col>
+          <v-col cols="12" lg="6" md="6">
+            <div class="wrap">
+              <div class="item py-2">
+                <h2>Running an E-Commerce market place?</h2>
+                <h3>Sahla Pay E-Commerce Plugins</h3>
+              </div>
+              <ul class="mt-6">
+                <li>
+                  Sahla Pay empowers partners with payments plugins for leading
+                  e-commerce technology solutions
+                </li>
+                <li class="mt-3">
+                  We offer payments plugins for the most leading e-commerce
+                  technology solutions, WooCommerce and Shopify, and Magento 2.
+                </li>
+                <li class="mt-3">
+                  Our plugins are designed to give your clients the best
+                  checkout experience.
+                </li>
+              </ul>
+              <v-btn class="btn-start mt-3">Learn More</v-btn>
+            </div>
+          </v-col>
+        </v-row>
       </div>
     </div>
-    <v-container class="py-0 d-none d-xl-block d-lg-block">
-      <v-row
-        class="headings-wrap px-8 mt-4 text-center"
-        justify="space-between"
-        align="start"
-      >
-        <v-col lg="2" md="5" sm="5">
-          <p class="mt-3">
-            Point your phone<br />
-            at the QR code
-          </p>
-        </v-col>
-        <v-col lg="2" md="5" sm="5">
-          <p class="mt-3">Scan the QR code</p>
-        </v-col>
-        <v-col lg="2" md="5" sm="5">
-          <p class="mt-3">
-            Wait for the page<br />
-            to load
-          </p>
-        </v-col>
-        <v-col lg="2" md="5" sm="5">
-          <p class="mt-3">Access the information</p>
-        </v-col>
-      </v-row>
-    </v-container>
   </div>
 </template>
 
@@ -116,17 +63,17 @@ export default {
 .heading {
   text-align: center;
   position: relative;
-  p {
+  h2 {
     color: #602167;
     font-weight: bold;
-    font-size: calc(3.6vw);
+    // font-size: calc(3.6vw);
     margin-bottom: 5px;
 
     span {
       color: #00ada8;
     }
     &:after {
-      content: "How to use Sahla Pay?";
+      content: "Choose how do you want to integrate";
       // display: flex;
       // transform: rotateX(180deg);
       position: absolute;
@@ -136,12 +83,48 @@ export default {
       color: #602167;
       transform: translate(-50%, -50%);
       opacity: 0.1;
-      font-size: calc(4vw);
+      // font-size: calc(3vw);
     }
   }
-  span {
+  p {
+    width: 70%;
+    margin: 0 auto;
     font-weight: lighter;
-    color: #602167;
+    color: #000;
+  }
+}
+
+.useSahla {
+  margin-top: 60px;
+  background: linear-gradient(
+    to left,
+    rgba($color: #fff, $alpha: 0),
+    rgba($color: #e6c8ed, $alpha: 0.45)
+  );
+  .wrap {
+    .item {
+      border-bottom: 2px dashed #602167;
+      h2 {
+        // color: linear-gradient(to right, #602167, #b25abf);
+        color: #602167;
+        // font-size: 2.9vw;
+        font-weight: bolder;
+      }
+      h3 {
+        color: #00ada8;
+        // line-height: 1.5rem;
+      }
+    }
+    ul {
+      li {
+        font-weight: 600;
+      }
+    }
+    .btn-start {
+      background: linear-gradient(to right, #602167, #b25abf) !important;
+      font-weight: bold;
+      min-width: 140px;
+    }
   }
 }
 .item {
@@ -149,22 +132,6 @@ export default {
   .mob-logo {
     box-shadow: 0 10px 10px #707070;
     border-radius: 16px;
-  }
-  &:not(:last-child):after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 120%;
-    width: 150px;
-    height: 40px;
-    background: url("../assets/images/new/arrow.png");
-    background-size: 25% 75%;
-    background-repeat: no-repeat;
-  }
-  @media screen and (max-width: 1200px) {
-    &:after {
-      left: 150%;
-    }
   }
 }
 .headings-wrap {
