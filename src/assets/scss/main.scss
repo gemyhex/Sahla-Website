@@ -57,6 +57,9 @@ a {
   box-shadow: none !important;
   text-transform: none !important;
 }
+.theme--light.v-tabs > .v-tabs-bar {
+  background-color: transparent !important;
+}
 
 .form-control {
   // height: 6vh;

@@ -18,8 +18,8 @@
       </div>
     </div>
     <v-container>
-      <v-row class="my-12" justify="center" align="center">
-        <v-col class="col-xl-7 col-lg-7 col-md-6 col-sm-12 col-12">
+      <v-row class="my-12 pa-8" justify="center" align="center">
+        <v-col cols="12" lg="7" md="6" sm="12" class="merchantt">
           <div class="merch-wrap">
             <p>Benefits of joining Sahla Pay’s merchant network</p>
             <ul class="list">
@@ -46,9 +46,7 @@
             </ul>
           </div>
         </v-col>
-        <v-col
-          class="d-none d-lg-block col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12"
-        >
+        <v-col cols="12" lg="5" md="6" sm="12" class="merchantu">
           <v-img
             src="@/assets/images/new/merchantu.png"
             max-width="400px"
@@ -61,7 +59,7 @@
           <h6>Become a Sahla Pay Merchant</h6>
         </v-col>
       </v-row>
-      <v-row justify="center" align="center">
+      <v-row class="pa-8" justify="center" align="center">
         <v-col cols="12" lg="8">
           <v-row>
             <v-col>

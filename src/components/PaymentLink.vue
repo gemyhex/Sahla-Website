@@ -4,13 +4,15 @@
       <v-row justify="space-around" align="center" class="px-lg-8">
         <v-col
           cols="12"
-          xl="5"
-          lg="5"
+          xl="7"
+          lg="7"
           md="6"
           sm="12"
+          class="pa-8"
           justify="start"
           align="start"
         >
+<<<<<<< HEAD
           <div class="wrap">
             <div class="item py-2">
               <h2>No website? No problem</h2>
@@ -27,11 +29,29 @@
             </p>
             <v-btn class="btn-start mt-3">Learn More</v-btn>
           </div>
+=======
+          <h3
+            :style="{
+              'font-size': '46px',
+              color: '#602167',
+              'font-weight': '900',
+            }"
+          >
+            Payment link to scan QR code
+          </h3>
+          <p :style="{ 'font-size': '1.2rem' }" class="mt-6">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+            nulla eros, condimentum id leo a, laoreet eleifend ipsum. Aliquam at
+            sodales elit, sit amet cursus dui. Maecenas venenatis tincidunt
+            lacus id mollis. In ex justo, consequat a elit in, tincidunt
+            vulputate odio. Pellentesque pellentesque quis elit ut feugiat.
+          </p>
+>>>>>>> 1f3f05beb046672e3b25f1ac2ee6a32207bb03cf
         </v-col>
         <v-col
           cols="12"
-          xl="6"
-          lg="6"
+          xl="5"
+          lg="5"
           md="6"
           sm="8"
           justify="center"

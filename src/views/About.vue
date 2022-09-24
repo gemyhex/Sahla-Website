@@ -48,7 +48,7 @@
           </v-col>
         </v-row>
 
-        <v-row class="abt__b" justify="center" align="center">
+        <v-row class="abt__b mb-8" justify="center" align="center">
           <div class="heading d-flex flex-column justify-center">
             <p>Our Mission <span>&amp;</span> Vision</p>
           </div>
@@ -70,7 +70,7 @@
                   </li>
                 </ul>
               </div>
-              <div class="px-8">
+              <div class=" mt-6 px-8">
                 <h6>Our mission</h6>
                 <p>
                   is to offer financial solutions to all consumer segments in
@@ -96,44 +96,37 @@
               ></v-img>
             </div>
           </v-col>
-          <v-col cols="12" class="rats">
-            <v-row justify="center" align="center" class="text-center">
-              <v-col cols="12" lg="3" md="6" sm="6">
+          <!-- <v-col cols="12" class="rats">
+            <v-row
+              justify="center"
+              align="end"
+              class="rats__wrapper text-center"
+            >
+              <v-col class="rate__item" cols="12" lg="3" md="6" sm="6">
                 <h4>90 K</h4>
                 <p>Active User</p>
               </v-col>
-              <v-col cols="12" lg="3" md="6" sm="6">
+              <v-col class="rate__item" cols="12" lg="3" md="6" sm="6">
                 <h4>70 K</h4>
                 <p>Download App</p>
               </v-col>
-              <v-col cols="12" lg="3" md="6" sm="6">
+              <v-col class="rate__item" cols="12" lg="3" md="6" sm="6">
                 <h4>60 K</h4>
                 <p>Client</p>
               </v-col>
-              <v-col cols="12" lg="3" md="6" sm="6">
+              <v-col class="rate__item" cols="12" lg="3" md="6" sm="6">
                 <h4>60 K</h4>
                 <p>Active User</p>
               </v-col>
             </v-row>
-          </v-col>
+          </v-col> -->
         </v-row>
-
-        <div class="py-8 useSahla">
-          <use-sahla></use-sahla>
-        </div>
-        <div class="parters">
-          <partners></partners>
-        </div>
       </div>
     </div>
   </div>
 </template>
 <script>
-import Partners from "../components/partners.vue";
-import UseSahla from "../components/UseSahla.vue";
-export default {
-  components: { UseSahla, Partners },
-};
+export default {};
 </script>
 
 <style lang="scss" scoped>
@@ -168,7 +161,7 @@ export default {
   .abt__b {
     background: linear-gradient(to bottom, #fff, #e6c8ed 100%);
     .abt__image {
-      // width: 90%;
+      width: 90%;
       margin: auto;
       img {
         width: 100%;
@@ -193,8 +186,21 @@ export default {
     margin-top: 100px;
     background: transparent;
     .rats {
-      margin-top: 70px;
-      background: linear-gradient(to bottom, #fff, #e6c8ed 100%);
+      min-height: 363px;
+      margin-top: 100px;
+      background: linear-gradient(to bottom, #fff, rgba(#e6c8ed, 0.45) 100%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .rats__wrapper {
+        .rate__item {
+          // height: 196px;
+          padding: 30px 0;
+          &:not(:last-child) {
+            border-right: 0.5px solid rgba(#9b5ba2, 0.45);
+          }
+        }
+      }
       h4 {
         color: #00ada8;
         font-weight: bold;
@@ -204,6 +210,7 @@ export default {
         color: #602167;
         font-weight: bold;
         font-size: calc(1.5vw);
+        margin-left: 0;
       }
     }
   }
